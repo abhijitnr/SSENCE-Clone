@@ -6,18 +6,18 @@ let flag = false;
 function chkMail() {
     event.preventDefault();
     let userData = {
-        email :document.querySelector("#email").value
+        email: document.querySelector("#email").value
     }
-    mail.push(userData);
-    localStorage.setItem("email", JSON.stringify(mail));
     
     // console.log(mail[0].email)
-    for(let i = 0; i < mail.length; i++) {
-        if(userData.email === mail[i].email) {
+    for (let i = 0; i < mail.length; i++) {
+        if (userData.email === mail[i].email) {
             flag = true;
             break;
         }
     }
-    if(flag) window.location.replace("signin.html");
+    mail.push(userData);
+    localStorage.setItem("email", JSON.stringify(mail));
+    if (flag) window.location.replace("signin.html");
     else window.location.replace("signup.html");
 }
