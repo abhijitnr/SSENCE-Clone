@@ -19,7 +19,7 @@ form>label, form>p {
 a:hover{
     text-decoration: underline;
 }
-form>input[type="submit"] {
+form>input[type="submit"], form>input[type="button"]{
     cursor: pointer;
     width: 100%;
     font-size: 10px;
