@@ -259,6 +259,8 @@ let mensData = [
   },
 ];
 
+let mensArr=JSON.parse(localStorage.getItem("mensInfo")) || [];
+
 display(mensData);
 
 function display(mensData) {
@@ -267,6 +269,10 @@ function display(mensData) {
 
   mensData.forEach(function (elem) {
     let box = document.createElement("div");
+    box.setAttribute("id","box");
+    box.addEventListener("click",function(){
+        preview(elem);
+    });
 
     let div1 = document.createElement("div");
     let div2 = document.createElement("div");
@@ -2402,4 +2408,10 @@ function sortPrice2(){
     });
 
     display(mensData);
+}
+
+
+function preview(elem){
+    mensArr.push(elem);
+    localStorage.setItem("mensInfo",JSON.stringify(mensArr));
 }
