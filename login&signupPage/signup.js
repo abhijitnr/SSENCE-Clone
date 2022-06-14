@@ -9,4 +9,5 @@ function uData() {
             break;
         }
     }
+    localStorage.setItem("email", JSON.stringify(mail));
 }
