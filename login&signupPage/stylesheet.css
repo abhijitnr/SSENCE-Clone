@@ -9,22 +9,44 @@ p {
     margin-bottom: 4%;
 }
 
-div>p,
-form>label {
+div>p,a,
+form>label, form>p {
+    text-decoration: none;
     color: gray;
     font-size: 10px;
+    margin-bottom:0%
 }
-
+a:hover{
+    text-decoration: underline;
+}
 form>input[type="submit"] {
+    cursor: pointer;
     width: 100%;
+    font-size: 10px;
     margin-top: 4%;
-    padding: 5px 25px;
+    padding: 10px 30px;
     background-color: black;
     color: white;
 }
 
-form>input[type="email"] {
+form>input[type="email"],
+form>input[type="password"] {
+    margin-bottom: 2%;
     width: 100%;
     padding: 5px;
     box-sizing: border-box;
+}
+form>div{
+    display: flex;
+    border: 1px solid transparent;
+    width: 100%;
+    justify-content: space-evenly;
+    color: gray;
+    font-size: 10px;
+    margin-bottom:0%
+}
+#back{
+    border: none;
+    background-color:white;
+    color: black;
 }
