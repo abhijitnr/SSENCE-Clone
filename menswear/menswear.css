@@ -43,6 +43,10 @@ img{
 
 span{
     display: block;
+    cursor: pointer;
+}
+span:hover{
+    text-decoration: underline;
 }
 h2{
     font-weight: bold;

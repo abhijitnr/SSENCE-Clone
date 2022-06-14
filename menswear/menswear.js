@@ -2297,4 +2297,90 @@ let mensData=[
     span.innerText=elem.leftText;
     document.querySelector("#box1").append(span);
   })
+
+
+//   this is for right hand side part
+
+let rightdiv1=document.createElement("div");
+let rightdiv2=document.createElement("div");
+
+let h2_3=document.createElement("h2");
+h2_3.innerText="SORT";
+
+let s5=document.createElement("span");
+s5.innerText="Latest arrivals";
+
+let s6=document.createElement("span");
+s6.innerText="Trending";
+
+let s7=document.createElement("span");
+s7.innerText="Price: Low to high";
+
+let s8=document.createElement("span");
+s8.innerText="Price: High to low";
+
+rightdiv1.append(h2_3,s5,s6,s7,s8);
+
+
+let h2_4=document.createElement("h2");
+h2_4.innerText="COLORS";
+
+rightdiv2.append(h2_4);
+
+let colors=[
+    {
+        color:"ALL COLORS",
+    },
+    {
+        color:"Black",
+    },
+    {
+        color:"Blue",
+    },
+    {
+        color:"Brown",
+    },
+    {
+        color:"Burgundy",
+    },
+    {
+        color:"Gray",
+    },
+    {
+        color:"Green",
+    },
+    {
+        color:"Navy",
+    },
+    {
+        color:"Orange",
+    },
+    {
+        color:"Pink",
+    },
+    {
+        color:"Purple",
+    },
+    {
+        color:"Red",
+    },
+    {
+        color:"Tan",
+    },
+    {
+        color:"White",
+    },
+    {
+        color:"Yellow",
+    },
+    
+];
+document.querySelector("#box3").append(rightdiv1,rightdiv2);
+
+colors.map(function(elem){
+    let s=document.createElement("span");
+    s.innerText=elem.color;
+    document.querySelector("#box3").append(s);
+})
+
  
