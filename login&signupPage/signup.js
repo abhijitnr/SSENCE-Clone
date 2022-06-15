@@ -7,8 +7,8 @@ document.querySelector("form").addEventListener("submit", uData);
 function uData() {
     event.preventDefault();
     let pass = document.querySelector("#password").value;
-    for(let i = 0;i<mail.length;i++) {
-        if(currentEmail===mail[i].email && mail[i].pass === undefined){
+    for (let i = 0; i < mail.length; i++) {
+        if (currentEmail === mail[i].email && mail[i].pass === undefined) {
             mail[i].pass = pass;
             break;
         }

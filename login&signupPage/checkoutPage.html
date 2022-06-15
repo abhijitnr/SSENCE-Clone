@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <link rel="stylesheet" href="checkout.css">
+</head>
+
+<body>
+    <div>
+        <p>Checkout</p>
+        <div id="shopping">
+            <div>
+                <p>Shopping Address</p>
+                <hr>
+            </div>
+            <div>
+                <div>
+                    <p>First Name</p>
+                    <p>Last Name</p>
+                </div>
+                <div>
+                    <input type="text" id="firstName">
+                    <input type="text" id="lastName">
+                </div>
+                <div>
+                    <p>Street Address</p>
+                    <p>Company(Optional)</p>
+                </div>
+                <div>
+                    <input type="text" id="streetAddress">
+                    <input type="text" id="company">
+                </div>
+                <div>
+                    <p>City</p>
+                    <p>ZIP or Postal Code</p>
+                </div>
+                <div>
+                    <input type="text" id="city">
+                </div>
+                <div>
+                    <p>Country/Region</p>
+                    <p>State/Province</p>
+                </div>
+                <div>
+                    <input type="text" id="country">
+                    <input type="text" id="state">
+                </div>
+                <div>
+                    <p>Phone</p>
+                </div>
+                <div>
+                    <input type="number" id="phoneNumber">
+                </div>
+            </div>
+        </div>
+        <div id="shipping">
+            <p>SHIPPINNG METHOD</p>
+            <hr>
+            <input type="radio" id="shippingCharge"><span>$40.00 | 6 - 8 days | Express</span>
+        </div>
+        <div>
+            <p>PAYMENT METHOD</p>
+            <hr>
+            <input type="radio"><span>Pay with credit or debit card</span>
+            <input type="radio"><span>Pay with Paypal</span>
+            <input type="radio"><span>Pay with Alipay</span>
+        </div>
+        <div>
+            <p>CARD DETAILS</p>
+            <hr>
+            <div>
+                <p>Card number</p>
+                <p>Expiration date</p>
+            </div>
+            <div>
+                <input type="number" maxlength="16" placeholder="1234 1234 1234 1234">
+                <input type="date" placeholder="MM / YY">
+            </div>
+            <div>
+                <p>Cardholder's name</p>
+                <p>Security code</p>
+            </div>
+            <div>
+                <input type="text">
+                <input type="password" placeholder="CVC">
+            </div>
+        </div>
+        <div>
+            <p>BILLING ADDRESS</p>
+            <hr>
+            <input type="radio" id="square"> <span>Same as Shipping Addres</span>
+        </div>
+    </div>
+    <div></div>
+</body>
+
+</html>

@@ -1,0 +1,32 @@
+body {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    border: 1px solid transparent;
+    width: 60%;
+    margin: auto;
+}
+
+#shopping>div:last-child {
+    width: 80%
+}
+
+p,
+span {
+    margin-top: 2%;
+    color: gray;
+    font-family: sans-serif;
+    font-size: 10px;
+}
+
+#shopping>div:last-child>div {
+    font-family: sans-serif;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+input[type="radio"] {
+    border: 1px solid rgb(0, 0, 0);
+    padding: 0.5em;
+    -webkit-appearance: none;
+}

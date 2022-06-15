@@ -10,7 +10,7 @@ function chkMail() {
     let userData = {
         email: document.querySelector("#email").value
     }
-    
+
     // console.log(mail[0].email)
     for (let i = 0; i < mail.length; i++) {
         if (currentEmail === mail[i].email) {
