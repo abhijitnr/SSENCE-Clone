@@ -2,11 +2,14 @@ body{
     margin: 0px;
     padding: 0px;
 }
+#maincontainer{
+    width: 100%;
+}
 
 #container{
     /* border: 1px solid red; */
     display: flex;
-    width: 100%;
+    /* width: 100%; */
     padding: 0px 55px 0px 55px;
 }
 #container>div:nth-child(1){

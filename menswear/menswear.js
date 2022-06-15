@@ -259,7 +259,7 @@ let mensData = [
   },
 ];
 
-let mensArr=JSON.parse(localStorage.getItem("mensInfo")) || [];
+// let mensArr=JSON.parse(localStorage.getItem("mensInfo")) || [];
 
 display(mensData);
 
@@ -301,6 +301,7 @@ function display(mensData) {
     box.append(div1, div2, div3, div4);
     document.querySelector("#box2").append(box);
   });
+}
 
   //   this is all for left hand side part
 
@@ -2384,7 +2385,7 @@ function display(mensData) {
     s.innerText = elem.color;
     document.querySelector("#box3").append(s);
   });
-}
+
 
 
 document.querySelector("#low2high").addEventListener("click",sortPrice1);
@@ -2397,7 +2398,9 @@ function sortPrice1(){
         return 0;
     });
 
+   
     display(mensData);
+   
 }
 
 function sortPrice2(){
@@ -2406,12 +2409,17 @@ function sortPrice2(){
         if(a.price>b.price) return -1;
         return 0;
     });
-
+   
     display(mensData);
+    
 }
 
 
 function preview(elem){
+let mensArr=[];
     mensArr.push(elem);
+    // let parr=[];
+    // parr.push(elem);
     localStorage.setItem("mensInfo",JSON.stringify(mensArr));
+    window.location.href="preview.html";
 }
