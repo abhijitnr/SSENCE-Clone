@@ -8,6 +8,7 @@ let mensData = [
     brand: "Jil Sander",
     name: "Green Cotton Bucket Hat",
     price: 440,
+    tag:"clothing",
   },
   {
     id: 2,
@@ -16,6 +17,7 @@ let mensData = [
     brand: "Stüssy",
     name: "Black Cotton Trousers",
     price: 145,
+    tag:"clothing",
   },
   {
     id: 3,
@@ -24,6 +26,7 @@ let mensData = [
     brand: "032c",
     name: "Blue Destroyed Jeans",
     price: 370,
+    tag:"clothing",
   },
   {
     id: 4,
@@ -32,6 +35,7 @@ let mensData = [
     brand: "032c",
     name: "Blue 'The 032c' Jeans",
     price: 210,
+    tag:"clothing",
   },
   {
     id: 5,
@@ -40,6 +44,7 @@ let mensData = [
     brand: "1017 ALYX 9SM",
     name: "Black Blackmeans Edition Jeans",
     price: 760,
+    tag:"clothing",
   },
   {
     id: 6,
@@ -48,6 +53,7 @@ let mensData = [
     brand: "Alexander McQueen",
     name: "White Viscose Blazer",
     price: 3245,
+    tag:"clothing",
   },
   {
     id: 7,
@@ -56,6 +62,7 @@ let mensData = [
     brand: "Alexander McQueen",
     name: "Pink Wool Blazer",
     price: 2490,
+    tag:"clothing",
   },
   {
     id: 8,
@@ -64,6 +71,7 @@ let mensData = [
     brand: "Alexander McQueen",
     name: "White Workwear Denim Jacket",
     price: 1570,
+    tag:"clothing",
   },
   {
     id: 9,
@@ -72,6 +80,7 @@ let mensData = [
     brand: "Alexander McQueen",
     name: "Black Polyester Jacket",
     price: 1100,
+    tag:"clothing",
   },
   {
     id: 10,
@@ -80,6 +89,7 @@ let mensData = [
     brand: "Alexander McQueen",
     name: "White Cotton Sweatshirt",
     price: 590,
+    tag:"clothing",
   },
   {
     id: 11,
@@ -88,6 +98,7 @@ let mensData = [
     brand: "Alexander McQueen",
     name: "Blue Cotton Shirt",
     price: 1410,
+    tag:"clothing",
   },
   {
     id: 12,
@@ -96,6 +107,7 @@ let mensData = [
     brand: "Alexander McQueen",
     name: "Blue Graffiti Harness Shirt",
     price: 640,
+    tag:"clothing",
   },
   {
     id: 13,
@@ -104,6 +116,7 @@ let mensData = [
     brand: "Alexander McQueen",
     name: "White Cotton Shirt",
     price: 850,
+    tag:"clothing",
   },
   {
     id: 14,
@@ -112,6 +125,7 @@ let mensData = [
     brand: "Alexander McQueen",
     name: "White Printed Jeans",
     price: 870,
+    tag:"clothing",
   },
   {
     id: 15,
@@ -120,6 +134,7 @@ let mensData = [
     brand: "Alexander McQueen",
     name: "Navy Recycled Polyester Cargo Pants",
     price: 1345,
+    tag:"clothing",
   },
   {
     id: 16,
@@ -128,6 +143,7 @@ let mensData = [
     brand: "Alexander McQueen",
     name: "Navy Selvedge Shorts",
     price: 590,
+    tag:"clothing",
   },
   {
     id: 17,
@@ -136,6 +152,7 @@ let mensData = [
     brand: "A-COLD-WALL*",
     name: "Gray Nylon Polo",
     price: 355,
+    tag:"clothing",
   },
   {
     id: 18,
@@ -144,6 +161,7 @@ let mensData = [
     brand: "Dion Lee",
     name: "Navy Harness Back Tank Top",
     price: 265,
+    tag:"clothing",
   },
   {
     id: 19,
@@ -152,6 +170,7 @@ let mensData = [
     brand: "Dime",
     name: "Black Hooded Denim Jacket",
     price: 170,
+    tag:"clothing",
   },
   {
     id: 20,
@@ -160,6 +179,7 @@ let mensData = [
     brand: "Dime",
     name: "Off-White & Blue Cotton Jacket",
     price: 155,
+    tag:"clothing",
   },
   {
     id: 21,
@@ -168,6 +188,7 @@ let mensData = [
     brand: "Dime",
     name: "Blue Cotton Hoodie",
     price: 140,
+    tag:"clothing",
   },
   {
     id: 22,
@@ -176,6 +197,7 @@ let mensData = [
     brand: "Dime",
     name: "Gray Cotton Hoodie",
     price: 140,
+    tag:"clothing",
   },
   {
     id: 23,
@@ -184,6 +206,7 @@ let mensData = [
     brand: "Dime",
     name: "Gray Cotton Hoodie",
     price: 140,
+    tag:"clothing",
   },
   {
     id: 24,
@@ -192,6 +215,7 @@ let mensData = [
     brand: "Dime",
     name: "Black BMF Hoodie",
     price: 140,
+    tag:"clothing",
   },
   {
     id: 25,
@@ -200,6 +224,7 @@ let mensData = [
     brand: "Dime",
     name: "Gray Cotton Sweatshirt",
     price: 130,
+    tag:"clothing",
   },
   {
     id: 26,
@@ -208,6 +233,7 @@ let mensData = [
     brand: "Dime",
     name: "Green Cotton Long Sleeve T-Shirt",
     price: 100,
+    tag:"clothing",
   },
   {
     id: 27,
@@ -216,6 +242,7 @@ let mensData = [
     brand: "Dime",
     name: "Black Cotton Jacket",
     price: 155,
+    tag:"clothing",
   },
   {
     id: 28,
@@ -224,6 +251,7 @@ let mensData = [
     brand: "Dime",
     name: "Off-White Cotton Shirt",
     price: 140,
+    tag:"clothing",
   },
   {
     id: 29,
@@ -232,6 +260,7 @@ let mensData = [
     brand: "Dime",
     name: "Black Cotton Shirt",
     price: 140,
+    tag:"clothing",
   },
   {
     id: 30,
@@ -240,6 +269,7 @@ let mensData = [
     brand: "Dime",
     name: "Orange Cotton T-Shirt",
     price: 50,
+    tag:"clothing",
   },
   {
     id: 31,
@@ -248,6 +278,7 @@ let mensData = [
     brand: "Dime",
     name: "Green Cotton Cargo Pants",
     price: 165,
+    tag:"clothing",
   },
   {
     id: 32,
@@ -256,6 +287,200 @@ let mensData = [
     brand: "Dime",
     name: "Black & Gray Polyster Shorts",
     price: 115,
+    tag:"clothing",
+  },
+  {
+    id: 33,
+    imgUrl:'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.3/221828M166003_1/stone-island-burgundy-roll-top-backpack.jpg',
+    brand: 'Stone Island',
+    name: 'Burgundy Roll Top Backpack',
+    price: 490,
+    tag: 'bag',
+  },
+  {
+    id: 34,
+    imgUrl:'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.3/221828M166005_1/stone-island-navy-roll-top-backpack.jpg',
+    brand: 'Stone Island',
+    name: 'Navy Roll Top Backpack',
+    price: 490,
+    tag: 'bag',
+  },
+  {
+    id: 35,
+    imgUrl:'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.3/221828M166005_1/stone-island-navy-roll-top-backpack.jpg',
+    brand: 'Stone Island',
+    name: 'Black Roll Top Backpack',
+    price: 490,
+    tag: 'bag',
+  },
+  {
+    id: 36,
+    imgUrl:'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.3/221828M166007_1/stone-island-green-roll-top-backpack.jpg',
+    brand: 'Stone Island',
+    name: 'Green Roll Top Backpack',
+    price: 490,
+    tag: 'bag',
+  },
+  {
+    id: 37,
+    imgUrl:'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.3/221001M166020_1/diesel-white-farb-backpack.jpg',
+    brand: 'Diesel',
+    name: 'White Farb Backpack',
+    price: 145,
+    tag: 'bag',
+  },
+  {
+    id: 38,
+    imgUrl:'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.3/222387M166010_1/kenzo-black-canvas-kampus-tiger-backpack.jpg',
+    brand: 'Kenzo',
+    name: 'Black Canvas Kampus Tiger Backpack',
+    price: 285,
+    tag: 'bag',
+  },
+  {
+    id: 39,
+    imgUrl:'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.3/222387M166012_1/kenzo-black-mini-kampus-tiger-backpack.jpg',
+    brand: 'Kenzo',
+    name: 'Black Mini Kampus Tiger Backpack',
+    price: 230,
+    tag: 'bag',
+  },
+  {
+    id: 40,
+    imgUrl:'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.3/222387M171010_1/kenzo-black-small-kampus-tiger-pouch.jpg',
+    brand: 'Kenzo',
+    name: 'Black Small Kampus Tiger Pouch',
+    price: 195,
+    tag: 'bag',
+  },
+ 
+  {
+    id: 41,
+    imgUrl: 'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.3/222129M138026_1/acne-studios-black-wool-beanie.jpg',
+    brand: 'Acne Studios',
+    name: 'Black Wool Beanie',
+    price: 145,
+    tag: 'accessories',
+  },
+  {
+    id: 42,
+    imgUrl: 'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.3/222807M139001_1/valentino-garavani-black-baseball-cap.jpg',
+    brand: 'Valentino Garavani',
+    name: 'Black Baseball Cap',
+    price: 450,
+    tag: 'accessories',
+  },
+  {
+    id: 43,
+    imgUrl: 'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.3/222111M138002_1/moncler-black-wool-beanie.jpg',
+    brand: 'Moncler',
+    name: 'Black Wool Beanie',
+    price: 315,
+    tag: 'accessories',
+  },
+  {
+    id: 44,
+    imgUrl: 'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.3/221379M139001_1/marni-orange-denim-bucket-hat.jpg',
+    brand: 'Marni',
+    name: 'Orange Denim Bucket Hat',
+    price: 385,
+    tag: 'accessories',
+  },
+  {
+    id: 45,
+    imgUrl: 'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.3/222745M139000_1/online-ceramics-green-good-deed-cap.jpg',
+    brand: 'Online Ceramics',
+    name: 'Green \'Good Deed\' Cap',
+    price: 45,
+    tag: 'accessories',
+  },
+  {
+    id: 46,
+    imgUrl: 'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.3/222745M139001_1/online-ceramics-black-its-ok-cap.jpg',
+    brand: 'Online Ceramics',
+    name: 'Black \'It\'s Ok\' Cap',
+    price: 45,
+    tag: 'accessories',
+  },
+  {
+    id: 47,
+    imgUrl: 'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.3/221769M165002_1/frandeacutedandeacuterique-constant-silver-classics-index-automatic-watch.jpg',
+    brand: 'Frederique Constant',
+    name: 'Silver Classics Index Automatic Watch',
+    price: 1465,
+    tag: 'accessories',
+  },
+  {
+    id: 48,
+    imgUrl: 'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.3/222503M145004_1/dear-letterman-silver-damaati-necklace.jpg',
+    brand: 'Dear Letterman',
+    name: 'Silver Damaati Necklace',
+    price: 155,
+    tag: 'accessories',
+  },
+  {
+    id: 49,
+    imgUrl: 'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.3/221451M231009_1/gucci-black-wislet-loafers.jpg',
+    brand: 'Gucci',
+    name: 'Black Wislet Loafers',
+    price: 815,
+    tag: 'shoes',
+  },
+  {
+    id: 50,
+    imgUrl: 'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.3/221891M236000_1/a-cold-wall-gray-roa-edition-andreas-boots.jpg',
+    brand: 'A-COLD-WALL*',
+    name: 'Gray ROA Edition Andreas Boots',
+    price: 535,
+    tag: 'shoes',
+  },
+  {
+    id: 51,
+    imgUrl: 'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.3/221891M236002_1/a-cold-wall-black-roa-edition-andreas-lace-up-boots.jpg',
+    brand: 'A-COLD-WALL*',
+    name: 'Black ROA Edition Andreas Lace-Up Boots',
+    price: 535,
+    tag: 'shoes',
+  },
+  {
+    id: 52,
+    imgUrl: 'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.3/222807M237052_1/valentino-garavani-white-one-stud-sneakers.jpg',
+    brand: 'Valentino Garavani',
+    name: 'White One Stud Sneakers',
+    price: 775,
+    tag: 'shoes',
+  },
+  {
+    id: 53,
+    imgUrl: 'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.3/221249M234007_1/jil-sander-black-nabuk-sandals.jpg',
+    brand: 'Jil Sander',
+    name: 'Black Nabuk Sandals',
+    price: 680,
+    tag: 'shoes',
+  },
+  {
+    id: 54,
+    imgUrl: 'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.3/222387M237008_1/kenzo-black-tiger-k-skate-sneakers.jpg',
+    brand: 'Kenzo',
+    name: 'Black Tiger K-Skate Sneakers',
+    price: 245,
+    tag: 'shoes',
+  },
+  {
+    id: 55,
+    imgUrl: 'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.3/222387M237010_1/kenzo-white-tiger-k-skate-sneakers.jpg',
+    brand: 'Kenzo',
+    name: 'White Tiger K-Skate Sneakers',
+    price: 245,
+    tag: 'shoes',
+  },
+  {
+    id: 56,
+    imgUrl: 'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.3/222381M225000_1/thom-browne-black-longwing-brogue-oxfords.jpg',
+    brand: 'Thom Browne',
+    name: 'Black Longwing Brogue Oxfords',
+    price: 970,
+    tag: 'shoes',
   },
 ];
 
