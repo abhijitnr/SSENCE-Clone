@@ -1,7 +1,6 @@
 #sale{
     width: 100%;
     height: auto;
-    height: 200px;
     margin-top: 70px;
 }
 #sale>p{
@@ -15,13 +14,13 @@
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    margin-top: 30px;
     width: 100%;
     height: auto;
 }
 #catagory>p{
     font-size: 60px;
     font-family: 'Roboto Condensed', sans-serif;
+    cursor: pointer;
 }
 .firstDiv{
     width: 100%;
@@ -85,6 +84,7 @@
     background-color: white;
     border: 0.5px solid grey;
     border-radius: 10px;
+    cursor: pointer;
 }
 .thirdDiv{
     width: 100%;
@@ -220,4 +220,139 @@
     border-radius: 10px;
     margin-top: 40px;
     margin-bottom: 30px;
+    cursor: pointer;
+}
+
+/* Media Query for medium screen */
+@media screen and (min-width: 500px) and (max-width: 800px) {
+    #sale>p{
+        font-size: 45px;
+        margin-top: 5px;
+        text-align: center;
+    }
+    #catagory>p{
+        font-size: 25px;
+    }
+    .firstDiv{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: auto;
+    }
+    .firstDiv>div{
+        width: 100%;
+    }
+    .firstDiv>div>button{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .secondDiv{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: auto;
+    }
+    .secondDiv>div{
+        width: 100%;
+    }
+    .thirdDiv{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: auto;
+    }
+    .thirdDiv>div{
+        width: 90%;
+    }
+    #fourthDiv{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: auto;
+    }
+    #fourthDiv>div{
+        width: 100%;
+        grid-template-columns: repeat(2,1fr);
+    }
+    #fifthDiv>p:first-child{
+        width: 90%;
+        font-size: 60px;
+    }
+    #fifthDiv>p{
+        width: 100%;
+        font-size: 40px;
+    }
+    #fifthDiv>button{
+        width: 95%;
+    }
+}
+
+/* Media Query for small screen */
+@media screen and (min-width: 200px) and (max-width: 499px){
+    #sale>p{
+        font-size: 40px;
+        margin-top: 5px;
+        text-align: center;
+    }
+    #catagory>p{
+        font-size: 20px;
+        text-align: center;
+    }
+    .firstDiv{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: auto;
+    }
+    .firstDiv>div{
+        width: 100%;
+    }
+    .firstDiv>div>button{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .secondDiv{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: auto;
+    }
+    .secondDiv>div{
+        width: 100%;
+    }
+    .thirdDiv{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: auto;
+    }
+    .thirdDiv>div{
+        width: 95%;
+        margin: auto;
+    }
+    #fourthDiv{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: auto;
+    }
+    #fourthDiv>div{
+        width: 100%;
+        grid-template-columns: repeat(1,1fr);
+    }
+    #fourthDiv>div:first-child>div>img{
+        width: 100%;
+    }
+    #fourthDiv>div>div>p:first-child{
+        margin-left: 20px;
+    }
+    #fourthDiv>div>div>p:nth-child(2){
+        margin-left: 20px;
+    }
+    #fourthDiv>div>div>p:last-child{
+        margin-left: 20px;
+    }
+    #fifthDiv>p:first-child{
+        width: 100%;
+        font-size: 30px;
+    }
+    #fifthDiv>p{
+        width: 100%;
+        font-size: 25px;
+    }
+    #fifthDiv>button{
+        width: 95%;
+    }
 }
