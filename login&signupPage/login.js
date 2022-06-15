@@ -4,6 +4,8 @@ let mail = JSON.parse(localStorage.getItem("email")) || [];
 let flag = false;
 
 function chkMail() {
+    let currentEmail = document.querySelector("#email").value;
+    localStorage.setItem("currentEmail", JSON.stringify(currentEmail));
     event.preventDefault();
     let userData = {
         email: document.querySelector("#email").value
@@ -11,7 +13,7 @@ function chkMail() {
     
     // console.log(mail[0].email)
     for (let i = 0; i < mail.length; i++) {
-        if (userData.email === mail[i].email) {
+        if (currentEmail === mail[i].email) {
             flag = true;
             break;
         }
