@@ -1,5 +1,8 @@
 let previewarr=JSON.parse(localStorage.getItem("mensInfo"));
 
+let previewdata=JSON.parse(localStorage.getItem("bagdata")) || [];
+let previewdata2=JSON.parse(localStorage.getItem("wishdata")) || [];
+
 display(previewarr);
 
 function display(previewarr){
@@ -62,10 +65,18 @@ function display(previewarr){
         let btn1=document.createElement("button");
         btn1.innerText="ADD TO BAG";
         btn1.setAttribute("id","btn1");
+        btn1.addEventListener("click",function(){
+            let fit=document.querySelector("#size").value;
+            addtobag(elem,fit);
+        })
 
         let btn2=document.createElement("button");
         btn2.innerText="ADD TO WISHLIST";
         btn2.setAttribute("id","btn2");
+        btn2.addEventListener("click",function(){
+            let fit=document.querySelector("#size").value;
+            addtowish(elem,fit);
+        })
 
         let div5=document.createElement("div");
         div5.append(btn1,btn2);
@@ -86,15 +97,28 @@ function display(previewarr){
 
 
 
-
-
-
-
-
-
-
         div3.append(price,select,div5,div6)
 
     })
    
+}
+
+function addtobag(elem,fit){
+    if(elem["size"]==undefined){
+        elem["size"]=fit;
+    }else{
+        elem.size = fit;
+    }
+    previewdata.push(elem)
+    localStorage.setItem("bagdata",JSON.stringify(previewdata));
+}
+
+function addtowish(elem,fit){
+    if(elem["size"]==undefined){
+        elem["size"]=fit;
+    }else{
+        elem.size = fit;
+    }
+    previewdata2.push(elem)
+    localStorage.setItem("wishdata",JSON.stringify(previewdata2));
 }
