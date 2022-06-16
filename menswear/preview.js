@@ -223,7 +223,7 @@ function display(previewarr){
         btn2.innerText="ADD TO WISHLIST";
         btn2.setAttribute("id","btn2");
         btn2.addEventListener("click",function(){
-            let fit=document.querySelector("#size").value;
+            let fit=document.querySelector("#size")?.value;
             addtowish(elem,fit);
         })
 
@@ -240,7 +240,7 @@ function display(previewarr){
 function addtobag(elem,fit){
     // console.log(elem,fit)
     if(fit == undefined){
-        elem["size"]="";
+        elem["size"]="-";
     }else if(elem["size"]==undefined){
         elem["size"]=fit;
     }else{
@@ -251,7 +251,9 @@ function addtobag(elem,fit){
 }
 
 function addtowish(elem,fit){
-    if(elem["size"]==undefined){
+    if(fit==undefined){
+        elem["size"]="-";
+    }else if(elem["size"]==undefined){
         elem["size"]=fit;
     }else{
         elem.size = fit;
