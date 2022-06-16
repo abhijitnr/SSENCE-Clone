@@ -40,6 +40,9 @@ body{
 #box2>div>div:nth-child(2){
     text-transform: uppercase;
 }
+#box3>div,#box3>span{
+    padding-left: 125px;
+}
 img{
     width: 100%;
 }
