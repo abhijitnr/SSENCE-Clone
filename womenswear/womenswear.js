@@ -500,18 +500,23 @@ function display(womensData) {
 
   let h2_1 = document.createElement("h2");
   h2_1.innerText = "ALL CATEGORIES";
+  h2_1.setAttribute("id","all");
 
   let s1 = document.createElement("span");
   s1.innerText = "ACCESSORIES";
+  s1.setAttribute("id","accessories");
 
   let s2 = document.createElement("span");
   s2.innerText = "BAGS";
+  s2.setAttribute("id","bags")
 
   let s3 = document.createElement("span");
   s3.innerText = "CLOTHING";
+  s3.setAttribute("id","clothing")
 
   let s4 = document.createElement("span");
   s4.innerText = "SHOES";
+  s4.setAttribute("id","shoes");
 
   leftdiv2.append(h2_1, s1, s2, s3, s4);
 
@@ -2601,4 +2606,53 @@ let womensArr=[];
     // parr.push(elem);
     localStorage.setItem("womensInfo",JSON.stringify(womensArr));
     window.location.href="preview.html";
+}
+
+document.querySelector("#all").addEventListener("click",allfun);
+function allfun(){
+  window.location.reload();
+};
+
+document.querySelector("#bags").addEventListener("click",bagsfun);
+
+function bagsfun(){
+  let filteredbags=womensData.filter(function(elem){
+    
+    return elem.tag=="bag";
+})
+
+display(filteredbags);
+}
+
+document.querySelector("#clothing").addEventListener("click",clothingfun);
+
+function clothingfun(){
+  let filteredclothing=womensData.filter(function(elem){
+    
+    return elem.tag=="clothing";
+})
+
+display(filteredclothing);
+}
+
+document.querySelector("#shoes").addEventListener("click",shoesfun);
+
+function shoesfun(){
+  let filteredshoes=womensData.filter(function(elem){
+    
+    return elem.tag=="shoes";
+})
+
+display(filteredshoes);
+}
+
+document.querySelector("#accessories").addEventListener("click",accessoriesfun);
+
+function accessoriesfun(){
+  let filteredaccessories=womensData.filter(function(elem){
+    
+    return elem.tag=="accessories";
+})
+
+display(filteredaccessories);
 }
