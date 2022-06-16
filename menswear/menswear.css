@@ -56,6 +56,7 @@ span:hover{
 }
 h2{
     font-weight: bold;
+    cursor: pointer;
 }
 
 *{
