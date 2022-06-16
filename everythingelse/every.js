@@ -452,20 +452,36 @@ function display(everyData) {
 
   let h2_1 = document.createElement("h2");
   h2_1.innerText = "ALL CATEGORIES";
+  h2_1.setAttribute("id","all");
 
   let s1 = document.createElement("span");
-  s1.innerText = "ACCESSORIES";
+  s1.innerText = "ACTIVITY";
+  s1.setAttribute("class","filter")
 
   let s2 = document.createElement("span");
-  s2.innerText = "BAGS";
+  s2.innerText = "HOME";
+  s2.setAttribute("class","filter")
+
 
   let s3 = document.createElement("span");
-  s3.innerText = "CLOTHING";
+  s3.innerText = "KIDS";
+  s3.setAttribute("class","filter")
+
 
   let s4 = document.createElement("span");
-  s4.innerText = "SHOES";
+  s4.innerText = "PETS";
+  s4.setAttribute("class","filter")
 
-  leftdiv2.append(h2_1, s1, s2, s3, s4);
+  let s5 = document.createElement("span");
+  s5.innerText = "SELF-CARE";
+  s5.setAttribute("class","filter")
+
+  let s6 = document.createElement("span");
+  s6.innerText = "TECHNOLOGY";
+  s6.setAttribute("class","filter")
+
+
+  leftdiv2.append(h2_1, s1, s2, s3, s4,s5,s6);
 
   let h2_2 = document.createElement("h2");
   h2_2.innerText = "ALL DESIGNERS";
