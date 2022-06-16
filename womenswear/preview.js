@@ -32,6 +32,11 @@ function display(previewarr){
         document.querySelector("#box2").append(div2);
 
         //right side part
+
+        if(elem.tag=="clothing"){
+
+        
+
         let div3=document.createElement("div");
         document.querySelector("#box3").append(div3);
 
@@ -102,14 +107,123 @@ function display(previewarr){
 
 
 
-        div3.append(price,select,div5,div6)
+        div3.append(price,select,div5,div6);
+
+    }else if(elem.tag=="bag" || elem.tag=="accessories"){
+        let div3=document.createElement("div");
+        document.querySelector("#box3").append(div3);
+
+        let price=document.createElement("h3");
+        price.innerText=`$${elem.price} USD`;
+
+    
+        let btn1=document.createElement("button");
+        btn1.innerText="ADD TO BAG";
+        btn1.setAttribute("id","btn1");
+        btn1.addEventListener("click",function(){
+            let fit=document.querySelector("#size")?.value;
+            addtobag(elem,fit);
+        })
+
+        let btn2=document.createElement("button");
+        btn2.innerText="ADD TO WISHLIST";
+        btn2.setAttribute("id","btn2");
+        btn2.addEventListener("click",function(){
+            let fit=document.querySelector("#size")?.value;
+            addtowish(elem,fit);
+        })
+
+        let div5=document.createElement("div");
+        div5.append(btn1,btn2);
+
+
+
+        div3.append(price,div5);
+    }else if(elem.tag=="shoes"){
+
+        let div3=document.createElement("div");
+        document.querySelector("#box3").append(div3);
+
+        let price=document.createElement("h3");
+        price.innerText=`$${elem.price} USD`;
+
+    
+
+        
+
+        let select=document.createElement("select");
+        select.setAttribute("id","size");
+        select.setAttribute("label","SELECT SIZE");
+        // select.innerText="SELECT SIZE";
+        let opt1=document.createElement("option");
+        opt1.innerText="SELECT SIZE";
+        let opt2=document.createElement("option");
+        opt2.innerText="IT 36";
+        let opt3=document.createElement("option");
+        opt3.innerText="IT 37";
+        let opt4=document.createElement("option");
+        opt4.innerText="IT 38";
+        let opt5=document.createElement("option");
+        opt5.innerText="IT 39";
+        let opt6=document.createElement("option");
+        opt6.innerText="IT 40";
+        let opt7=document.createElement("option");
+        opt7.innerText="IT 41";
+        let opt8=document.createElement("option");
+        opt8.innerText="IT 42";
+        select.append(opt1,opt2,opt3,opt4,opt5,opt6,opt7,opt8);
+        
+
+        let btn1=document.createElement("button");
+        btn1.innerText="ADD TO BAG";
+        btn1.setAttribute("id","btn1");
+        btn1.addEventListener("click",function(){
+            let fit=document.querySelector("#size").value;
+            addtobag(elem,fit);
+        })
+
+        let btn2=document.createElement("button");
+        btn2.innerText="ADD TO WISHLIST";
+        btn2.setAttribute("id","btn2");
+        btn2.addEventListener("click",function(){
+            let fit=document.querySelector("#size").value;
+            addtowish(elem,fit);
+        })
+
+        let div5=document.createElement("div");
+        div5.append(btn1,btn2);
+
+        let div6=document.createElement("div");
+        div6.setAttribute("id","fitpredictor");
+        let image=document.createElement("img");
+        image.setAttribute("id","logopng")
+        image.src="https://images.squarespace-cdn.com/content/v1/54e3cdb3e4b0b56fcc45e9e2/1458176028392-UUPHVWHWQKX88UXLG2RO/F+STOP+CAMERAS.jpg?format=300w";
+
+        let fitp=document.createElement("p");
+        fitp.innerText="Fit Predictor";
+
+        let calci=document.createElement("p");
+        calci.innerText="Calculate your size";
+
+        div6.append(image,fitp,calci)
+
+
+
+        div3.append(price,select,div5,div6);
+
+    }
 
     })
-   
+
 }
+   
+
 
 function addtobag(elem,fit){
-    if(elem["size"]==undefined){
+    if(fit==undefined){
+        elem["size"]="-";
+    }
+   else if(elem["size"]==undefined){
         elem["size"]=fit;
     }else{
         elem.size = fit;
@@ -119,7 +233,10 @@ function addtobag(elem,fit){
 }
 
 function addtowish(elem,fit){
-    if(elem["size"]==undefined){
+    if(fit==undefined){
+        elem["size"]="-";
+    }
+   else if(elem["size"]==undefined){
         elem["size"]=fit;
     }else{
         elem.size = fit;
