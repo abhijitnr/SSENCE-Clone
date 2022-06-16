@@ -1,4 +1,4 @@
-let everydata=[
+let everyData=[
     {
       id: 1,
       imgUrl:'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.3/222749M776000_1/culti-aramara-lotion-250-ml.jpg',
@@ -390,15 +390,15 @@ let everydata=[
 
 
 
-// let mensArr=JSON.parse(localStorage.getItem("mensInfo")) || [];
+// let everyArr=JSON.parse(localStorage.getItem("everyInfo")) || [];
 
-display(mensData);
+display(everyData);
 
-function display(mensData) {
+function display(everyData) {
 
     document.querySelector("#box2").innerHTML="";
 
-  mensData.forEach(function (elem) {
+  everyData.forEach(function (elem) {
     let box = document.createElement("div");
     box.setAttribute("id","box");
     box.addEventListener("click",function(){
@@ -2523,34 +2523,34 @@ document.querySelector("#low2high").addEventListener("click",sortPrice1);
 document.querySelector("#high2low").addEventListener("click",sortPrice2);
 
 function sortPrice1(){
-    mensData.sort(function(a,b){
+    everyData.sort(function(a,b){
         if(a.price>b.price) return 1;
         if(a.price<b.price) return -1;
         return 0;
     });
 
    
-    display(mensData);
+    display(everyData);
    
 }
 
 function sortPrice2(){
-    mensData.sort(function(a,b){
+    everyData.sort(function(a,b){
         if(a.price<b.price) return 1;
         if(a.price>b.price) return -1;
         return 0;
     });
    
-    display(mensData);
+    display(everyData);
     
 }
 
 
 function preview(elem){
-let mensArr=[];
-    mensArr.push(elem);
+let everyArr=[];
+    everyArr.push(elem);
     // let parr=[];
     // parr.push(elem);
-    localStorage.setItem("mensInfo",JSON.stringify(mensArr));
+    localStorage.setItem("everyInfo",JSON.stringify(everyArr));
     window.location.href="preview.html";
 }

@@ -1,4 +1,4 @@
-let previewarr=JSON.parse(localStorage.getItem("mensInfo"));
+let previewarr=JSON.parse(localStorage.getItem("everyInfo"));
 
 let previewdata=JSON.parse(localStorage.getItem("bagdata")) || [];
 let previewdata2=JSON.parse(localStorage.getItem("wishdata")) || [];
@@ -19,7 +19,7 @@ function display(previewarr){
       name.innerText=elem.name;
 
       let id=document.createElement("p");
-      id.innerText=`222887F09100${elem.id}`
+      id.innerText=`221607M71800${elem.id}`
 
       div1.append(brand,name,id);
 
