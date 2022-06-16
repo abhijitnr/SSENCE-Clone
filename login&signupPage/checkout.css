@@ -7,7 +7,12 @@ body {
 }
 
 #shopping>div:last-child {
-    width: 80%
+    border: 1px solid transparent;
+    width: 90%
+}
+
+#shopping>div:last-child>div>p {
+    margin-top: 10%
 }
 
 p,
@@ -18,14 +23,25 @@ span {
     font-size: 10px;
 }
 
-#shopping>div:last-child>div {
+#shopping>div:last-child>div,
+#cardDetails>div {
     font-family: sans-serif;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
 }
 
+#shopping,
+#shipping,
+#payment,
+#cardDetails,
+#bill {
+    margin-top: 5%;
+}
+
 input[type="radio"] {
+    cursor: pointer;
+    
     border: 1px solid rgb(0, 0, 0);
     padding: 0.5em;
     -webkit-appearance: none;
