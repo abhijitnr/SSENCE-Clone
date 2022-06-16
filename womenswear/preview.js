@@ -1,4 +1,4 @@
-let previewarr=JSON.parse(localStorage.getItem("mensInfo"));
+let previewarr=JSON.parse(localStorage.getItem("womensInfo"));
 
 let previewdata=JSON.parse(localStorage.getItem("bagdata")) || [];
 let previewdata2=JSON.parse(localStorage.getItem("wishdata")) || [];
@@ -38,6 +38,10 @@ function display(previewarr){
         let price=document.createElement("h3");
         price.innerText=`$${elem.price} USD`;
 
+    
+
+        
+
         let select=document.createElement("select");
         select.setAttribute("id","size");
         select.setAttribute("label","SELECT SIZE");
@@ -61,6 +65,7 @@ function display(previewarr){
         let opt9=document.createElement("option");
         opt9.innerText="XXXL";
         select.append(opt1,opt2,opt3,opt4,opt5,opt6,opt7,opt8,opt9);
+        
 
         let btn1=document.createElement("button");
         btn1.innerText="ADD TO BAG";
