@@ -32,6 +32,9 @@ function display(previewarr){
         document.querySelector("#box2").append(div2);
 
         //right side part
+        if(elem.tag=="kids"){
+
+        
         let div3=document.createElement("div");
         document.querySelector("#box3").append(div3);
 
@@ -45,22 +48,18 @@ function display(previewarr){
         let opt1=document.createElement("option");
         opt1.innerText="SELECT SIZE";
         let opt2=document.createElement("option");
-        opt2.innerText="XXS";
+        opt2.innerText="4Y";
         let opt3=document.createElement("option");
-        opt3.innerText="XS";
+        opt3.innerText="6Y";
         let opt4=document.createElement("option");
-        opt4.innerText="S";
+        opt4.innerText="8Y";
         let opt5=document.createElement("option");
-        opt5.innerText="M";
+        opt5.innerText="10Y";
         let opt6=document.createElement("option");
-        opt6.innerText="L";
+        opt6.innerText="12Y";
         let opt7=document.createElement("option");
-        opt7.innerText="XL";
-        let opt8=document.createElement("option");
-        opt8.innerText="XXL";
-        let opt9=document.createElement("option");
-        opt9.innerText="XXXL";
-        select.append(opt1,opt2,opt3,opt4,opt5,opt6,opt7,opt8,opt9);
+        opt7.innerText="14Y";
+        select.append(opt1,opt2,opt3,opt4,opt5,opt6,opt7);
 
         let btn1=document.createElement("button");
         btn1.innerText="ADD TO BAG";
@@ -97,14 +96,52 @@ function display(previewarr){
 
 
 
-        div3.append(price,select,div5,div6)
+        div3.append(price,select,div5,div6);
+
+    }else{
+
+        let div3=document.createElement("div");
+        document.querySelector("#box3").append(div3);
+
+        let price=document.createElement("h3");
+        price.innerText=`$${elem.price} USD`;
+
+       
+
+        let btn1=document.createElement("button");
+        btn1.innerText="ADD TO BAG";
+        btn1.setAttribute("id","btn1");
+        btn1.addEventListener("click",function(){
+            let fit=document.querySelector("#size")?.value;
+            addtobag(elem,fit);
+        })
+
+        let btn2=document.createElement("button");
+        btn2.innerText="ADD TO WISHLIST";
+        btn2.setAttribute("id","btn2");
+        btn2.addEventListener("click",function(){
+            let fit=document.querySelector("#size")?.value;
+            addtowish(elem,fit);
+        })
+
+        let div5=document.createElement("div");
+        div5.append(btn1,btn2);
+
+
+
+        div3.append(price,div5);
+
+    }
 
     })
    
 }
 
 function addtobag(elem,fit){
-    if(elem["size"]==undefined){
+    if(fit==undefined){
+        elem["size"]="-";
+    }
+    else if(elem["size"]==undefined){
         elem["size"]=fit;
     }else{
         elem.size = fit;
@@ -114,7 +151,10 @@ function addtobag(elem,fit){
 }
 
 function addtowish(elem,fit){
-    if(elem["size"]==undefined){
+    if(fit==undefined){
+        elem["size"]="-";
+    }
+    else if(elem["size"]==undefined){
         elem["size"]=fit;
     }else{
         elem.size = fit;
