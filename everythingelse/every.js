@@ -456,32 +456,32 @@ function display(everyData) {
 
   let s1 = document.createElement("span");
   s1.innerText = "ACTIVITY";
-  s1.setAttribute("class","filter")
+  s1.setAttribute("id","activity")
 
   let s2 = document.createElement("span");
   s2.innerText = "HOME";
-  s2.setAttribute("class","filter")
+  s2.setAttribute("id","home")
 
 
   let s3 = document.createElement("span");
   s3.innerText = "KIDS";
-  s3.setAttribute("class","filter")
+  s3.setAttribute("id","kids")
 
 
   let s4 = document.createElement("span");
   s4.innerText = "PETS";
-  s4.setAttribute("class","filter")
+  s4.setAttribute("id","pets")
 
-  let s5 = document.createElement("span");
-  s5.innerText = "SELF-CARE";
-  s5.setAttribute("class","filter")
+  let s55 = document.createElement("span");
+  s55.innerText = "SELF-CARE";
+  s55.setAttribute("id","selfcare")
 
-  let s6 = document.createElement("span");
-  s6.innerText = "TECHNOLOGY";
-  s6.setAttribute("class","filter")
+  let s66 = document.createElement("span");
+  s66.innerText = "TECHNOLOGY";
+  s66.setAttribute("id","technology")
 
 
-  leftdiv2.append(h2_1, s1, s2, s3, s4,s5,s6);
+  leftdiv2.append(h2_1, s1, s2, s3, s4,s55,s66);
 
   let h2_2 = document.createElement("h2");
   h2_2.innerText = "ALL DESIGNERS";
@@ -2569,4 +2569,76 @@ let everyArr=[];
     // parr.push(elem);
     localStorage.setItem("everyInfo",JSON.stringify(everyArr));
     window.location.href="preview.html";
+}
+
+
+document.querySelector("#all").addEventListener("click",allfun);
+function allfun(){
+  window.location.reload();
+};
+
+document.querySelector("#selfcare").addEventListener("click",selfcarefun);
+
+function selfcarefun(){
+  let filteredselfcare=everyData.filter(function(elem){
+    
+      return elem.tag=="selfcare";
+})
+
+display(filteredselfcare);
+}
+
+document.querySelector("#activity").addEventListener("click",activityfun);
+
+function activityfun(){
+  let filteredactivity=everyData.filter(function(elem){
+    
+    return elem.tag=="activity";
+})
+
+display(filteredactivity);
+}
+
+document.querySelector("#home").addEventListener("click",homefun);
+
+function homefun(){
+  let filteredhome=everyData.filter(function(elem){
+    
+    return elem.tag=="home";
+})
+
+display(filteredhome);
+}
+
+document.querySelector("#kids").addEventListener("click",kidsfun);
+
+function kidsfun(){
+  let filteredkids=everyData.filter(function(elem){
+    
+    return elem.tag=="kids";
+})
+
+display(filteredkids);
+}
+
+document.querySelector("#pets").addEventListener("click",petsfun);
+
+function petsfun(){
+  let filteredpets=everyData.filter(function(elem){
+    
+    return elem.tag=="pets";
+})
+
+display(filteredpets);
+}
+
+document.querySelector("#technology").addEventListener("click",technologyfun);
+
+function technologyfun(){
+  let filteredtechnology=everyData.filter(function(elem){
+    
+    return elem.tag=="technology";
+})
+
+display(filteredtechnology);
 }
