@@ -70,8 +70,30 @@ h2{
     color: #000;
 }
 
-@media all and (min-width:775px) and (max-width:1200px) {
+#productbar{
+    display: none;
+}
+
+
+@media all and (min-width:991px) and (max-width:1200px){
+
+    #box2{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: auto;
+       
+    }
+}
+
+@media all and (min-width:557px) and (max-width:991px) {
+    #container{
+        /* border: 1px solid red; */
+        display: flex;
+        /* width: 100%; */
+        padding: 0px 31px 0px 31px;
+    }
     #box2 {
+        display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: auto;
         
@@ -79,10 +101,87 @@ h2{
     #box3>div,#box3>span{
         padding-left: 0px;
     }
+    
+    #box1,#box3{
+        display: none;
+    }
+    #container>div:nth-child(2){
+        margin: auto;
+        width: 100%;
+    }
+
+
+    #productbar{
+        text-align: center;
+        display: flex;
+        justify-content: space-around;
+        padding: 0px 31px 0px 31px;
+        height: 45px;
+        /* border: 1px solid black; */
+        margin-bottom: 10px;
+    }
+    #productbar>div{
+        border: 1px solid;
+        width: 100%;
+    }
+
+    /* product bar */
+    .productbar {
+        overflow: hidden;
+        /* background-color: #333; */
+        /* font-family: Arial; */
+      }
+      .dropdown {
+        float: left;
+        overflow: hidden;
+      }
+      /* Dropdown button */
+    .dropdown .dropbtn {
+        /* font-size: 16px; */
+        border: none;
+        outline: none;
+        color: black;
+        padding: 14px 16px;
+        background-color: inherit;
+        font-family: inherit; /* Important for vertical align on mobile phones */
+        margin: 0; /* Important for vertical align on mobile phones */
+      }
+    .dropdown-content{
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        border: 1px solid black;
+      /* min-width: 160px; */
+      /* width: 125px; */
+      /* text-align: center; */
+      /* box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); */
+      z-index: 1;
+    }
+    /* Links inside the dropdown */
+    .dropdown-content span {
+        float: none;
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+      }
+      /* Show the dropdown menu on hover */
+    .dropdown:hover .dropdown-content {
+        display: block;
+      }
 
 }
 
-    @media all and (min-width: 0px) and (max-width:775px){
+    @media all and (min-width: 0px) and (max-width:575px){
+
+        #container{
+            /* border: 1px solid red; */
+            display: flex;
+            /* width: 100%; */
+            padding: 0px 23px 0px 23px;
+        }
+
         #box2 {
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: auto;
@@ -96,4 +195,67 @@ h2{
         margin: auto;
         width: 100%;
     }
+    #productbar{
+        text-align: center;
+        display: flex;
+        justify-content: space-around;
+        padding: 0px 23px 0px 23px;
+        height: 45px;
+        /* border: 1px solid black; */
+        margin-bottom: 10px;
     }
+    #productbar>div{
+        border: 1px solid;
+        width: 100%;
+    }
+
+    /* product bar */
+    .productbar {
+        overflow: hidden;
+        /* background-color: #333; */
+        /* font-family: Arial; */
+      }
+      .dropdown {
+        float: left;
+        overflow: hidden;
+      }
+      /* Dropdown button */
+    .dropdown .dropbtn {
+        /* font-size: 16px; */
+        border: none;
+        outline: none;
+        color: black;
+        padding: 14px 16px;
+        background-color: inherit;
+        font-family: inherit; /* Important for vertical align on mobile phones */
+        margin: 0; /* Important for vertical align on mobile phones */
+      }
+    .dropdown-content{
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        border: 1px solid black;
+      /* min-width: 160px; */
+      /* width: 125px; */
+      /* text-align: center; */
+      /* box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); */
+      z-index: 1;
+    }
+    /* Links inside the dropdown */
+    .dropdown-content span {
+        float: none;
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+      }
+      /* Show the dropdown menu on hover */
+    .dropdown:hover .dropdown-content {
+        display: block;
+      }
+
+
+
+    } 
+    
