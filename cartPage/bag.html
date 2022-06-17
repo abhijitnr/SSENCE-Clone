@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SSENCE | Shopping Bag</title>
+
+    <link rel="stylesheet" href="bag.css">
+
+</head>
+
+<body>
+    <!-- Navabar Section -->
+    <div id="navbar">
+        <!-- for left sides of navbar -->
+        <div>
+            <p><a href="https://course.masaischool.com/">menswear</a></p>
+            <p><a href="https://course.masaischool.com/">womenswear</a></p>
+            <p><a href="https://course.masaischool.com/">everything else</a></p>
+            <p>sale</p>
+            <p>search</p>
+        </div>
+
+        <div></div>
+
+        <!-- for logo of navbar -->
+        <div>
+            <img src="https://res.cloudinary.com/ssenseweb/image/upload/v1471963917/web/ssense_logo_v2.svg" alt="Error">
+        </div>
+
+        <div></div>
+
+        <!-- for right sides of navbar -->
+        <div>
+            <p>english</p>
+            <p>account</p>
+            <p><a href="https://course.masaischool.com/">whishlist</a></p>
+            <p><a href="https://course.masaischool.com/">shopping bag <span id="countShow">(0)</span></a></p>
+        </div>
+
+    </div>
+
+    <div id="container">
+
+        <div class="firstThird"></div>
+
+        <div id="storeProduct">
+            <div>
+                <!-- for top section -->
+                <p>shopping bag</p>
+                <div>
+                    <p>item</p>
+                    <p>total</p>
+                </div>
+            </div>
+
+            <div id="appendItem">
+                <!-- Append here -->
+            </div>
+
+            <div id="pricePart">
+                <!-- For total price part -->
+                <div>
+                    <p>Total</p>
+                    <p id="priceAppend"></p>
+                </div>
+
+                <div>
+                    <p>Shipping estimate</p>
+                    <p>Calculated at Checkout</p>
+                </div>
+
+                <div>
+                    <h5>Order Total</h5>
+                    <h5 id="finalPrice">price final</h5>
+                </div>
+            </div>
+        </div>
+
+        <div class="firstThird"></div>
+
+        <div id="checkout">
+            <div>
+                <p>logged in as</p>
+                <p id="email">
+                    <!-- Append Email Here -->
+                </p>
+                <p>Not your account? <span>Sign in as another user</span></p>
+                <button id="proceed">proceed to checkout</button>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
+
+<script src="bag.js"></script>
