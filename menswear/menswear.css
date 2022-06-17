@@ -83,6 +83,9 @@ h2{
         grid-template-rows: auto;
        
     }
+    #box3>div,#box3>span{
+        padding-left: 0px;
+    }
 }
 
 @media all and (min-width:557px) and (max-width:991px) {
