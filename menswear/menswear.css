@@ -70,12 +70,16 @@ h2{
     color: #000;
 }
 
-@media all and (min-width:575px) and (max-width:1200px) {
+@media all and (min-width:775px) and (max-width:1200px) {
     #box2 {
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: auto;
         
     }
+    #box3>div,#box3>span{
+        padding-left: 0px;
+    }
+
 }
 
     @media all and (min-width: 0px) and (max-width:775px){
@@ -83,5 +87,13 @@ h2{
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: auto;
         
+    }
+    #box1,#box3{
+        display: none;
+        width: 0px;
+    }
+    #container>div:nth-child(2){
+        margin: auto;
+        width: 100%;
     }
     }
