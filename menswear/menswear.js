@@ -2703,3 +2703,83 @@ function accessoriesfun(){
 
 display(filteredaccessories);
 }
+
+
+
+document.querySelector("#low2high2").addEventListener("click",sortPrice12);
+document.querySelector("#high2low2").addEventListener("click",sortPrice22);
+
+function sortPrice12(){
+    mensData.sort(function(a,b){
+        if(a.price>b.price) return 1;
+        if(a.price<b.price) return -1;
+        return 0;
+    });
+
+   
+    display(mensData);
+   
+}
+
+function sortPrice22(){
+    mensData.sort(function(a,b){
+        if(a.price<b.price) return 1;
+        if(a.price>b.price) return -1;
+        return 0;
+    });
+   
+    display(mensData);
+    
+}
+
+
+
+document.querySelector("#all2").addEventListener("click",allfun2);
+function allfun2(){
+  window.location.reload();
+};
+
+document.querySelector("#bags2").addEventListener("click",bagsfun2);
+
+function bagsfun2(){
+  let filteredbags=mensData.filter(function(elem){
+    
+    return elem.tag=="bag";
+})
+
+display(filteredbags);
+}
+
+document.querySelector("#clothing2").addEventListener("click",clothingfun2);
+
+function clothingfun2(){
+  let filteredclothing=mensData.filter(function(elem){
+    
+    return elem.tag=="clothing";
+})
+
+display(filteredclothing);
+}
+
+document.querySelector("#shoes2").addEventListener("click",shoesfun2);
+
+function shoesfun2(){
+  let filteredshoes=mensData.filter(function(elem){
+    
+    return elem.tag=="shoes";
+})
+
+display(filteredshoes);
+}
+
+document.querySelector("#accessories2").addEventListener("click",accessoriesfun2);
+
+function accessoriesfun2(){
+  let filteredaccessories=mensData.filter(function(elem){
+    
+    return elem.tag=="accessories";
+})
+
+display(filteredaccessories);
+}
+
