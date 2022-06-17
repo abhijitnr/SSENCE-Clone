@@ -1,6 +1,7 @@
 body {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    grid-template-columns: 2fr 1fr;
     border: 1px solid transparent;
     width: 60%;
     margin: auto;
@@ -38,11 +39,6 @@ span {
 #bill {
     margin-top: 5%;
 }
-
-input[type="radio"] {
-    cursor: pointer;
-    
-    border: 1px solid rgb(0, 0, 0);
-    padding: 0.5em;
-    -webkit-appearance: none;
+#bill{
+    margin-bottom: 10%;
 }

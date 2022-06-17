@@ -1,3 +1,5 @@
+<!-- //payment page for men and women carted items -->
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -14,7 +16,7 @@
         <p>Checkout</p>
         <div id="shopping">
             <div>
-                <p>Shopping Address</p>
+                <p>Shipping Address</p>
                 <hr>
             </div>
             <div>
@@ -31,7 +33,7 @@
                     <p>Company(Optional)</p>
                 </div>
                 <div>
-                    <input type="text" id="streetAddress">
+                    <input type="text" id="address">
                     <input type="text" id="company">
                 </div>
                 <div>
@@ -40,6 +42,7 @@
                 </div>
                 <div>
                     <input type="text" id="city">
+                    <input type="text" id="zipCode">
                 </div>
                 <div>
                     <p>Country/Region</p>
@@ -77,8 +80,8 @@
                 <p>Expiration date</p>
             </div>
             <div>
-                <input type="number" maxlength="16" placeholder="1234 1234 1234 1234">
-                <input type="date" placeholder="MM / YY">
+                <input id="cNumber" type="number" maxlength="16" placeholder="1234 1234 1234 1234">
+                <input id="month" type="month" placeholder="MM / YY">
             </div>
             <div id="cardHolder">
                 <p>Cardholder's name</p>
@@ -95,7 +98,26 @@
             <input type="radio" id="square"> <span>Same as Shipping Addres</span>
         </div>
     </div>
-    <div></div>
+    <div>
+        <div>
+            <p>ORDER SUMMARY</p>
+            <hr> 
+        </div>
+        <div id="items"></div>
+        <div>
+            <p>
+                COUNTRY/REGION: INDIA/USE
+            </p>
+            <hr>
+        </div>
+        <div id="subTotal"></div>
+        <hr>
+        <div id="placeOrder">
+    
+        </div>
+    </div>
 </body>
 
 </html>
+
+<script src="checkout.js"></script>

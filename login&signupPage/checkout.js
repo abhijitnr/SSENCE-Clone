@@ -1,0 +1,98 @@
+//for payment.html
+let shippingArray = [];
+document.querySelector("#items").style.display = "grid";
+document.querySelector("#items").style.gridTemplateColumns = "0.7fr 2fr"
+
+let fetchData = JSON.parse(localStorage.getItem("cartData"));
+let totalPrice = JSON.parse(localStorage.getItem("priceTotal"));
+
+fetchData.forEach(function (elem, index) {
+    let divA = document.createElement("div");
+    let itemImage = document.createElement("img");
+    itemImage.src = elem.image_url;
+    itemImage.style.width = "50%";
+
+    let divB = document.createElement("div");
+    divB.style.display = "grid";
+    divB.style.gridTemplateColumns = "2fr 1fr"
+
+    let name = document.createElement("span")
+    let price = document.createElement("span")
+
+    name.innerText = elem.name;
+    name.style.color = "gray";
+    name.style.fontFamily = "sans-serif";
+    name.style.fontSize = "10px";
+
+    price.innerText = "$" + elem.price;
+    price.style.color = "gray";
+    price.style.fontFamily = "sans-serif";
+    price.style.fontSize = "10px";
+
+    divA.append(itemImage);
+    divB.append(name, price);
+    document.querySelector("#items").append(divA, divB);
+})
+document.querySelector("#subTotal").style.display = "grid";
+document.querySelector("#subTotal").style.gridTemplateColumns = "3fr 1fr";
+document.querySelector("#subTotal").style.gridTemplateRows = "1fr 1fr 1fr";
+
+let sTotal = document.createElement("p");
+let svalue = document.createElement("p");
+sTotal.innerText = "Subtotal";
+svalue.innerText = totalPrice;
+
+let tItems = document.createElement("p");
+tItems.innerText = "Total Items";
+let tItemsValue = document.createElement("p");
+tItemsValue.innerText = fetchData.length;
+
+
+let shTotal = document.createElement("p");
+let shvalue = document.createElement("p");
+shTotal.innerText = "Shipping total";
+shvalue.innerText = "$40.00";
+
+document.querySelector("#subTotal").append(sTotal, svalue, tItems, tItemsValue, shTotal, shvalue);
+
+let oTotal = document.createElement("span");
+oTotal.innerText = "Order total(USE)";
+oTotal.style.marginRight = "50%"
+
+let oValue = document.createElement("span");
+oValue.innerText = "$" + eval(totalPrice + 40);
+
+//this will redirect it to the payment final page
+let btn = document.createElement("button");
+btn.innerText = "PLACE ORDER";
+btn.style.color = "white";
+btn.style.padding = "10px";
+btn.style.marginTop = "5%";
+btn.style.backgroundColor = "black";
+btn.style.fontFamily = "sans-serif";
+btn.style.width = "100%";
+btn.style.cursor = "pointer";
+
+document.querySelector("#placeOrder").append(oTotal, oValue);
+document.querySelector("#placeOrder").append(btn);
+
+// to catch the details submitted on the page-->
+btn.addEventListener("click", toOTP);
+
+function toOTP() {
+    let shippingDetails = {
+        name: document.querySelector("#firstName").value + " " + document.querySelector("#lastName").value,
+        strAddress: document.querySelector("#address").value,
+        company: document.querySelector("#company").value,
+        city: document.querySelector("#city").value,
+        zipCode: document.querySelector("#zipCode").value,
+        country: document.querySelector("#country").value,
+        state: document.querySelector("#state").value,
+        phone: document.querySelector("#phoneNumber").value,
+        card: document.querySelector("#cNumber").value,
+        month: document.querySelector("#month").value
+    }
+    shippingArray.push(shippingDetails);
+    localStorage.setItem("shippingDetails", JSON.stringify(shippingArray));
+    window.location.replace("otp.html");
+}
