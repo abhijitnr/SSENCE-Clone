@@ -95,3 +95,50 @@ img{
 p{
     padding-right: 5px;
 }
+
+@media all and (min-width:991px) and (max-width:1200px){
+    #container{
+        display: flex;
+        flex-direction: column;
+    }
+    #box1,#box2,#box3{
+        width: 100%;
+    }
+    #box1{
+        margin-top: 25px;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+
+@media all and (min-width:575px) and (max-width:991px){
+    #container{
+        display: flex;
+        flex-direction: column;
+    }
+    #box1,#box2,#box3{
+        width: 100%;
+    }
+    #box1{
+        margin-top: 25px;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+
+@media all and (min-width:0px) and (max-width:575px){
+    #container{
+        display: flex;
+        flex-direction: column;
+    }
+    #box1,#box2,#box3{
+        width: 100%;
+    }
+    #box1{
+        margin-top: 25px;
+        display: flex;
+        justify-content: center;
+    }
+}

@@ -2642,3 +2642,105 @@ function technologyfun(){
 
 display(filteredtechnology);
 }
+
+
+
+document.querySelector("#low2high2").addEventListener("click",sortPrice12);
+document.querySelector("#high2low2").addEventListener("click",sortPrice22);
+
+function sortPrice12(){
+    everyData.sort(function(a,b){
+        if(a.price>b.price) return 1;
+        if(a.price<b.price) return -1;
+        return 0;
+    });
+
+   
+    display(everyData);
+   
+}
+
+function sortPrice22(){
+    everyData.sort(function(a,b){
+        if(a.price<b.price) return 1;
+        if(a.price>b.price) return -1;
+        return 0;
+    });
+   
+    display(everyData);
+    
+}
+
+
+
+
+document.querySelector("#all2").addEventListener("click",allfun2);
+function allfun2(){
+  window.location.reload();
+};
+
+document.querySelector("#selfcare2").addEventListener("click",selfcarefun2);
+
+function selfcarefun2(){
+  let filteredselfcare=everyData.filter(function(elem){
+    
+      return elem.tag=="selfcare";
+})
+
+display(filteredselfcare);
+}
+
+document.querySelector("#activity2").addEventListener("click",activityfun2);
+
+function activityfun2(){
+  let filteredactivity=everyData.filter(function(elem){
+    
+    return elem.tag=="activity";
+})
+
+display(filteredactivity);
+}
+
+document.querySelector("#home2").addEventListener("click",homefun2);
+
+function homefun2(){
+  let filteredhome=everyData.filter(function(elem){
+    
+    return elem.tag=="home";
+})
+
+display(filteredhome);
+}
+
+document.querySelector("#kids2").addEventListener("click",kidsfun2);
+
+function kidsfun2(){
+  let filteredkids=everyData.filter(function(elem){
+    
+    return elem.tag=="kids";
+})
+
+display(filteredkids);
+}
+
+document.querySelector("#pets2").addEventListener("click",petsfun2);
+
+function petsfun2(){
+  let filteredpets=everyData.filter(function(elem){
+    
+    return elem.tag=="pets";
+})
+
+display(filteredpets);
+}
+
+document.querySelector("#technology2").addEventListener("click",technologyfun2);
+
+function technologyfun2(){
+  let filteredtechnology=everyData.filter(function(elem){
+    
+    return elem.tag=="technology";
+})
+
+display(filteredtechnology);
+}
