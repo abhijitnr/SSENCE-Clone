@@ -1,7 +1,7 @@
 #sale{
     width: 100%;
     height: auto;
-    margin-top: 70px;
+    margin-top: 50px;
 }
 #sale>p{
     font-size: 160px;
@@ -16,6 +16,7 @@
     align-items: center;
     width: 100%;
     height: auto;
+    margin-top: -150px;
 }
 #catagory>p{
     font-size: 60px;
@@ -223,12 +224,97 @@
     cursor: pointer;
 }
 
+/* Navbar CSS */
+#navbar{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    margin: auto;
+    position: fixed;
+    top: 0px;
+    background-color: white;
+}
+#navbar>div:first-child{
+    width: 33%;
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    height: auto;
+}
+#navbar>div:first-child>p{
+    text-transform: uppercase;
+    font-size: 11px;
+    font-family: 'Open Sans', sans-serif;
+    cursor: pointer;
+    text-decoration: underline;
+}
+#navbar>div:nth-child(2){
+    width: 6%;
+}
+#navbar>div:nth-child(4){
+    width: 11%;
+}
+#navbar>div:nth-child(3){
+    width: 20%;
+    height: auto;
+    text-align: center;
+}
+#navbar>div:nth-child(3)>img{
+    width: 100px;
+    height: 21px;
+    margin-top: 17px;
+}
+#navbar>div:last-child{
+    width: 30%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: auto;
+}
+#navbar>div:last-child>p{
+    text-transform: uppercase;
+    font-size: 11px;
+    font-family: 'Open Sans', sans-serif;
+    cursor: pointer;
+    text-decoration: underline;
+}
+#navbar>div>p>a{
+    text-decoration: none;
+    color: #000000;
+}
+
 /* Media Query for medium screen */
 @media screen and (min-width: 500px) and (max-width: 800px) {
+    /* #navbar{
+        width: 100%;
+    } */
+    #navbar>div:first-child{
+        display: none;
+        /* visibility: hidden;
+        overflow: hidden; */
+    }
+    /* #navbar>div:nth-child(2){
+        width: 0%;
+    } */
+    #navbar>div:nth-child(3){
+        width: 100%;
+        margin: auto;
+    }
+    /* #navbar>div:nth-child(4){
+        width: 0%;
+    } */
+    #navbar>div:last-child{
+        display: none;
+        /* visibility: hidden;
+        overflow: hidden; */
+    }
     #sale>p{
         font-size: 45px;
         margin-top: 5px;
         text-align: center;
+    }
+    #catagory{
+        margin-top: -30px;
     }
     #catagory>p{
         font-size: 25px;
@@ -289,6 +375,9 @@
         font-size: 40px;
         margin-top: 5px;
         text-align: center;
+    }
+    #catagory{
+        margin-top: -10px;
     }
     #catagory>p{
         font-size: 20px;
