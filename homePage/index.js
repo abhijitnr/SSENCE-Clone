@@ -4,7 +4,7 @@ document.querySelector("#menBotton1").addEventListener("click", mensFunction);
 document.querySelector("#menBotton2").addEventListener("click", mensFunction);
 document.querySelector("#mens").addEventListener("click", mensFunction);
 function mensFunction(){
-    window.location.href = "https://course.masaischool.com/"
+    window.location.href = "../menswear/menswear.html"
 }
 
 // EventListener for WomensWear
@@ -13,13 +13,13 @@ document.querySelector("#womenBotton1").addEventListener("click", womensFunction
 document.querySelector("#womenBotton2").addEventListener("click", womensFunction);
 document.querySelector("#womens").addEventListener("click", womensFunction);
 function womensFunction(){
-    window.location.href = "https://course.masaischool.com/"
+    window.location.href = "../womenswear/womenswear.html"
 }
 
 // EventListener for everythingelse
 document.querySelector("#else").addEventListener("click", elseFunction);
 function elseFunction(){
-    window.location.href = "https://course.masaischool.com/"
+    window.location.href = "../everythingelse/every.html"
 }
 
 // EventListener for wishlists
@@ -43,16 +43,16 @@ function accountFunction(){
 // EventListener for shopping bag
 document.querySelector("#shoppingLogo").addEventListener("click", shoppingFunction);
 function shoppingFunction(){
-    window.location.href = "https://course.masaischool.com/"
+    window.location.href = "../cartPage/bag.html"
 }
 
 
 // EventListener for brand logo
 document.querySelector("#brandLogo").addEventListener("click", brandLogoFunction);
 function brandLogoFunction(){
-    window.location.href = "index.html"
+    window.location.replace("index.html");
 }
 
 // for showing the count
-let previewDataFromLs = JSON.parse(localStorage.getItem("cartData"));
+let previewDataFromLs = JSON.parse(localStorage.getItem("bagdata"))
 document.querySelector("#countShow").innerText = "("+previewDataFromLs.length+")";

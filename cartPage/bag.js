@@ -1,4 +1,4 @@
-let previewDataFromLs = JSON.parse(localStorage.getItem("cartData")) || [];
+let previewDataFromLs = JSON.parse(localStorage.getItem("bagdata")) || [];
 
 let subTotal = JSON.parse(localStorage.getItem("priceTotal"));
 
@@ -13,7 +13,7 @@ function displayDiv(previewDataFromLs){
 
         let  div1 = document.createElement("div");
         let imgTage = document.createElement("img");
-        imgTage.setAttribute("src", el.image_url);
+        imgTage.setAttribute("src", el.imgUrl);
         
         let boxOfDiv1 = document.createElement("div");
         // enter brand element
@@ -24,7 +24,7 @@ function displayDiv(previewDataFromLs){
         para2.innerText= el.name
         // enter size element
         let para3 = document.createElement("p");
-        para3.innerText= "Size :"
+        para3.innerText= "Size : "+el.size;
         // enter wishlish event listener
         let para4 = document.createElement("p");
         para4.innerText= "Move to Wishlist"
@@ -63,7 +63,7 @@ function displayDiv(previewDataFromLs){
 //For remove particular index
 function deleteData(index) {
     previewDataFromLs.splice(index, 1);
-    localStorage.setItem("cartData", JSON.stringify(previewDataFromLs));
+    localStorage.setItem("bagdata", JSON.stringify(previewDataFromLs));
     window.location.reload();
 }
 
@@ -71,29 +71,29 @@ function deleteData(index) {
 document.querySelector("#proceed").addEventListener("click", goToPaymentPage);
 
 function goToPaymentPage() {
-    window.location.href = "https://www.npmjs.com/"
+    window.location.href = "../login&signupPage/checkoutPage.html"
 }
-
-document.querySelector("#email").innerText = "abhijitbiswas8859@gmail.com";
+let currentEmail = JSON.parse(localStorage.getItem("currentEmail"));
+document.querySelector("#email").innerText = currentEmail;
 
 // javascript functionalaty
 
-// EventListener for womenswear
+// EventListener for menswear
 document.querySelector("#mens").addEventListener("click", mensFunction);
 function mensFunction(){
-    window.location.href = "https://course.masaischool.com/"
+    window.location.href = "../menswear/menswear.html"
 }
 
 // EventListener for womenswear
 document.querySelector("#womens").addEventListener("click", womensFunction);
 function womensFunction(){
-    window.location.href = "https://course.masaischool.com/"
+    window.location.href = "../womenswear/womenswear.html"
 }
 
 // EventListener for everythingelse
 document.querySelector("#else").addEventListener("click", elseFunction);
 function elseFunction(){
-    window.location.href = "https://course.masaischool.com/"
+    window.location.href = "../everythingelse/every.html"
 }
 
 // EventListener for wishlists
@@ -117,12 +117,12 @@ function accountFunction(){
 // EventListener for shopping bag
 document.querySelector("#shoppingLogo").addEventListener("click", shoppingFunction);
 function shoppingFunction(){
-    window.location.href = "https://course.masaischool.com/"
+    window.location.href = "bag.html"
 }
 
 
 // EventListener for brand logo
 document.querySelector("#brandLogo").addEventListener("click", brandLogoFunction);
 function brandLogoFunction(){
-    window.location.href = "index.html"
+    window.location.href = "../homePage/index.html"
 }
