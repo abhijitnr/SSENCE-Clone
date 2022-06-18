@@ -220,6 +220,11 @@ function display(previewarr){
 
 
 function addtobag(elem,fit){
+    if(fit=="SELECT SIZE"){
+        alert("Please Select Size");
+        window.location.reload();
+    }
+    else{
     if(fit==undefined){
         elem["size"]="-";
     }
@@ -232,8 +237,16 @@ function addtobag(elem,fit){
     localStorage.setItem("bagdata",JSON.stringify(previewdata));
     window.location.reload();
 }
+}
 
 function addtowish(elem,fit){
+    if(fit=="SELECT SIZE"){
+        alert("Please Select Size");
+        window.location.reload();
+    }
+    else{
+
+    
     if(fit==undefined){
         elem["size"]="-";
     }
@@ -245,6 +258,7 @@ function addtowish(elem,fit){
     previewdata2.push(elem)
     localStorage.setItem("wishdata",JSON.stringify(previewdata2));
     window.location.reload();
+}
 }
 
 
