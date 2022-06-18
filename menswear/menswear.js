@@ -2807,19 +2807,19 @@ let mensData = [
   // EventListener for wishlists
   document.querySelector("#wish").addEventListener("click", wishFunction);
   function wishFunction(){
-      window.location.href = "https://course.masaischool.com/"
+      window.location.href = "../wishPage/wish.html"
   }
   
   // EventListener for search button
   document.querySelector("#search").addEventListener("click", searchFunction);
   function searchFunction(){
-      window.location.href = "https://course.masaischool.com/"
+      window.location.href = ""
   }
   
   // EventListener for accountLogo
   document.querySelector("#accountLogo").addEventListener("click", accountFunction);
   function accountFunction(){
-      window.location.href = "https://course.masaischool.com/"
+      window.location.href = ""
   }
   
   // EventListener for shopping bag
@@ -2832,7 +2832,7 @@ let mensData = [
   // EventListener for brand logo
   document.querySelector("#brandLogo").addEventListener("click", brandLogoFunction);
   function brandLogoFunction(){
-      window.location.href = "../homePage/index.html"
+      window.location.href = "../index.html"
   }
 
   let previewDataFromLs = JSON.parse(localStorage.getItem("bagdata"))

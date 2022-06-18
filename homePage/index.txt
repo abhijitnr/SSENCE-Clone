@@ -1,0 +1,606 @@
+#sale{
+    width: 100%;
+    height: auto;
+    margin-top: 50px;
+}
+#sale>p{
+    font-size: 160px;
+    height: 100%;
+    width: 100%;
+    margin-top: 5px;
+    text-align: center;
+}
+#catagory{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    margin-top: -150px;
+}
+#catagory>p{
+    font-size: 60px;
+    font-family: 'Roboto Condensed', sans-serif;
+    cursor: pointer;
+}
+.firstDiv{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 40px;
+}
+.firstDiv>div{
+    width: 43%;
+}
+.firstDiv>div>p{
+    font-size: 19px;
+    width: 90%;
+    margin-top: -10px;
+    font-family: 'Cormorant Garamond', serif;
+}
+.firstDiv>div>img{
+    width: 100%;
+}
+.firstDiv>div>div{
+    display: flex;
+}
+.firstDiv>div>div>p:first-child{
+    font-size: 18px;
+}
+.firstDiv>div>div>p:last-child{
+    font-size: 20px;
+    font-family: 'Nunito', sans-serif;
+    margin-left: 23px;
+    margin-top: 18px;
+}
+.secondDiv{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 50px;
+}
+.secondDiv>div{
+    width: 30%;
+}
+.secondDiv>div>img{
+    width: 100%;
+}
+.secondDiv>div>div{
+    display: flex;
+    
+}
+.secondDiv>div>div>p:first-child{
+    font-size: 15px;
+}
+.secondDiv>div>div>p:last-child{
+    font-size: 19px;
+    font-family: 'Nunito', sans-serif;
+    margin-left: 20px;
+    margin-top: 14px;
+}
+.firstDiv>div>button{
+    padding: 12px 20px;
+    background-color: white;
+    border: 0.5px solid grey;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.thirdDiv{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 50px;
+}
+.thirdDiv>div:first-child{
+    display: block;
+    font-family: 'Nunito', sans-serif;
+}
+.thirdDiv>div:first-child>h1{
+    margin-top: 1px;
+}
+.thirdDiv>div:first-child>p{
+    margin-top: 75px;
+}
+.thirdDiv>div{
+    width: 18%;
+    height: 130px;
+    border-top: 1px solid grey;
+    border-bottom: 1px solid grey;
+    padding: 10px 0px 10px 0px;
+    display: flex;
+
+}
+.thirdDiv>div>img{
+    width: 90px;
+    height: 130px;
+}
+.thirdDiv>div>div{
+    margin-left: 10px;
+    color: rgb(142, 140, 140);
+    font-family: 'Nunito', sans-serif;
+}
+.thirdDiv>div>div>p:first-child{
+    margin-top: 0px;
+}
+.thirdDiv>div>div>p:last-child{
+    margin-top: 75px;
+}
+#fourthDiv{
+    width: 100%;
+    height: auto;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+}
+#fourthDiv>div{
+    width: 48%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: auto;
+    gap: 30px 10px;
+}
+#fourthDiv>div:first-child>div>img{
+    width: 350px;
+}
+#fourthDiv>div>div>p:first-child{
+    font-size: 25px;
+    font-family: 'Nunito', sans-serif;
+    color: rgb(75, 75, 75);
+    margin-top: 0px;
+}
+#fourthDiv>div>div>p:nth-child(2){
+    font-size: 14px;
+    color: rgb(122, 120, 120);
+    margin-top: -20px;
+}
+#fourthDiv>div>div>p:last-child{
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(75, 75, 75);
+    margin-top: 30px;
+}
+#fourthDiv>div:last-child>div>img{
+    width: 280px;
+    margin-left: 50px;
+}
+#fourthDiv>div:last-child>div>p{
+    width: 80%;
+    margin-left: 50px;
+}
+#fourthDiv>div:last-child>div>div{
+    display: flex;
+    padding: 10px;
+    border-bottom: 1px solid grey;
+    margin-left: 50px;
+}
+#fourthDiv>div:last-child>div>div:first-child{
+    border-top: 1px solid grey;
+}
+#fourthDiv>div:last-child>div>div>img{
+    width: 90px;
+    height: 130px;
+}
+#fourthDiv>div:last-child>div>div>div{
+    margin-left: 10px;
+}
+#fourthDiv>div:last-child>div>div>div>p:first-child{
+    margin-top: -3px;
+}
+#fourthDiv>div:last-child>div>div>div>p:last-child{
+    margin-top: 75px;
+    margin-bottom: 0px;
+}
+#fifthDiv{
+    margin-top: 70px;
+    text-align: center;
+
+}
+#fifthDiv>p:first-child{
+    width: 80%;
+    font-size: 90px;
+    font-family: 'Noto Sans', sans-serif;
+    color: rgb(49, 49, 49);
+    margin: auto;
+}
+#fifthDiv>p{
+    width: 90%;
+    font-size: 60px;
+    font-family: 'Noto Serif', serif;
+    color: rgb(49, 49, 49);
+    margin: auto;
+    margin-top: 20px;
+}
+#fifthDiv>button{
+    padding: 12px 20px;
+    background-color: white;
+    border: 0.5px solid grey;
+    border-radius: 10px;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+
+/* Navbar CSS */
+#navbar{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    margin: auto;
+    position: fixed;
+    top: 0px;
+    background-color: white;
+    align-items: center;
+}
+#leftPage{
+    width: 33%;
+}
+#leftPage>div:first-child{
+    display: flex;
+    justify-content:space-evenly;
+    height: auto;
+}
+#leftPage>div:first-child>p{
+    text-transform: uppercase;
+    font-size: 11px;
+    font-family: 'Open Sans', sans-serif;
+    cursor: pointer;
+}
+#leftPage>div:first-child>p:hover{
+    text-decoration: underline;
+}
+#navbar>div:nth-child(2){
+    width: 6%;
+}
+#navbar>div:nth-child(4){
+    width: 11%;
+}
+#navbar>div:nth-child(3){
+    width: 20%;
+    height: auto;
+    text-align: center;
+    cursor: pointer;
+}
+#navbar>div:nth-child(3)>img{
+    width: 100px;
+    height: 21px;
+}
+#rightPage{
+    width: 30%;
+}
+#rightPage>div:first-child{
+    display: flex;
+    justify-content: space-evenly;
+    height: auto;
+}
+#rightPage>div:first-child>p{
+    text-transform: uppercase;
+    font-size: 11px;
+    font-family: 'Open Sans', sans-serif;
+    cursor: pointer;
+}
+#rightPage>div:first-child>p:hover{
+    text-decoration: underline;
+}
+#navbar>div>div>p>a{
+    text-decoration: none;
+    color: #000000;
+}
+#allProduct{
+    display: none;
+}
+#cartLogo{
+    display: none;
+}
+
+/* Media Query for medium screen */
+@media screen and (min-width: 500px) and (max-width: 900px) {
+
+   #allProduct{
+        text-align: center;
+        display: flex;
+        justify-content: space-around;
+        padding: 0px 10px 0px 10px;
+        height: 45px;
+        margin-bottom: 10px;
+    }
+    #allProduct>div{
+        border: 1px solid grey;
+        width: 100%;
+        border-radius: 13px;
+        font-family: 'Open Sans', sans-serif;
+    }
+
+    /* product bar */
+    .productbar {
+        overflow: hidden;
+    }
+    .dropdown {
+        float: left;
+        overflow: hidden;
+    }
+      /* Dropdown button */
+    .dropdown .dropbtn {
+        border: none;
+        outline: none;
+        color: black;
+        padding: 14px 16px;
+        background-color: inherit;
+        font-family: inherit;
+        margin: 0; 
+    }
+    .dropdown-content{
+        width: 95%;
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        z-index: 1;
+        font-size: 11px;
+        font-family: 'Open Sans', sans-serif;
+    }
+    .dropdown-content>span:hover{
+        cursor: pointer;
+        text-decoration: underline;
+    }
+    /* Links inside the dropdown */
+    .dropdown-content span {
+        float: none;
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+    }
+      /* Show the dropdown menu on hover */
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+    #cartLogo{
+        text-align: center;
+        display: flex;
+        justify-content: space-evenly;
+        margin-bottom: 10px;
+    }
+    #cartLogo>img{
+        width: 20px;
+        height: 20px;
+        cursor: pointer;
+    }
+
+
+    #leftPage>div:first-child{
+        display: none;
+    }
+    #navbar>div:nth-child(3){
+        width: 100%;
+        margin: auto;
+    }
+    #rightPage>div:first-child{
+        display: none;
+    }
+    #sale>p{
+        font-size: 45px;
+        margin-top: 5px;
+        text-align: center;
+    }
+    #catagory{
+        margin-top: -30px;
+    }
+    #catagory>p{
+        font-size: 25px;
+    }
+    .firstDiv{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: auto;
+    }
+    .firstDiv>div{
+        width: 100%;
+    }
+    .firstDiv>div>button{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .secondDiv{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: auto;
+    }
+    .secondDiv>div{
+        width: 100%;
+    }
+    .thirdDiv{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: auto;
+    }
+    .thirdDiv>div{
+        width: 90%;
+    }
+    #fourthDiv{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: auto;
+    }
+    #fourthDiv>div{
+        width: 100%;
+        grid-template-columns: repeat(2,1fr);
+    }
+    #fifthDiv>p:first-child{
+        width: 90%;
+        font-size: 60px;
+    }
+    #fifthDiv>p{
+        width: 100%;
+        font-size: 40px;
+    }
+    #fifthDiv>button{
+        width: 95%;
+    }
+}
+
+/* Media Query for small screen */
+@media screen and (min-width: 200px) and (max-width: 499px){
+
+    #allProduct{
+        text-align: center;
+        display: flex;
+        justify-content: space-around;
+        padding: 0px 10px 0px 10px;
+        height: 45px;
+        margin-bottom: 10px;
+    }
+    #allProduct>div{
+        border: 1px solid grey;
+        width: 100%;
+        border-radius: 13px;
+        font-family: 'Open Sans', sans-serif;
+    }
+
+    /* product bar */
+    .productbar {
+        overflow: hidden;
+    }
+    .dropdown {
+        float: left;
+        overflow: hidden;
+    }
+      /* Dropdown button */
+    .dropdown .dropbtn {
+        border: none;
+        outline: none;
+        color: black;
+        padding: 14px 16px;
+        background-color: inherit;
+        font-family: inherit;
+        margin: 0; 
+    }
+    .dropdown-content{
+        width: 90%;
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        z-index: 1;
+        font-size: 11px;
+        font-family: 'Open Sans', sans-serif;
+    }
+    .dropdown-content>span:hover{
+        cursor: pointer;
+        text-decoration: underline;
+    }
+    /* Links inside the dropdown */
+    .dropdown-content span {
+        float: none;
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+    }
+      /* Show the dropdown menu on hover */
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+    #cartLogo{
+        margin-right: 20px;
+        text-align: center;
+        display: flex;
+        justify-content: space-evenly;
+        margin-bottom: 10px;
+    }
+    #cartLogo>img{
+        width: 20px;
+        height: 20px;
+        cursor: pointer;
+    }
+
+
+    #leftPage>div:first-child{
+        display: none;
+    }
+    #navbar>div:nth-child(3){
+        width: 100%;
+        margin: auto;
+    }
+    #rightPage>div:first-child{
+        display: none;
+    }
+    #sale>p{
+        font-size: 40px;
+        margin-top: 5px;
+        text-align: center;
+    }
+    #catagory{
+        margin-top: -10px;
+    }
+    #catagory>p{
+        font-size: 20px;
+        text-align: center;
+    }
+    .firstDiv{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: auto;
+    }
+    .firstDiv>div{
+        width: 100%;
+    }
+    .firstDiv>div>button{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .secondDiv{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: auto;
+    }
+    .secondDiv>div{
+        width: 100%;
+    }
+    .thirdDiv{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: auto;
+    }
+    .thirdDiv>div{
+        width: 95%;
+        margin: auto;
+    }
+    #fourthDiv{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: auto;
+    }
+    #fourthDiv>div{
+        width: 100%;
+        grid-template-columns: repeat(1,1fr);
+    }
+    #fourthDiv>div:first-child>div>img{
+        width: 100%;
+    }
+    #fourthDiv>div>div>p:first-child{
+        margin-left: 20px;
+    }
+    #fourthDiv>div>div>p:nth-child(2){
+        margin-left: 20px;
+    }
+    #fourthDiv>div>div>p:last-child{
+        margin-left: 20px;
+    }
+    #fifthDiv>p:first-child{
+        width: 100%;
+        font-size: 30px;
+    }
+    #fifthDiv>p{
+        width: 100%;
+        font-size: 25px;
+    }
+    #fifthDiv>button{
+        width: 95%;
+    }
+}
