@@ -20,6 +20,7 @@ function finalOutput() {
     let otp = document.querySelector("#otp").value;
     if (otp == "1234") {
         alert("Order placed successfully, it will be delivered to your within 7-10 busines days."); 
+        localStorage.removeItem("bagdata");
         window.location.replace("../index.html");
     } 
     else alert("Invalid OTP, please enter the correct OTP!");
