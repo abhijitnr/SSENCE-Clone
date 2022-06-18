@@ -41,26 +41,73 @@ let sTotal = document.createElement("p");
 let svalue = document.createElement("p");
 sTotal.innerText = "Subtotal";
 svalue.innerText = totalPrice;
+svalue.style.textAlign = "right";
 
 let tItems = document.createElement("p");
 tItems.innerText = "Total Items";
 let tItemsValue = document.createElement("p");
 tItemsValue.innerText = fetchData.length;
+tItemsValue.style.textAlign = "right";
 
 
 let shTotal = document.createElement("p");
 let shvalue = document.createElement("p");
 shTotal.innerText = "Shipping total";
 shvalue.innerText = "$40.00";
+shvalue.style.textAlign = "right";
 
-document.querySelector("#subTotal").append(sTotal, svalue, tItems, tItemsValue, shTotal, shvalue);
+let promo = document.createElement("span");
+promo.innerText = "Enter Promo Code(if any):";
+promo.style.fontFamily = "sans-serif";
+promo.style.fontSize = "10px";
+promo.style.color = "gray";
+
+let promoValue = document.createElement("input");
+promoValue.type = "text";
+promoValue.style.boxShadow = "rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;"
+
+let prBtn1 = document.createElement("button");
+prBtn1.style.border = "none";
+prBtn1.style.backgroundColor = "transparent";
+
+let prBtn = document.createElement("button");
+prBtn.innerText = "Apply";
+prBtn.style.marginTop = "2%"
+prBtn.style.backgroundColor = "black";
+prBtn.style.color = "white";
+prBtn.style.cursor = "pointer";
+prBtn.addEventListener("click", promoChk);
+
+document.querySelector("#subTotal").
+append(sTotal, svalue, tItems, tItemsValue, shTotal,
+    shvalue, promo,promoValue,prBtn1, prBtn);
 
 let oTotal = document.createElement("span");
 oTotal.innerText = "Order total(USE)";
 oTotal.style.marginRight = "45%"
+let price = eval(totalPrice + 40);
 
 let oValue = document.createElement("span");
-oValue.innerText = "$" + eval(totalPrice + 40);
+oValue.innerText = "$" + price;
+
+//function to update the total price of order:
+// promoCode = ssense30;
+
+function promoChk() {
+    let promoCode = promoValue.value;
+    if(promoCode === undefined || promoCode === null){
+        oValue.innerText = "$" + price;
+    }
+    else if(promoCode === "ssense30") {
+        totalValue = price - (price*0.3);
+        oValue.innerText = "$" + totalValue;
+    }
+}
+
+
+
+
+
 
 //this button will redirect it to the payment final page
 let btn = document.createElement("button");
@@ -98,6 +145,9 @@ function toOTP() {
     localStorage.setItem("shippingDetails", JSON.stringify(shippingArray));
     window.location.replace("otp.html");
 }
+
+
+
 // javascript functionalaty
 
 // EventListener for menswear
