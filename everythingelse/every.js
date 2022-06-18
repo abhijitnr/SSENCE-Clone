@@ -1,450 +1,404 @@
-let womensData=[
+let everyData=[
     {
       id: 1,
-       imgUrl:'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.3/222381F099003_1/thom-browne-off-white-wool-turtleneck.jpg',
-      brand: 'Thom Browne',
-      name: 'Off-White Wool Turtleneck',
-      price: 940,
-      tag:'clothing'
+      imgUrl:'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.3/222749M776000_1/culti-aramara-lotion-250-ml.jpg',
+      brand: 'CULTI MILANO',
+      name: 'Aramara Lotion, 250 mL',
+      price: 50,
+      tag: 'selfcare',
     },
     {
       id: 2,
-       imgUrl:'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.3/222381F107001_1/thom-browne-white-cotton-blouse.jpg',
-      brand: 'Thom Browne',
-      name: 'White Cotton Blouse',
-      price: 485,
-       tag:'clothing'
+      imgUrl:'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.3/221715M649003_1/frama-be-my-guest-edition-herbanium-hand-cream-60-ml.jpg',
+      brand: 'FRAMA',
+      name: 'Be My Guest Edition Herbanium Hand Cream, 60 mL',
+      price: 40,
+      tag: 'selfcare',
     },
     {
       id: 3,
-       imgUrl:'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.3/222381F096004_1/thom-browne-navy-4-bar-sweater.jpg',
-      brand: 'Thom Browne',
-      name: 'Navy 4-Bar Sweater',
-      price: 810,
-       tag:'clothing'
+      imgUrl:'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.3/221715M650003_1/frama-be-my-guest-edition-herbarium-body-wash-refill-500-ml.jpg',
+      brand: 'FRAMA',
+      name: 'Be My Guest Edition Herbarium Body Wash Refill, 500 mL',
+      price: 55,
+      tag: 'selfcare',
     },
     {
       id: 4,
-       imgUrl:'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.3/222381F110000_1/thom-browne-navy-cotton-t-shirt.jpg',
-      brand: 'Thom Browne',
-      name: 'Navy Cotton T-Shirt',
-      price: 260,
-       tag:'clothing'
+      imgUrl:'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.3/221715M650004_1/frama-be-my-guest-edition-herbarium-hand-wash-375-ml.jpg',
+      brand: 'FRAMA',
+      name: 'Be My Guest Edition Herbarium Hand Wash, 375 mL',
+      price: 55,
+      tag: 'selfcare',
     },
     {
       id: 5,
-       imgUrl:'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.3/222381F110001_1/thom-browne-gray-cotton-t-shirt.jpg',
-      brand: 'Thom Browne',
-      name: 'Gray Cotton T-Shirt',
-      price: 260,
-       tag:'clothing'
+      imgUrl:'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.3/221715M649000_1/frama-be-my-guest-edition-herbarium-body-lotion-375-ml.jpg',
+      brand: 'FRAMA',
+      name: 'Be My Guest Edition Herbarium Body Lotion, 375 mL',
+      price: 95,
+      tag: 'selfcare',
     },
     {
       id: 6,
-       imgUrl:'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.3/222381F014000_1/thom-browne-gray-cashmere-4-bar-beanie.jpg',
-      brand: 'Thom Browne',
-      name: 'Gray Cashmere 4-Bar Beanie',
-      price: 295,
-       tag:'clothing'
+      imgUrl:'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.3/221715M649002_1/frama-be-my-guest-edition-herbarium-hand-lotion-375-ml.jpg',
+      brand: 'FRAMA',
+      name: 'Be My Guest Edition Herbarium Hand Lotion, 375 mL',
+      price: 95,
+      tag: 'selfcare',
     },
     {
       id: 7,
-       imgUrl:'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.3/222381F014001_1/thom-browne-gray-cashmere-4-bar-beanie.jpg',
-      brand: 'Thom Browne',
-      name: 'Gray Cashmere 4-Bar Beanie',
-      price: 295,
-       tag:'clothing'
+      imgUrl:'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.3/221715M649001_1/frama-be-my-guest-edition-herbarium-body-oil-100-ml.jpg',
+      brand: 'FRAMA',
+      name: 'Be My Guest Edition Herbarium Body Oil, 100 mL',
+      price: 80,
+      tag: 'selfcare',
     },
     {
       id: 8,
-       imgUrl:'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.3/222381F087000_1/thom-browne-navy-4-bar-trousers.jpg',
-      brand: 'Thom Browne',
-      name: 'Navy 4-Bar Trousers',
-      price: 1100,
-       tag:'clothing'
+      imgUrl:'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.3/221715M649004_1/frama-apothecary-hand-cream-60-ml.jpg',
+      brand: 'FRAMA',
+      name: 'Apothecary Hand Cream, 60 mL',
+      price: 40,
+      tag: 'selfcare',
     },
     {
       id: 9,
-       imgUrl:'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.3/221342F086008_1/balenciaga-taupe-cotton-lounge-pants.jpg',
-      brand: 'Balenciaga',
-      name: 'Taupe Cotton Lounge Pants',
-      price: 710,
-       tag:'clothing'
+      imgUrl:'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.3/221797M831003_1/project-full-gray-natural-canvas-meditation-cushion-set.jpg',
+      brand: 'project full',
+      name: 'Gray Natural Canvas Meditation Cushion Set',
+      price: 400,
+      tag: 'activity',
     },
     {
       id: 10,
-       imgUrl:'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.3/222129F110004_1/acne-studios-black-organic-cotton-t-shirt.jpg',
-      brand: 'Acne Studios',
-      name: 'Black Organic Cotton T-Shirt',
-      price: 115,
-       tag:'clothing'
+      imgUrl:'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.3/221797M831000_1/project-full-gray-natural-canvas-meditation-cushion-set.jpg',
+      brand: 'project full',
+      name: 'Gray Natural Canvas Meditation Cushion Set',
+      price: 375,
+      tag: 'activity',
     },
     {
       id: 11,
-       imgUrl:'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.3/222129F108001_1/acne-studios-blue-organic-cotton-polo.jpg',
-      brand: 'Acne Studios',
-      name: 'Blue Organic Cotton Polo',
-      price: 225,
-       tag:'clothing'
+      imgUrl:'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.3/221737M834016_1/mammut-orange-trion-nordwand-alpine-28-backpack.jpg',
+      brand: 'Mammut',
+      name: 'Orange Trion Nordwand Alpine 28 Backpack',
+      price: 220,
+      tag: 'activity',
     },
     {
       id: 12,
-       imgUrl:'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.3/222129F110003_1/acne-studios-pink-organic-cotton-t-shirt.jpg',
-      brand: 'Acne Studios',
-      name: 'Pink Organic Cotton T-Shirt',
-      price: 115,
-       tag:'clothing'
+      imgUrl:'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.3/221797M831004_1/project-full-pink-natural-canvas-meditation-cushion-set.jpg',
+      brand: 'project full',
+      name: 'Pink Natural Canvas Meditation Cushion Set',
+      price: 400,
+      tag: 'activity',
     },
     {
       id: 13,
-       imgUrl:'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.3/222129F110002_1/acne-studios-grey-organic-cotton-t-shirt.jpg',
-      brand: 'Acne Studios',
-      name: 'Grey Organic Cotton T-Shirt',
-      price: 115,
-       tag:'clothing'
+      imgUrl:'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.3/221737M834017_1/mammut-black-trion-nordwand-15-alpine-backpack.jpg',
+      brand: 'Mammut',
+      name: 'Black Trion Nordwand 15 Alpine Backpack',
+      price: 215,
+      tag: 'activity',
     },
     {
       id: 14,
-       imgUrl:'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.3/222129F110022_1/acne-studios-beige-organic-cotton-t-shirt.jpg',
-      brand: 'Acne Studios',
-      name: 'Beige Organic Cotton T-Shirt',
-      price: 125,
-       tag:'clothing'
+      imgUrl:'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.3/221797M831001_1/project-full-off-white-natural-canvas-meditation-cushion-set.jpg',
+      brand: 'project full',
+      name: 'Off-White Natural Canvas Meditation Cushion Set',
+      price: 375,
+      tag: 'activity',
     },
     {
       id: 15,
-       imgUrl:'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.3/222129F110017_1/acne-studios-multicolor-organic-cotton-t-shirt.jpg',
-      brand: 'Acne Studios',
-      name: 'Multicolor Organic Cotton T-Shirt',
-      price: 265,
-       tag:'clothing'
+      imgUrl:'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.3/221835M834000_1/miir-white-camp-cup.jpg',
+      brand: 'MiiR',
+      name: 'White Camp Cup',
+      price: 25,
+      tag: 'activity',
     },
     {
       id: 16,
-       imgUrl:'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.3/222129F014007_1/acne-studios-blue-wool-beanie.jpg',
-      brand: 'Acne Studios',
-      name: 'Blue Wool Beanie',
-      price: 140,
-       tag:'clothing'
+      imgUrl:'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.3/221315M831008_1/byoga-off-white-and-brown-alpaca-throw-blanket.jpg',
+      brand: 'B.Yoga',
+      name: 'Off-White & Brown Alpaca Throw Blanket',
+      price: 165,
+      tag: 'activity',
     },
     {
       id: 17,
-       imgUrl:'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.3/222887F096000_1/brunello-cucinelli-brown-linen-sweater.jpg',
-      brand: 'Brunello Cucinelli',
-      name: 'Brown Linen Sweater',
-      price: 960,
-       tag:'clothing'
+      imgUrl:'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.3/221711M620013_1/vitruvi-refresh-scent-kit-4-x-5-ml.jpg',
+      brand: 'Vitruvi',
+      name: 'Refresh Scent Kit, 4 x 5 mL',
+      price: 55,
+      tag: 'home',
     },
     {
       id: 18,
-       imgUrl:'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.3/222887F096001_1/brunello-cucinelli-beige-mohair-sweater.jpg',
-      brand: 'Brunello Cucinelli',
-      name: 'Beige Mohair Sweater',
-      price: 1250,
-       tag:'clothing'
+      imgUrl:'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.3/221711M620011_1/vitruvi-signature-scent-kit-4-x-5-ml.jpg',
+      brand: 'Vitruvi',
+      name: 'Signature Scent Kit, 4 x 5 mL',
+      price: 55,
+      tag: 'home',
     },
     {
       id: 19,
-       imgUrl:'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.3/222887F100002_1/brunello-cucinelli-beige-mohair-vest.jpg',
-      brand: 'Brunello Cucinelli',
-      name: 'Beige Mohair Vest',
-      price: 860,
-       tag:'clothing'
+      imgUrl:'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.3/221711M620012_1/vitruvi-rest-scent-kit-4-x-5-ml.jpg',
+      brand: 'Vitruvi',
+      name: 'Rest Scent Kit, 4 x 5 mL',
+      price: 55,
+      tag: 'home',
     },
     {
       id: 20,
-       imgUrl:'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_1086,w_724/c_scale,h_480/f_auto,q_auto/222887F086003_1/brunello-cucinelli-taupe-felpa-lounge-pants.jpg',
-      brand: 'Brunello Cucinelli',
-      name: 'Taupe Felpa Lounge Pants',
-      price: 650,
-       tag:'clothing'
+      imgUrl:'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.3/221087M796000_1/baina-ssense-exclusive-green-and-off-white-checkered-towel.jpg',
+      brand: 'Baina',
+      name: 'SSENSE Exclusive Green & Off-White Checkered Towel',
+      price: 75,
+      tag: 'home',
     },
     {
       id: 21,
-       imgUrl:'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.3/222887F086003_1/brunello-cucinelli-taupe-felpa-lounge-pants.jpg',
-      brand: 'Brunello Cucinelli',
-      name: 'Beige Wool Beret',
-      price: 320,
-       tag:'clothing'
+      imgUrl:'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.3/221087M796001_1/baina-ssense-exclusive-green-and-off-white-checkered-hand-towel.jpg',
+      brand: 'Baina',
+      name: 'SSENSE Exclusive Green & Off-White Checkered Hand Towel',
+      price: 45,
+      tag: 'home',
     },
     {
       id: 22,
-       imgUrl:'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.3/222359F014003_1/the-row-black-cashmere-ayfer-beanie.jpg',
-      brand: 'The Row',
-      name: 'Black Cashmere Ayfer Beanie',
-      price: 700,
-       tag:'clothing'
+      imgUrl:'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.3/221525M610004_1/1882-ltd-white-flare-pitcher.jpg',
+      brand: '1882 Ltd.',
+      name: 'White Flare Pitcher',
+      price: 250,
+      tag: 'home',
     },
     {
       id: 23,
-       imgUrl:'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.3/221222F111019_1/selasi-ssense-exclusive-brown-ricky-tank-top.jpg',
-      brand: 'SELASI',
-      name: 'SSENSE Exclusive Brown Ricky Tank Top',
-      price: 325,
-       tag:'clothing'
+      imgUrl:'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.3/221711M620014_1/vitruvi-fresh-air-essential-oil-set.jpg',
+      brand: 'Vitruvi',
+      name: 'Fresh Air Essential Oil Set',
+      price: 50,
+      tag: 'home',
     },
     {
       id: 24,
-       imgUrl:'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.3/221482F109002_1/ami-alexandre-mattiussi-off-white-ami-de-coeur-shirt.jpg',
-      brand: 'AMI Alexandre Mattiussi',
-      name: 'Off-White Ami De Cœur Shirt',
-      price: 207,
-       tag:'clothing'
+      imgUrl:'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.3/221948M618001_1/wacko-maria-red-maria-candle.jpg',
+      brand: 'WACKO MARIA',
+      name: 'Red Maria Candle',
+      price: 105,
+      tag: 'home',
     },
     {
       id: 25,
-       imgUrl:'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.3/221325F093000_1/coperni-khaki-cotton-maxi-skirt.jpg',
-      brand: 'Coperni',
-      name: 'Khaki Cotton Maxi Skirt',
-      price: 445,
-       tag:'clothing'
+      imgUrl:'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.3/221413M690004_1/tiny-cottons-baby-blue-and-tan-pima-cotton-bodysuit.jpg',
+      brand: 'TINYCOTTONS',
+      name: 'Baby Blue & Tan Pima Cotton Bodysuit',
+      price: 40,
+      tag: 'kids',
     },
     {
       id: 26,
-       imgUrl:'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.3/221817F087001_1/and-wander-off-white-trek-2way-trousers.jpg',
-      brand: 'and wander',
-      name: 'Off-White Trek 2way Trousers',
-      price: 405,
-       tag:'clothing'
+      imgUrl:'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.3/221404M717000_1/versace-kids-pink-medusa-bag.jpg',
+      brand: 'Versace',
+      name: 'Kids Pink Medusa Bag',
+      price: 535,
+      tag: 'kids',
     },
     {
       id: 27,
-       imgUrl:'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.3/221817F087000_1/and-wander-black-trek-2way-trousers.jpg',
-      brand: 'and wander',
-      name: 'Black Trek 2way Trousers',
-      price: 405,
-       tag:'clothing'
+      imgUrl:'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.3/221975M713006_1/maed-for-mini-kids-orange-luxurious-leopard-bucket-hat.jpg',
+      brand: 'maed for mini',
+      name: 'Kids Orange Luxurious Leopard Bucket Hat',
+      price: 50,
+      tag: 'kids',
     },
     {
       id: 28,
-       imgUrl:'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.3/222731F086008_1/theopen-product-navy-cotton-lounge-pants.jpg',
-      brand: 'TheOpen Product',
-      name: 'Navy Cotton Lounge Pants',
-      price: 185,
-       tag:'clothing'
+      imgUrl:'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.3/221101M000055_1/charles-jeffrey-loverboy-ssense-exclusive-baby-multicolor-printed-romper.jpg',
+      brand: 'Charles Jeffrey Loverboy',
+      name: 'SSENSE Exclusive Baby Multicolor Printed Romper',
+      price: 80,
+      tag: 'kids',
     },
     {
       id: 29,
-       imgUrl:'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.3/221944F111006_1/constanca-entrudo-green-polyester-tank-top.jpg',
-      brand: 'Constança Entrudo',
-      name: 'Green Polyester Tank Top',
-      price: 410,
-       tag:'clothing'
+      imgUrl:'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.3/221404M702013_1/versace-kids-white-barocco-goddess-dress.jpg',
+      brand: 'Versace',
+      name: 'Kids White Barocco Goddess Dress',
+      price: 270,
+      tag: 'kids',
     },
     {
       id: 30,
-       imgUrl:'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.3/221944F111007_1/constanca-entrudo-orange-polyestertank-top.jpg',
-      brand: 'Constança Entrudo',
-      name: 'Orange PolyesterTank Top',
-      price: 410,
-       tag:'clothing'
+      imgUrl:'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.3/221413M705003_1/tiny-cottons-kids-yellow-flowers-bikini-set.jpg',
+      brand: 'TINYCOTTONS',
+      name: 'Kids Yellow Flowers Bikini Set',
+      price: 70,
+      tag: 'kids',
     },
     {
       id: 31,
-       imgUrl:'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.3/221254F023013_1/lanvin-multicolor-enamel-bead-necklace.jpg',
-      brand: "LANVIN",
-      name: "Multicolor Enamel Bead Necklace",
-      price: 785,
-      tag: "accessories"
+      imgUrl:'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.3/221413M704012_1/tiny-cottons-kids-orange-solid-jumpsuit.jpg',
+      brand: 'TINYCOTTONS',
+      name: 'Kids Orange Solid Jumpsuit',
+      price: 75,
+      tag: 'kids',
     },
     {
       id: 32,
-       imgUrl:'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.3/221648F023007_1/paloma-wool-beige-carla-ii-choker.jpg',
-      brand: "PALOMA Wool",
-      name: "Beige Carla II choker",
-      price: 100,
-      tag: "accessories"
+      imgUrl:'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.3/221404M721010_1/versace-kids-blue-royal-rebellion-denim-shorts.jpg',
+      brand: 'Versace',
+      name: 'Kids Blue Royal Rebellion Denim Shorts',
+      price: 335,
+      tag: 'kids',
     },
     {
       id: 33,
-       imgUrl:'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.3/221648F023010_1/paloma-wool-green-pelagia-ii-necklace.jpg',
-      brand:  "PALOMA Wool",
-      name: "Green Pelagia II Necklace",
-      price: 145,
-      tag: "accessories"
+      imgUrl:'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_1086,w_724/c_scale,h_480/f_auto,q_auto/212107M668007_1/see-scout-sleep-off-white-and-black-medium-nice-grill-standard-collar.jpg',
+      brand: 'See Scout Sleep',
+      name: 'Off-White & Black Medium Nice Grill Standard Collar',
+      price: 90,
+      tag: 'pets',
     },
     {
       id: 34,
-       imgUrl:'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.3/221254F020003_1/lanvin-multicolor-beads-cord-bracelet.jpg',
-      brand: "Lanvin",
-      name: "Multicolor Beads Cord Bracelet",
-      price: 555,
-      tag: "accessories"
+      imgUrl:'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.3/212107M668005_1/see-scout-sleep-off-white-and-black-extra-small-nice-grill-standard-collar.jpg',
+      brand: 'See Scout Sleep',
+      name: 'Off-White & Black Extra Small Nice Grill Standard Collar',
+      price: 70,
+      tag: 'pets',
     },
     {
       id: 35,
-       imgUrl:'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.3/222278F022008_1/givenchy-silver-g-zip-hoop-earrings.jpg',
-      brand: "Givenchy",
-      name:"Silver G Zip Hoop Earings",
-      price: 445,
-      tag: "accessories"
+      imgUrl:'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.3/212107M668015_1/see-scout-sleep-beige-and-off-white-extra-small-nice-grill-standard-collar.jpg',
+      brand: 'See Scout Sleep',
+      name: 'Beige & Off-White Extra Small Nice Grill Standard Collar',
+      price: 70,
+      tag: 'pets',
     },
     {
       id: 36,
-       imgUrl:'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.3/222605F022002_1/paco-rabanne-gold-and-blue-eight-nano-earrings.jpg',
-      brand: "PACO RABANNE",
-      name: "Gold & Blue Nano Earings",
-      price: 295,
-      tag: "accessories"
+      imgUrl:'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.3/212107M668017_1/see-scout-sleep-beige-and-off-white-medium-nice-grill-standard-collar.jpg',
+      brand: 'See Scout Sleep',
+      name: 'Beige & Off-White Medium Nice Grill Standard Collar',
+      price: 90,
+      tag: 'pets',
     },
     {
       id: 37,
-       imgUrl:'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.3/222129F004000_1/acne-studios-multicolor-aviator-glasses.jpg',
-      brand: "ACNE STUDIOS",
-      name: "Multicolor Aviator Glasses",
-      price: 255,
-      tag: "accessories"
+      imgUrl:'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.3/212107M668024_1/see-scout-sleep-black-the-scot-medium-original-harness.jpg',
+      brand: 'See Scout Sleep',
+      name: 'Black The Scot Medium Original Harness',
+      price: 93,
+      tag: 'pets',
     },
     {
       id: 38,
-       imgUrl:'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.3/222404F005001_1/versace-purple-medusa-biggie-sunglasses.jpg',
-      brand:"VERSACE",
-      name: "Purple Medusa Biggie Sunglasses",
-      price: 315,
-      tag: "accessories"
+      imgUrl:'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.3/221567M668000_1/canem-studio-black-ash-classic-collar.jpg',
+      brand: 'Canem Studio',
+      name: 'Black Ash Classic Collar',
+      price: 98,
+      tag: 'pets',
     },
-            {
-            id: 39,
-             imgUrl:'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.3/221169F049000_1/bode-brown-board-game-tote.jpg',
-            brand: "Bode",
-            name: "Brown Board Game Tote",
-            price:  1790,
-            tag: "bag"
-          },
-          {
-              id: 40,
-               imgUrl:'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.3/222359F045000_1/the-row-black-90s-baguette-shoulder-bag.jpg',
-              brand: "The Row",
-              name: "Black 90's Baguette Shoulder Bag",
-              price:  1030,
-              tag: "bag"
-          },
-          {
-              id: 41,
-               imgUrl:'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.3/222359F046000_1/the-row-black-e-w-top-handle-bag.jpg',
-              brand: "The Row",
-              name: "Black E/W Top Handle Bag",
-              price:  3280,
-              tag: "bag"
-          },
-          {
-              id: 42,
-               imgUrl:'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.3/222359F045003_1/the-row-brown-xl-bourse-pouch.jpg',
-              brand: "The Row",
-              name: "Brown XL Bourse Pouch",
-              price:  1030,
-              tag: "bag"
-          },
-          {
-              id: 43,
-               imgUrl:'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.3/222359F048001_1/the-row-off-white-emy-bag.jpg',
-              brand: "The Row",
-              name:"Off-White Emy Bag",
-              price:  1405,
-              tag: "bag"
-          },
-          {
-              id: 44,
-               imgUrl:'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.3/222359F048007_1/the-row-black-terrasse-shoulder-bag.jpg',
-              brand: "The Row",
-              name: "Black Terrasse Shoulder Bag",
-              price:  2655,
-              tag: "bag"
-          },
-          {
-              id:45,
-               imgUrl:'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.3/222359F048008_1/the-row-black-90s-baguette-shoulder-bag.jpg',
-              brand: "The Row",
-              name: "Black 90's Baguette Shoulder Bag",
-              price:  1030,
-              tag: "bag"
-          },
-          {
-              id: 46,
-               imgUrl:'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.3/222359F048006_1/the-row-black-small-slouchy-banana-bag.jpg',
-              brand: "The Row",
-            name: "Black Small Slouchy Banana Bag",
-            price: 2145,
-            tag: "bag"
-          },
-           {
+    {
+      id: 39,
+      imgUrl:'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.3/221567M668001_1/canem-studio-black-ash-classic-collar.jpg',
+      brand: 'Canem Studio',
+      name: 'Black Ash Classic Collar',
+      price: 98,
+      tag: 'pets',
+    },
+    {
+      id: 40,
+      imgUrl:'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.3/221567M668002_1/canem-studio-black-lillunn-edition-classic-cut-dog-collar.jpg',
+      brand: 'Canem Studio',
+      name: 'Black Lillunn Edition Classic Cut Dog Collar',
+      price: 98,
+      tag: 'pets',
+    },
+    {
+      id: 41,
+      imgUrl:'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.3/222168M645002_1/maison-margiela-black-phone-pouch.jpg',
+      brand: 'Maison Margiela',
+      name: 'Black Phone Pouch',
+      price: 400,
+      tag: 'technology',
+    },
+    {
+      id: 42,
+      imgUrl:'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.3/222168M645004_1/maison-margiela-black-neck-phone-pouch.jpg',
+      brand: 'Maison Margiela',
+      name: 'Black Neck Phone Pouch',
+      price: 350,
+      tag: 'technology',
+    },
+    {
+      id: 43,
+      imgUrl:'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.3/222168M645003_1/maison-margiela-beige-neck-phone-pouch.jpg',
+      brand: 'Maison Margiela',
+      name: 'Beige Neck Phone Pouch',
+      price: 350,
+      tag: 'technology',
+    },
+    {
+      id: 44,
+      imgUrl:'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.3/221377M643014_1/teenage-engineering-orange-off-white-edition-ob-4-speaker.jpg',
+      brand: 'Teenage Engineering',
+      name: 'Orange Off-Whiteâ„¢ Edition OB-4 Speaker',
+      price: 2215,
+      tag: 'technology',
+    },
+    {
+      id: 45,
+      imgUrl:'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.3/212334M642000_1/denon-brown-ah-d9200-headphones.jpg',
+      brand: 'Denon',
+      name: 'Brown AH-D9200 Headphones',
+      price: 1995,
+      tag: 'technology',
+    },
+    {
+      id: 46,
+      imgUrl:'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.3/221389M645020_1/maison-kitsune-brown-stamp-logo-strap-iphone-12-12-pro-case.jpg',
+      brand: 'Maison KitsunÃ©',
+      name: 'Brown Stamp Logo Strap iPhone 12/12 Pro Case',
+      price: 85,
+      tag: 'technology',
+    },
+    {
       id: 47,
-       imgUrl:'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.3/222359F128004_1/the-row-beige-fairy-low-top-sneakers.jpg',
-      brand: 'The Row',
-      name: 'Beige Fairy Low-Top Sneakers',
-      price: 1055,
-      tag: 'shoes',
+      imgUrl:'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.3/221389M645023_1/maison-kitsune-big-fox-head-aqua-iphone-12-12-pro-case.jpg',
+      brand: 'Maison KitsunÃ©',
+      name: 'Big Fox Head Aqua iPhone 12/12 Pro Case',
+      price: 55,
+      tag: 'technology',
     },
     {
       id: 48,
-       imgUrl:'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.3/222359F118000_1/the-row-black-leather-ballerina-flats.jpg',
-      brand: 'The Row',
-      name: 'Black Leather Ballerina Flats',
-      price: 855,
-      tag: 'shoes',
+      imgUrl:'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.3/221389M615000_1/maison-kitsune-beige-cafe-kitsune-laptop-pouch.jpg',
+      brand: 'Maison KitsunÃ©',
+      name: 'Beige \'CafÃ© KitsunÃ©\' Laptop Pouch',
+      price: 55,
+      tag: 'technology',
     },
-    {
-      id: 49,
-       imgUrl:'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.3/222359F118009_1/the-row-black-ava-ballerina-flats.jpg',
-      brand: 'The Row',
-      name: 'Black Ava Ballerina Flats',
-      price: 855,
-      tag: 'shoes',
-    },
-    {
-      id: 50,
-       imgUrl:'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.3/222359F113001_1/the-row-beige-zipped-i-ankle-boots.jpg',
-      brand: 'The Row',
-      name: 'Beige Zipped I Ankle Boots',
-      price: 1620,
-      tag: 'shoes',
-    },
-    {
-      id: 51,
-       imgUrl:'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.3/222359F128001_1/the-row-white-marie-h-low-top-sneakers.jpg',
-      brand: 'The Row',
-      name: 'White Marie H Low-Top Sneakers',
-      price: 855,
-      tag: 'shoes',
-    },
-    {
-      id: 52,
-       imgUrl:'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.3/222359F124006_1/the-row-black-hook-and-loop-flat-sandals.jpg',
-      brand: 'The Row',
-      name: 'Black Hook And Loop Flat Sandals',
-      price: 1075,
-      tag: 'shoes',
-    },
-    {
-      id: 53,
-       imgUrl:'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.3/222278F113004_1/givenchy-black-g-cube-ankle-boots.jpg',
-      brand: 'Givenchy',
-      name: 'Black G Cube Ankle Boots',
-      price: 1065,
-      tag: 'shoes',
-    },
-    {
-      id: 54,
-       imgUrl:'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.3/222278F113005_1/givenchy-white-g-cube-ankle-boots.jpg',
-      brand: 'Givenchy',
-      name: 'White G Cube Ankle Boots',
-      price: 1055,
-      tag: 'shoes',
-    },
-   
   ];
 
 
+  // this is all for middle part
 
-// let womensArr=JSON.parse(localStorage.getItem("womensInfo")) || [];
 
-display(womensData);
 
-function display(womensData) {
+// let everyArr=JSON.parse(localStorage.getItem("everyInfo")) || [];
+
+display(everyData);
+
+function display(everyData) {
 
     document.querySelector("#box2").innerHTML="";
 
-  womensData.forEach(function (elem) {
+  everyData.forEach(function (elem) {
     let box = document.createElement("div");
     box.setAttribute("id","box");
     box.addEventListener("click",function(){
@@ -501,24 +455,33 @@ function display(womensData) {
   h2_1.setAttribute("id","all");
 
   let s1 = document.createElement("span");
-  s1.innerText = "ACCESSORIES";
-  s1.setAttribute("id","accessories");
+  s1.innerText = "ACTIVITY";
+  s1.setAttribute("id","activity")
 
   let s2 = document.createElement("span");
-  s2.innerText = "BAGS";
+  s2.innerText = "HOME";
+  s2.setAttribute("id","home")
 
-  s2.setAttribute("id","bags")
 
   let s3 = document.createElement("span");
-  s3.innerText = "CLOTHING";
-  s3.setAttribute("id","clothing")
+  s3.innerText = "KIDS";
+  s3.setAttribute("id","kids")
 
-  
+
   let s4 = document.createElement("span");
-  s4.innerText = "SHOES";
-  s4.setAttribute("id","shoes");
+  s4.innerText = "PETS";
+  s4.setAttribute("id","pets")
 
-  leftdiv2.append(h2_1, s1, s2, s3, s4);
+  let s55 = document.createElement("span");
+  s55.innerText = "SELF-CARE";
+  s55.setAttribute("id","selfcare")
+
+  let s66 = document.createElement("span");
+  s66.innerText = "TECHNOLOGY";
+  s66.setAttribute("id","technology")
+
+
+  leftdiv2.append(h2_1, s1, s2, s3, s4,s55,s66);
 
   let h2_2 = document.createElement("h2");
   h2_2.innerText = "ALL DESIGNERS";
@@ -2576,97 +2539,109 @@ document.querySelector("#low2high").addEventListener("click",sortPrice1);
 document.querySelector("#high2low").addEventListener("click",sortPrice2);
 
 function sortPrice1(){
-    womensData.sort(function(a,b){
+    everyData.sort(function(a,b){
         if(a.price>b.price) return 1;
         if(a.price<b.price) return -1;
         return 0;
     });
 
    
-    display(womensData);
+    display(everyData);
    
 }
 
 function sortPrice2(){
-    womensData.sort(function(a,b){
+    everyData.sort(function(a,b){
         if(a.price<b.price) return 1;
         if(a.price>b.price) return -1;
         return 0;
     });
    
-    display(womensData);
+    display(everyData);
     
 }
 
 
 function preview(elem){
-let womensArr=[];
-    womensArr.push(elem);
+let everyArr=[];
+    everyArr.push(elem);
     // let parr=[];
     // parr.push(elem);
-    localStorage.setItem("womensInfo",JSON.stringify(womensArr));
+    localStorage.setItem("everyInfo",JSON.stringify(everyArr));
     window.location.href="preview.html";
 }
+
 
 document.querySelector("#all").addEventListener("click",allfun);
 function allfun(){
   window.location.reload();
 };
 
-document.querySelector("#bags").addEventListener("click",bagsfun);
+document.querySelector("#selfcare").addEventListener("click",selfcarefun);
 
-function bagsfun(){
-
-  let filteredbags=womensData.filter(function(elem){
-
+function selfcarefun(){
+  let filteredselfcare=everyData.filter(function(elem){
     
-    return elem.tag=="bag";
+      return elem.tag=="selfcare";
 })
 
-display(filteredbags);
+display(filteredselfcare);
 }
 
-document.querySelector("#clothing").addEventListener("click",clothingfun);
+document.querySelector("#activity").addEventListener("click",activityfun);
 
-function clothingfun(){
-
-  let filteredclothing=womensData.filter(function(elem){
-
+function activityfun(){
+  let filteredactivity=everyData.filter(function(elem){
     
-    return elem.tag=="clothing";
+    return elem.tag=="activity";
 })
 
-display(filteredclothing);
+display(filteredactivity);
 }
 
-document.querySelector("#shoes").addEventListener("click",shoesfun);
+document.querySelector("#home").addEventListener("click",homefun);
 
-function shoesfun(){
-
-  let filteredshoes=womensData.filter(function(elem){
-
+function homefun(){
+  let filteredhome=everyData.filter(function(elem){
     
-    return elem.tag=="shoes";
+    return elem.tag=="home";
 })
 
-display(filteredshoes);
+display(filteredhome);
 }
 
-document.querySelector("#accessories").addEventListener("click",accessoriesfun);
+document.querySelector("#kids").addEventListener("click",kidsfun);
 
-function accessoriesfun(){
-
-  let filteredaccessories=womensData.filter(function(elem){
-
+function kidsfun(){
+  let filteredkids=everyData.filter(function(elem){
     
-    return elem.tag=="accessories";
+    return elem.tag=="kids";
 })
 
-display(filteredaccessories);
+display(filteredkids);
 }
 
+document.querySelector("#pets").addEventListener("click",petsfun);
 
+function petsfun(){
+  let filteredpets=everyData.filter(function(elem){
+    
+    return elem.tag=="pets";
+})
 
+display(filteredpets);
+}
+
+document.querySelector("#technology").addEventListener("click",technologyfun);
+
+function technologyfun(){
+  let filteredtechnology=everyData.filter(function(elem){
+    
+    return elem.tag=="technology";
+})
+
+display(filteredtechnology);
+}
 
 
 
@@ -2674,35 +2649,28 @@ document.querySelector("#low2high2").addEventListener("click",sortPrice12);
 document.querySelector("#high2low2").addEventListener("click",sortPrice22);
 
 function sortPrice12(){
-
-    womensData.sort(function(a,b){
-
+    everyData.sort(function(a,b){
         if(a.price>b.price) return 1;
         if(a.price<b.price) return -1;
         return 0;
     });
 
-
-    display(womensData);
-
+   
+    display(everyData);
    
 }
 
 function sortPrice22(){
-
-    womensData.sort(function(a,b){
-
+    everyData.sort(function(a,b){
         if(a.price<b.price) return 1;
         if(a.price>b.price) return -1;
         return 0;
     });
    
-
-    display(womensData);
-
-
+    display(everyData);
     
 }
+
 
 
 
@@ -2711,58 +2679,71 @@ function allfun2(){
   window.location.reload();
 };
 
-document.querySelector("#bags2").addEventListener("click",bagsfun2);
+document.querySelector("#selfcare2").addEventListener("click",selfcarefun2);
 
-function bagsfun2(){
-
-  let filteredbags=womensData.filter(function(elem){
-
+function selfcarefun2(){
+  let filteredselfcare=everyData.filter(function(elem){
     
-    return elem.tag=="bag";
+      return elem.tag=="selfcare";
 })
 
-display(filteredbags);
+display(filteredselfcare);
 }
 
-document.querySelector("#clothing2").addEventListener("click",clothingfun2);
+document.querySelector("#activity2").addEventListener("click",activityfun2);
 
-function clothingfun2(){
-
-  let filteredclothing=womensData.filter(function(elem){
-
+function activityfun2(){
+  let filteredactivity=everyData.filter(function(elem){
     
-    return elem.tag=="clothing";
+    return elem.tag=="activity";
 })
 
-display(filteredclothing);
+display(filteredactivity);
 }
 
-document.querySelector("#shoes2").addEventListener("click",shoesfun2);
+document.querySelector("#home2").addEventListener("click",homefun2);
 
-function shoesfun2(){
-
-  let filteredshoes=womensData.filter(function(elem){
-
+function homefun2(){
+  let filteredhome=everyData.filter(function(elem){
     
-    return elem.tag=="shoes";
+    return elem.tag=="home";
 })
 
-display(filteredshoes);
+display(filteredhome);
 }
 
-document.querySelector("#accessories2").addEventListener("click",accessoriesfun2);
+document.querySelector("#kids2").addEventListener("click",kidsfun2);
 
-function accessoriesfun2(){
-
-  let filteredaccessories=womensData.filter(function(elem){
-
+function kidsfun2(){
+  let filteredkids=everyData.filter(function(elem){
     
-    return elem.tag=="accessories";
+    return elem.tag=="kids";
 })
 
-display(filteredaccessories);
+display(filteredkids);
 }
 
+document.querySelector("#pets2").addEventListener("click",petsfun2);
+
+function petsfun2(){
+  let filteredpets=everyData.filter(function(elem){
+    
+    return elem.tag=="pets";
+})
+
+display(filteredpets);
+}
+
+document.querySelector("#technology2").addEventListener("click",technologyfun2);
+
+function technologyfun2(){
+  let filteredtechnology=everyData.filter(function(elem){
+    
+    return elem.tag=="technology";
+})
+
+display(filteredtechnology);
+}
 
 // javascript functionalaty
 
