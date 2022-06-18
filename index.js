@@ -34,10 +34,33 @@ function searchFunction(){
     window.location.href = ""
 }
 
+//event listener for account check input when big screen
+
+document.querySelector("#bigScreen").addEventListener("click", chkAccount);
+
+function chkAccount(){
+    let currentEmail = JSON.parse(localStorage.getItem("currentEmail")) || "";
+    console.log(currentEmail);
+    if(currentEmail == "") {
+        window.location.replace("./login&SignupPage/login.html");
+    }
+    else {
+        window.location.replace("./login&SignupPage/accountDetails.html");
+    }
+}
+
+
 // EventListener for accountLogo
 document.querySelector("#accountLogo").addEventListener("click", accountFunction);
 function accountFunction(){
-    window.location.href = ""
+    let currentEmail = JSON.parse(localStorage.getItem("currentEmail")) || "";
+    // console.log(currentEmail);
+    if(currentEmail == "") {
+        window.location.replace("./login&SignupPage/login.html");
+    }
+    else {
+        window.location.replace("./login&SignupPage/accountDetails.html");
+    }
 }
 
 // EventListener for shopping bag
@@ -55,4 +78,7 @@ function brandLogoFunction(){
 
 // for showing the count
 let previewDataFromLs = JSON.parse(localStorage.getItem("bagdata"))
+if(previewDataFromLs == null) {
+    previewDataFromLs = [];
+}
 document.querySelector("#countShow").innerText = "("+previewDataFromLs.length+")";
