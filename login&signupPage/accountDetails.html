@@ -1,5 +1,3 @@
-<!-- //payment page for men and women carted items -->
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -7,8 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Checkout</title>
-    <link rel="stylesheet" href="checkout.css">
+    <title>Account Details | SSENSE</title>
+    <link rel="stylesheet" href="accountDetails.css">
 </head>
 
 <body>
@@ -71,115 +69,51 @@
             </div>
         </div>
     </div>
-    <!-- Navbar End -->
-    <div id="secondDiv">
-        <div id="paymentBag">
-            <p>Checkout</p>
-            <div id="shopping">
-                <div>
-                    <p>Shipping Address</p>
-                    <hr>
-                </div>
-                <div>
-                    <div>
-                        <p>First Name</p>
-                        <p>Last Name</p>
-                    </div>
-                    <div>
-                        <input type="text" id="firstName">
-                        <input type="text" id="lastName">
-                    </div>
-                    <div>
-                        <p>Street Address</p>
-                        <p>Company(Optional)</p>
-                    </div>
-                    <div>
-                        <input type="text" id="address">
-                        <input type="text" id="company">
-                    </div>
-                    <div>
-                        <p>City</p>
-                        <p>ZIP or Postal Code</p>
-                    </div>
-                    <div>
-                        <input type="text" id="city">
-                        <input type="text" id="zipCode">
-                    </div>
-                    <div>
-                        <p>Country/Region</p>
-                        <p>State/Province</p>
-                    </div>
-                    <div>
-                        <input type="text" id="country">
-                        <input type="text" id="state">
-                    </div>
-                    <div>
-                        <p>Phone</p>
-                    </div>
-                    <div>
-                        <input type="number" id="phoneNumber">
-                    </div>
-                </div>
-            </div>
-            <div id="shipping">
-                <p>SHIPPINNG METHOD</p>
-                <hr>
-                <input type="radio" id="shippingCharge"><span>$40.00 | 6 - 8 days | Express</span>
-            </div>
-            <div id="payment">
-                <p>PAYMENT METHOD</p>
-                <hr>
-                <input type="radio"><span>Pay with credit or debit card</span>
-                <input type="radio"><span>Pay with Paypal</span>
-                <input type="radio"><span>Pay with Alipay</span>
-            </div>
-            <div id="cardDetails">
-                <p>CARD DETAILS</p>
-                <hr>
-                <div>
-                    <p>Card number</p>
-                    <p>Expiration date</p>
-                </div>
-                <div>
-                    <input id="cNumber" type="number" maxlength="16" placeholder="1234 1234 1234 1234">
-                    <input id="month" type="month" placeholder="MM / YY">
-                </div> 
-                <div id="cardHolder">
-                    <p>Cardholder's name</p>
-                    <p>Security code</p>
-                </div>
-                <div>
-                    <input type="text">
-                    <input type="password" placeholder="CVC">
-                </div>
-            </div>
-            <div id="bill">
-                <p>BILLING ADDRESS</p>
-                <hr>
-                <input type="radio" id="square"> <span>Same as Shipping Addres</span>
+    <div id="accDetails">
+        <div id="box1">
+            <h1 id="child">Account</h1>
+            <div id="child2">
+                <p>Account Details</p>
+                <p>Email Preferences</p>
+                <p>Order History</p>
+                <p>Appointments</p>
+                <p>Addresses</p>
+                <p>Logout</p>
             </div>
         </div>
-        <div id="order">
-            <div>
-                <p>ORDER SUMMARY</p>
-                <hr>
-            </div>
-            <div id="products"></div>
-            <div>
-                <p>
-                    COUNTRY/REGION: INDIA/USE
-                </p>
-                <hr>
-            </div>
-            <div id="subTotal"></div>
-            <hr>
-            <div id="placeOrder">
-
-            </div>
+        <div id="box2">
+            <form>
+                <p id="edit">Edit your preferences below</p>
+                <p id="acc1">Account Information</p>
+                <br>
+                <label for="firstName">First Name</label>
+                <br>
+                <input id="firstName" type="text">
+                <br>
+                <label for="lastName">Last Name</label>
+                <br>
+                <input id="lastName" type="text">
+                <br>
+                <label> Email Address</label>
+                <br>
+                <input id="email" type="email">
+                <br>
+                <p>Account Password</p>
+                <br>
+                <label for="oldPassword">Old Password</label>
+                <br>
+                <input id="oldPassword" type="password" name="oldPassword">
+                <br>
+                <label for="newPassword">New Password</label>
+                <br>
+                <input id="newPassword" type="password" name="newPassword">
+                <br>
+                <input type="submit" value="SAVE CHANGES">
+            </form>
         </div>
     </div>
 </body>
 
 </html>
 
-<script src="checkout.js"></script>
+<script src="account.js"></script>
