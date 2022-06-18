@@ -20,7 +20,7 @@
     margin-top:100px;
 }
 
-#paymentBag p,
+#paymentBag p, #order p,
 #paymentBag span {
     margin-top: 2%;
     color: gray;

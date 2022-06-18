@@ -1,7 +1,7 @@
 //for payment.html
 let shippingArray = [];
-document.querySelector("#order").style.display = "grid";
-document.querySelector("#order").style.gridTemplateColumns = "0.7fr 2fr"
+document.querySelector("#products").style.display = "grid";
+document.querySelector("#products").style.gridTemplateColumns = "0.7fr 2fr"
 
 let fetchData = JSON.parse(localStorage.getItem("bagdata"));
 let totalPrice = JSON.parse(localStorage.getItem("priceTotal"));
@@ -31,7 +31,7 @@ fetchData.forEach(function (elem, index) {
 
     divA.append(itemImage);
     divB.append(name, price);
-    document.querySelector("#order").append(divA, divB);
+    document.querySelector("#products").append(divA, divB);
 })
 document.querySelector("#subTotal").style.display = "grid";
 document.querySelector("#subTotal").style.gridTemplateColumns = "3fr 1fr";
@@ -57,12 +57,12 @@ document.querySelector("#subTotal").append(sTotal, svalue, tItems, tItemsValue, 
 
 let oTotal = document.createElement("span");
 oTotal.innerText = "Order total(USE)";
-oTotal.style.marginRight = "50%"
+oTotal.style.marginRight = "45%"
 
 let oValue = document.createElement("span");
 oValue.innerText = "$" + eval(totalPrice + 40);
 
-//this will redirect it to the payment final page
+//this button will redirect it to the payment final page
 let btn = document.createElement("button");
 btn.innerText = "PLACE ORDER";
 btn.style.color = "white";
@@ -75,6 +75,8 @@ btn.style.cursor = "pointer";
 
 document.querySelector("#placeOrder").append(oTotal, oValue);
 document.querySelector("#placeOrder").append(btn);
+document.querySelector("#placeOrder").style.fontSize = "12px";
+document.querySelector("#placeOrder").style.fontFamily = "sans-serif";
 
 // to catch the details submitted on the page-->
 btn.addEventListener("click", toOTP);
