@@ -1,5 +1,7 @@
 let previewDataFromLs = JSON.parse(localStorage.getItem("bagdata")) || [];
 
+let wishDatafromLs = JSON.parse(localStorage.getItem("wishdata")) || [];
+
 let subTotal = JSON.parse(localStorage.getItem("priceTotal"));
 
 displayDiv(previewDataFromLs);
@@ -27,7 +29,10 @@ function displayDiv(previewDataFromLs){
         para3.innerText= "Size : "+el.size;
         // enter wishlish event listener
         let para4 = document.createElement("p");
-        para4.innerText= "Move to Wishlist"
+        para4.innerText= "Move to Wishlist";
+        para4.addEventListener("click", function () {
+           moveToWishlist(el,index);
+        });
 
         boxOfDiv1.append(para1, para2, para3, para4);
         div1.append(imgTage, boxOfDiv1);
@@ -64,6 +69,16 @@ function displayDiv(previewDataFromLs){
 function deleteData(index) {
     previewDataFromLs.splice(index, 1);
     localStorage.setItem("bagdata", JSON.stringify(previewDataFromLs));
+    window.location.reload();
+}
+
+//move to item from bag to wish list
+
+function moveToWishlist(el,index){
+    previewDataFromLs.splice(index, 1);
+    localStorage.setItem("bagdata", JSON.stringify(previewDataFromLs));
+    wishDatafromLs.push(el);
+    localStorage.setItem("wishdata", JSON.stringify(wishDatafromLs));
     window.location.reload();
 }
 
