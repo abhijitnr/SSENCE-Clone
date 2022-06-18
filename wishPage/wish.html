@@ -5,11 +5,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign Up | SSENSE</title>
-    <link rel="stylesheet" href="stylesheet.css">
+    <title>SSENCE | Wishlist</title>
+
+    <link rel="stylesheet" href="wish.css">
+
 </head>
 
 <body>
+    <!-- Navabar Section -->
     <div id="navbar">
         <!-- for left sides of navbar -->
         <div id="leftPage">
@@ -56,7 +59,7 @@
             <div>
                 <p>english</p>
                 <p>account</p>
-                <p><a href="../wishPage/wish.html">whishlist</a></p>
+                <p><a href="wish.html">whishlist</a></p>
                 <p><a href="../cartPage/bag.html">shopping bag <span id="countShow">(0)</span></a></p>
             </div>
 
@@ -70,50 +73,23 @@
         </div>
     </div>
     <!-- Navbar End -->
-    <div id="signup">
-        <p>LOGIN OR CREATE ACCOUNT</p>
-        <form>
-            <label for="Email Address">Email Address</label>
-            <br>
-            <input type="email" id="email">
-            <br>
-            <label for="Password">Password</label>
-            <br>
-            <input type="password" id="password">
-            <br>
-            <p>Sign up for updates and promotions</p>
-            <br>
-            <div>
-                <div>
-                    <input type="radio" id="men" value="MEN'S"><label for="men">MEN'S</label>
-                </div>
-                <div>
-                    <input type="radio" id="women" value="WOMEN'S"><label for="men">WOMEN'S</label>
-                </div>
-                <div>
-                    <input type="radio" id="no" value="NO THANKS"><label for="men">NO THANKS</label>
-                </div>
-            </div>
-            <br>
-            <input onclick="window.location.href='index.html'" type="submit" value="CREATE AN ACCOUNT">
-            <br>
-            <input type="button" onclick="window.location.href='index.html'" id="back" value="BACK">
-            <br>
-        </form>
-        <p>
-            When you create an SSENSE account, we collect your email and other personal data to enhance your shopping
-            experience and, subject to your agreement, to provide you with exclusive email updates, promotions and
-            notifications. We may also use third party search engines and social media platforms to deliver our updates,
-            promotions and notifications to you.
-        </p>
-        <p>
-            You may unsubscribe at any time.
-        </p>
-        <p>
-            To find out more, please visit our <a href="https://www.ssense.com/en-in/privacy-policy">Privacy Policy.</a>
-        </p>
+
+    <div id="mainContainer">
+
+        <div id="aboutWish">
+            <p>WISHLIST</p>
+            <p>Use this page to manage the items you have added to your wishlist. Items saved can be removed or added to
+                your Shopping Bag for purchase.</p>
+        </div>
+
+        <div id="container">
+            <!-- Append Wishlist data here -->
+        </div>
+
     </div>
+
 </body>
 
 </html>
-<script src="signup.js"></script>
+
+<script src="wish.js"></script>

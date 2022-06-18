@@ -1,21 +1,21 @@
-let previewDataFromLs = JSON.parse(localStorage.getItem("bagdata")) || [];
+let previewDataFromLs = JSON.parse(localStorage.getItem("wishdata")) || [];
 
+let previewData = JSON.parse(localStorage.getItem("bagdata")) || [];
 let subTotal = JSON.parse(localStorage.getItem("priceTotal"));
 
 displayDiv(previewDataFromLs);
 
 function displayDiv(previewDataFromLs){
 
-    let totalPrice = 0;
     previewDataFromLs.forEach(function (el, index) {
         
         let childDiv = document.createElement("div");
 
-        let  div1 = document.createElement("div");
+        //imgae tag
         let imgTage = document.createElement("img");
         imgTage.setAttribute("src", el.imgUrl);
-        
-        let boxOfDiv1 = document.createElement("div");
+
+        let paraDiv = document.createElement("div");
         // enter brand element
         let para1 = document.createElement("p");
         para1.innerText= el.brand
@@ -25,56 +25,51 @@ function displayDiv(previewDataFromLs){
         // enter size element
         let para3 = document.createElement("p");
         para3.innerText= "Size : "+el.size;
-        // enter wishlish event listener
+        //enter price element
         let para4 = document.createElement("p");
-        para4.innerText= "Move to Wishlist"
-
-        boxOfDiv1.append(para1, para2, para3, para4);
-        div1.append(imgTage, boxOfDiv1);
-
-        let  div2 = document.createElement("div");
-        // enter price element
+        para4.innerText= "$"+el.price+" USD";
+        // enter wishlish event listener
         let para5 = document.createElement("p");
-        para5.innerText= "$"+el.price+" USD";
+        para5.innerText= "ADD TO BAG"
+
+        para5.addEventListener("click",function(){
+            addtobag(el,index);
+        })
         // enter remove event listner
         let para6 = document.createElement("p");
-        para6.innerText= "Remove"
+        para6.innerText= "X Remove"
         para6.addEventListener("click", function () {
             deleteData(index);
         });
-           
 
-        div2.append(para5, para6)
-
-        childDiv.append(div1,div2)
-        document.querySelector("#appendItem").append(childDiv);
-
-
-        //For Total Price
-        totalPrice += +el.price;
-        localStorage.setItem("priceTotal", JSON.stringify(totalPrice))
-        document.querySelector("#priceAppend").innerText = "$"+totalPrice+" USD";
-        document.querySelector("#finalPrice").innerText = "$"+totalPrice+" USD";
-
-        document.querySelector("#countShow").innerText = "("+previewDataFromLs.length+")";
+        paraDiv.append(para1, para2, para3, para4);
+        childDiv.append(imgTage,paraDiv,para5,para6);
+        document.querySelector("#container").append(childDiv);
     });
 }
 
 //For remove particular index
 function deleteData(index) {
     previewDataFromLs.splice(index, 1);
-    localStorage.setItem("bagdata", JSON.stringify(previewDataFromLs));
+    localStorage.setItem("wishdata", JSON.stringify(previewDataFromLs));
+    window.location.reload();
+}
+
+//Add to bag from wishlists page
+function addtobag(el,index){
+    previewData.push(el)
+    previewDataFromLs.splice(index, 1);
+    localStorage.setItem("wishdata", JSON.stringify(previewDataFromLs));
+    localStorage.setItem("bagdata",JSON.stringify(previewData));
     window.location.reload();
 }
 
 
-document.querySelector("#proceed").addEventListener("click", goToPaymentPage);
+// document.querySelector("#proceed").addEventListener("click", goToPaymentPage);
 
-function goToPaymentPage() {
-    window.location.href = "../login&signupPage/checkoutPage.html"
-}
-let currentEmail = JSON.parse(localStorage.getItem("currentEmail"));
-document.querySelector("#email").innerText = currentEmail;
+// function goToPaymentPage() {
+//     window.location.href = "../login&signupPage/checkoutPage.html"
+// }
 
 // javascript functionalaty
 
@@ -117,7 +112,7 @@ function accountFunction(){
 // EventListener for shopping bag
 document.querySelector("#shoppingLogo").addEventListener("click", shoppingFunction);
 function shoppingFunction(){
-    window.location.href = "bag.html"
+    window.location.href = "../cartPage/bag.html"
 }
 
 
@@ -126,3 +121,7 @@ document.querySelector("#brandLogo").addEventListener("click", brandLogoFunction
 function brandLogoFunction(){
     window.location.href = "../index.html"
 }
+
+//For shiiping item count
+let bagData = JSON.parse(localStorage.getItem("bagdata"));
+document.querySelector("#countShow").innerText = "("+bagData.length+")";
