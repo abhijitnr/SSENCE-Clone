@@ -1,498 +1,450 @@
-// this is all for middle part
+let womensData=[
+    {
+      id: 1,
+       imgUrl:'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.3/222381F099003_1/thom-browne-off-white-wool-turtleneck.jpg',
+      brand: 'Thom Browne',
+      name: 'Off-White Wool Turtleneck',
+      price: 940,
+      tag:'clothing'
+    },
+    {
+      id: 2,
+       imgUrl:'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.3/222381F107001_1/thom-browne-white-cotton-blouse.jpg',
+      brand: 'Thom Browne',
+      name: 'White Cotton Blouse',
+      price: 485,
+       tag:'clothing'
+    },
+    {
+      id: 3,
+       imgUrl:'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.3/222381F096004_1/thom-browne-navy-4-bar-sweater.jpg',
+      brand: 'Thom Browne',
+      name: 'Navy 4-Bar Sweater',
+      price: 810,
+       tag:'clothing'
+    },
+    {
+      id: 4,
+       imgUrl:'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.3/222381F110000_1/thom-browne-navy-cotton-t-shirt.jpg',
+      brand: 'Thom Browne',
+      name: 'Navy Cotton T-Shirt',
+      price: 260,
+       tag:'clothing'
+    },
+    {
+      id: 5,
+       imgUrl:'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.3/222381F110001_1/thom-browne-gray-cotton-t-shirt.jpg',
+      brand: 'Thom Browne',
+      name: 'Gray Cotton T-Shirt',
+      price: 260,
+       tag:'clothing'
+    },
+    {
+      id: 6,
+       imgUrl:'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.3/222381F014000_1/thom-browne-gray-cashmere-4-bar-beanie.jpg',
+      brand: 'Thom Browne',
+      name: 'Gray Cashmere 4-Bar Beanie',
+      price: 295,
+       tag:'clothing'
+    },
+    {
+      id: 7,
+       imgUrl:'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.3/222381F014001_1/thom-browne-gray-cashmere-4-bar-beanie.jpg',
+      brand: 'Thom Browne',
+      name: 'Gray Cashmere 4-Bar Beanie',
+      price: 295,
+       tag:'clothing'
+    },
+    {
+      id: 8,
+       imgUrl:'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.3/222381F087000_1/thom-browne-navy-4-bar-trousers.jpg',
+      brand: 'Thom Browne',
+      name: 'Navy 4-Bar Trousers',
+      price: 1100,
+       tag:'clothing'
+    },
+    {
+      id: 9,
+       imgUrl:'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.3/221342F086008_1/balenciaga-taupe-cotton-lounge-pants.jpg',
+      brand: 'Balenciaga',
+      name: 'Taupe Cotton Lounge Pants',
+      price: 710,
+       tag:'clothing'
+    },
+    {
+      id: 10,
+       imgUrl:'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.3/222129F110004_1/acne-studios-black-organic-cotton-t-shirt.jpg',
+      brand: 'Acne Studios',
+      name: 'Black Organic Cotton T-Shirt',
+      price: 115,
+       tag:'clothing'
+    },
+    {
+      id: 11,
+       imgUrl:'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.3/222129F108001_1/acne-studios-blue-organic-cotton-polo.jpg',
+      brand: 'Acne Studios',
+      name: 'Blue Organic Cotton Polo',
+      price: 225,
+       tag:'clothing'
+    },
+    {
+      id: 12,
+       imgUrl:'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.3/222129F110003_1/acne-studios-pink-organic-cotton-t-shirt.jpg',
+      brand: 'Acne Studios',
+      name: 'Pink Organic Cotton T-Shirt',
+      price: 115,
+       tag:'clothing'
+    },
+    {
+      id: 13,
+       imgUrl:'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.3/222129F110002_1/acne-studios-grey-organic-cotton-t-shirt.jpg',
+      brand: 'Acne Studios',
+      name: 'Grey Organic Cotton T-Shirt',
+      price: 115,
+       tag:'clothing'
+    },
+    {
+      id: 14,
+       imgUrl:'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.3/222129F110022_1/acne-studios-beige-organic-cotton-t-shirt.jpg',
+      brand: 'Acne Studios',
+      name: 'Beige Organic Cotton T-Shirt',
+      price: 125,
+       tag:'clothing'
+    },
+    {
+      id: 15,
+       imgUrl:'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.3/222129F110017_1/acne-studios-multicolor-organic-cotton-t-shirt.jpg',
+      brand: 'Acne Studios',
+      name: 'Multicolor Organic Cotton T-Shirt',
+      price: 265,
+       tag:'clothing'
+    },
+    {
+      id: 16,
+       imgUrl:'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.3/222129F014007_1/acne-studios-blue-wool-beanie.jpg',
+      brand: 'Acne Studios',
+      name: 'Blue Wool Beanie',
+      price: 140,
+       tag:'clothing'
+    },
+    {
+      id: 17,
+       imgUrl:'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.3/222887F096000_1/brunello-cucinelli-brown-linen-sweater.jpg',
+      brand: 'Brunello Cucinelli',
+      name: 'Brown Linen Sweater',
+      price: 960,
+       tag:'clothing'
+    },
+    {
+      id: 18,
+       imgUrl:'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.3/222887F096001_1/brunello-cucinelli-beige-mohair-sweater.jpg',
+      brand: 'Brunello Cucinelli',
+      name: 'Beige Mohair Sweater',
+      price: 1250,
+       tag:'clothing'
+    },
+    {
+      id: 19,
+       imgUrl:'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.3/222887F100002_1/brunello-cucinelli-beige-mohair-vest.jpg',
+      brand: 'Brunello Cucinelli',
+      name: 'Beige Mohair Vest',
+      price: 860,
+       tag:'clothing'
+    },
+    {
+      id: 20,
+       imgUrl:'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_1086,w_724/c_scale,h_480/f_auto,q_auto/222887F086003_1/brunello-cucinelli-taupe-felpa-lounge-pants.jpg',
+      brand: 'Brunello Cucinelli',
+      name: 'Taupe Felpa Lounge Pants',
+      price: 650,
+       tag:'clothing'
+    },
+    {
+      id: 21,
+       imgUrl:'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.3/222887F086003_1/brunello-cucinelli-taupe-felpa-lounge-pants.jpg',
+      brand: 'Brunello Cucinelli',
+      name: 'Beige Wool Beret',
+      price: 320,
+       tag:'clothing'
+    },
+    {
+      id: 22,
+       imgUrl:'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.3/222359F014003_1/the-row-black-cashmere-ayfer-beanie.jpg',
+      brand: 'The Row',
+      name: 'Black Cashmere Ayfer Beanie',
+      price: 700,
+       tag:'clothing'
+    },
+    {
+      id: 23,
+       imgUrl:'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.3/221222F111019_1/selasi-ssense-exclusive-brown-ricky-tank-top.jpg',
+      brand: 'SELASI',
+      name: 'SSENSE Exclusive Brown Ricky Tank Top',
+      price: 325,
+       tag:'clothing'
+    },
+    {
+      id: 24,
+       imgUrl:'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.3/221482F109002_1/ami-alexandre-mattiussi-off-white-ami-de-coeur-shirt.jpg',
+      brand: 'AMI Alexandre Mattiussi',
+      name: 'Off-White Ami De Cœur Shirt',
+      price: 207,
+       tag:'clothing'
+    },
+    {
+      id: 25,
+       imgUrl:'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.3/221325F093000_1/coperni-khaki-cotton-maxi-skirt.jpg',
+      brand: 'Coperni',
+      name: 'Khaki Cotton Maxi Skirt',
+      price: 445,
+       tag:'clothing'
+    },
+    {
+      id: 26,
+       imgUrl:'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.3/221817F087001_1/and-wander-off-white-trek-2way-trousers.jpg',
+      brand: 'and wander',
+      name: 'Off-White Trek 2way Trousers',
+      price: 405,
+       tag:'clothing'
+    },
+    {
+      id: 27,
+       imgUrl:'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.3/221817F087000_1/and-wander-black-trek-2way-trousers.jpg',
+      brand: 'and wander',
+      name: 'Black Trek 2way Trousers',
+      price: 405,
+       tag:'clothing'
+    },
+    {
+      id: 28,
+       imgUrl:'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.3/222731F086008_1/theopen-product-navy-cotton-lounge-pants.jpg',
+      brand: 'TheOpen Product',
+      name: 'Navy Cotton Lounge Pants',
+      price: 185,
+       tag:'clothing'
+    },
+    {
+      id: 29,
+       imgUrl:'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.3/221944F111006_1/constanca-entrudo-green-polyester-tank-top.jpg',
+      brand: 'Constança Entrudo',
+      name: 'Green Polyester Tank Top',
+      price: 410,
+       tag:'clothing'
+    },
+    {
+      id: 30,
+       imgUrl:'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.3/221944F111007_1/constanca-entrudo-orange-polyestertank-top.jpg',
+      brand: 'Constança Entrudo',
+      name: 'Orange PolyesterTank Top',
+      price: 410,
+       tag:'clothing'
+    },
+    {
+      id: 31,
+       imgUrl:'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.3/221254F023013_1/lanvin-multicolor-enamel-bead-necklace.jpg',
+      brand: "LANVIN",
+      name: "Multicolor Enamel Bead Necklace",
+      price: 785,
+      tag: "accessories"
+    },
+    {
+      id: 32,
+       imgUrl:'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.3/221648F023007_1/paloma-wool-beige-carla-ii-choker.jpg',
+      brand: "PALOMA Wool",
+      name: "Beige Carla II choker",
+      price: 100,
+      tag: "accessories"
+    },
+    {
+      id: 33,
+       imgUrl:'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.3/221648F023010_1/paloma-wool-green-pelagia-ii-necklace.jpg',
+      brand:  "PALOMA Wool",
+      name: "Green Pelagia II Necklace",
+      price: 145,
+      tag: "accessories"
+    },
+    {
+      id: 34,
+       imgUrl:'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.3/221254F020003_1/lanvin-multicolor-beads-cord-bracelet.jpg',
+      brand: "Lanvin",
+      name: "Multicolor Beads Cord Bracelet",
+      price: 555,
+      tag: "accessories"
+    },
+    {
+      id: 35,
+       imgUrl:'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.3/222278F022008_1/givenchy-silver-g-zip-hoop-earrings.jpg',
+      brand: "Givenchy",
+      name:"Silver G Zip Hoop Earings",
+      price: 445,
+      tag: "accessories"
+    },
+    {
+      id: 36,
+       imgUrl:'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.3/222605F022002_1/paco-rabanne-gold-and-blue-eight-nano-earrings.jpg',
+      brand: "PACO RABANNE",
+      name: "Gold & Blue Nano Earings",
+      price: 295,
+      tag: "accessories"
+    },
+    {
+      id: 37,
+       imgUrl:'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.3/222129F004000_1/acne-studios-multicolor-aviator-glasses.jpg',
+      brand: "ACNE STUDIOS",
+      name: "Multicolor Aviator Glasses",
+      price: 255,
+      tag: "accessories"
+    },
+    {
+      id: 38,
+       imgUrl:'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.3/222404F005001_1/versace-purple-medusa-biggie-sunglasses.jpg',
+      brand:"VERSACE",
+      name: "Purple Medusa Biggie Sunglasses",
+      price: 315,
+      tag: "accessories"
+    },
+            {
+            id: 39,
+             imgUrl:'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.3/221169F049000_1/bode-brown-board-game-tote.jpg',
+            brand: "Bode",
+            name: "Brown Board Game Tote",
+            price:  1790,
+            tag: "bag"
+          },
+          {
+              id: 40,
+               imgUrl:'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.3/222359F045000_1/the-row-black-90s-baguette-shoulder-bag.jpg',
+              brand: "The Row",
+              name: "Black 90's Baguette Shoulder Bag",
+              price:  1030,
+              tag: "bag"
+          },
+          {
+              id: 41,
+               imgUrl:'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.3/222359F046000_1/the-row-black-e-w-top-handle-bag.jpg',
+              brand: "The Row",
+              name: "Black E/W Top Handle Bag",
+              price:  3280,
+              tag: "bag"
+          },
+          {
+              id: 42,
+               imgUrl:'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.3/222359F045003_1/the-row-brown-xl-bourse-pouch.jpg',
+              brand: "The Row",
+              name: "Brown XL Bourse Pouch",
+              price:  1030,
+              tag: "bag"
+          },
+          {
+              id: 43,
+               imgUrl:'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.3/222359F048001_1/the-row-off-white-emy-bag.jpg',
+              brand: "The Row",
+              name:"Off-White Emy Bag",
+              price:  1405,
+              tag: "bag"
+          },
+          {
+              id: 44,
+               imgUrl:'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.3/222359F048007_1/the-row-black-terrasse-shoulder-bag.jpg',
+              brand: "The Row",
+              name: "Black Terrasse Shoulder Bag",
+              price:  2655,
+              tag: "bag"
+          },
+          {
+              id:45,
+               imgUrl:'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.3/222359F048008_1/the-row-black-90s-baguette-shoulder-bag.jpg',
+              brand: "The Row",
+              name: "Black 90's Baguette Shoulder Bag",
+              price:  1030,
+              tag: "bag"
+          },
+          {
+              id: 46,
+               imgUrl:'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.3/222359F048006_1/the-row-black-small-slouchy-banana-bag.jpg',
+              brand: "The Row",
+            name: "Black Small Slouchy Banana Bag",
+            price: 2145,
+            tag: "bag"
+          },
+           {
+      id: 47,
+       imgUrl:'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.3/222359F128004_1/the-row-beige-fairy-low-top-sneakers.jpg',
+      brand: 'The Row',
+      name: 'Beige Fairy Low-Top Sneakers',
+      price: 1055,
+      tag: 'shoes',
+    },
+    {
+      id: 48,
+       imgUrl:'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.3/222359F118000_1/the-row-black-leather-ballerina-flats.jpg',
+      brand: 'The Row',
+      name: 'Black Leather Ballerina Flats',
+      price: 855,
+      tag: 'shoes',
+    },
+    {
+      id: 49,
+       imgUrl:'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.3/222359F118009_1/the-row-black-ava-ballerina-flats.jpg',
+      brand: 'The Row',
+      name: 'Black Ava Ballerina Flats',
+      price: 855,
+      tag: 'shoes',
+    },
+    {
+      id: 50,
+       imgUrl:'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.3/222359F113001_1/the-row-beige-zipped-i-ankle-boots.jpg',
+      brand: 'The Row',
+      name: 'Beige Zipped I Ankle Boots',
+      price: 1620,
+      tag: 'shoes',
+    },
+    {
+      id: 51,
+       imgUrl:'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.3/222359F128001_1/the-row-white-marie-h-low-top-sneakers.jpg',
+      brand: 'The Row',
+      name: 'White Marie H Low-Top Sneakers',
+      price: 855,
+      tag: 'shoes',
+    },
+    {
+      id: 52,
+       imgUrl:'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.3/222359F124006_1/the-row-black-hook-and-loop-flat-sandals.jpg',
+      brand: 'The Row',
+      name: 'Black Hook And Loop Flat Sandals',
+      price: 1075,
+      tag: 'shoes',
+    },
+    {
+      id: 53,
+       imgUrl:'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.3/222278F113004_1/givenchy-black-g-cube-ankle-boots.jpg',
+      brand: 'Givenchy',
+      name: 'Black G Cube Ankle Boots',
+      price: 1065,
+      tag: 'shoes',
+    },
+    {
+      id: 54,
+       imgUrl:'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.3/222278F113005_1/givenchy-white-g-cube-ankle-boots.jpg',
+      brand: 'Givenchy',
+      name: 'White G Cube Ankle Boots',
+      price: 1055,
+      tag: 'shoes',
+    },
+   
+  ];
 
-let mensData = [
-  {
-    id: 1,
-    imgUrl:
-      "https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_320/f_auto,dpr_1.3/221249M140004_1/jil-sander-green-cotton-bucket-hat.jpg ",
-    brand: "Jil Sander",
-    name: "Green Cotton Bucket Hat",
-    price: 440,
-    tag:"clothing",
-  },
-  {
-    id: 2,
-    imgUrl:
-      "https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_320/f_auto,dpr_1.3/221353M191007_1/stussy-black-cotton-trousers.jpg ",
-    brand: "Stüssy",
-    name: "Black Cotton Trousers",
-    price: 145,
-    tag:"clothing",
-  },
-  {
-    id: 3,
-    imgUrl:
-      " https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_320/f_auto,dpr_1.3/221843M186002_1/032c-blue-destroyed-jeans.jpg",
-    brand: "032c",
-    name: "Blue Destroyed Jeans",
-    price: 370,
-    tag:"clothing",
-  },
-  {
-    id: 4,
-    imgUrl:
-      "https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_320/f_auto,dpr_1.3/221843M186001_1/032c-blue-the-032c-jeans.jpg ",
-    brand: "032c",
-    name: "Blue 'The 032c' Jeans",
-    price: 210,
-    tag:"clothing",
-  },
-  {
-    id: 5,
-    imgUrl:
-      " https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_320/f_auto,dpr_1.3/222776M186001_1/alyx-black-blackmeans-edition-jeans.jpg",
-    brand: "1017 ALYX 9SM",
-    name: "Black Blackmeans Edition Jeans",
-    price: 760,
-    tag:"clothing",
-  },
-  {
-    id: 6,
-    imgUrl:
-      "https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_320/f_auto,dpr_1.3/222259M195002_1/alexander-mcqueen-white-viscose-blazer.jpg ",
-    brand: "Alexander McQueen",
-    name: "White Viscose Blazer",
-    price: 3245,
-    tag:"clothing",
-  },
-  {
-    id: 7,
-    imgUrl:
-      " https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_320/f_auto,dpr_1.3/222259M195001_1/alexander-mcqueen-pink-wool-blazer.jpg",
-    brand: "Alexander McQueen",
-    name: "Pink Wool Blazer",
-    price: 2490,
-    tag:"clothing",
-  },
-  {
-    id: 8,
-    imgUrl:
-      "https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_320/f_auto,dpr_1.3/222259M180000_1/alexander-mcqueen-white-workwear-denim-jacket.jpg ",
-    brand: "Alexander McQueen",
-    name: "White Workwear Denim Jacket",
-    price: 1570,
-    tag:"clothing",
-  },
-  {
-    id: 9,
-    imgUrl:
-      " https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_320/f_auto,dpr_1.3/222259M180001_1/alexander-mcqueen-black-polyester-jacket.jpg",
-    brand: "Alexander McQueen",
-    name: "Black Polyester Jacket",
-    price: 1100,
-    tag:"clothing",
-  },
-  {
-    id: 10,
-    imgUrl:
-      " https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_320/f_auto,dpr_1.3/222259M204000_1/alexander-mcqueen-white-cotton-sweatshirt.jpg",
-    brand: "Alexander McQueen",
-    name: "White Cotton Sweatshirt",
-    price: 590,
-    tag:"clothing",
-  },
-  {
-    id: 11,
-    imgUrl:
-      " https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_320/f_auto,dpr_1.3/222259M192009_1/alexander-mcqueen-blue-cotton-shirt.jpg",
-    brand: "Alexander McQueen",
-    name: "Blue Cotton Shirt",
-    price: 1410,
-    tag:"clothing",
-  },
-  {
-    id: 12,
-    imgUrl:
-      "https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_320/f_auto,dpr_1.3/222259M192018_1/alexander-mcqueen-blue-graffiti-harness-shirt.jpg ",
-    brand: "Alexander McQueen",
-    name: "Blue Graffiti Harness Shirt",
-    price: 640,
-    tag:"clothing",
-  },
-  {
-    id: 13,
-    imgUrl:
-      " https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_320/f_auto,dpr_1.3/222259M192001_1/alexander-mcqueen-white-cotton-shirt.jpg",
-    brand: "Alexander McQueen",
-    name: "White Cotton Shirt",
-    price: 850,
-    tag:"clothing",
-  },
-  {
-    id: 14,
-    imgUrl:
-      "https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_320/f_auto,dpr_1.3/222259M186002_1/alexander-mcqueen-white-printed-jeans.jpg",
-    brand: "Alexander McQueen",
-    name: "White Printed Jeans",
-    price: 870,
-    tag:"clothing",
-  },
-  {
-    id: 15,
-    imgUrl:
-      "https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_320/f_auto,dpr_1.3/222259M191004_1/alexander-mcqueen-navy-recycled-polyester-cargo-pants.jpg",
-    brand: "Alexander McQueen",
-    name: "Navy Recycled Polyester Cargo Pants",
-    price: 1345,
-    tag:"clothing",
-  },
-  {
-    id: 16,
-    imgUrl:
-      "https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_320/f_auto,dpr_1.3/222259M193002_1/alexander-mcqueen-navy-selvedge-shorts.jpg",
-    brand: "Alexander McQueen",
-    name: "Navy Selvedge Shorts",
-    price: 590,
-    tag:"clothing",
-  },
-  {
-    id: 17,
-    imgUrl:
-      "https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_320/f_auto,dpr_1.3/221891M212000_1/a-cold-wall-gray-nylon-polo.jpg",
-    brand: "A-COLD-WALL*",
-    name: "Gray Nylon Polo",
-    price: 355,
-    tag:"clothing",
-  },
-  {
-    id: 18,
-    imgUrl:
-      "https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_320/f_auto,dpr_1.3/221417M214048_1/dion-lee-navy-harness-back-tank-top.jpg",
-    brand: "Dion Lee",
-    name: "Navy Harness Back Tank Top",
-    price: 265,
-    tag:"clothing",
-  },
-  {
-    id: 19,
-    imgUrl:
-      "https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_320/f_auto,dpr_1.3/222841M180006_1/dime-black-hooded-denim-jacket.jpg",
-    brand: "Dime",
-    name: "Black Hooded Denim Jacket",
-    price: 170,
-    tag:"clothing",
-  },
-  {
-    id: 20,
-    imgUrl:
-      "https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_320/f_auto,dpr_1.3/222841M180004_1/dime-off-white-and-blue-cotton-jacket.jpg",
-    brand: "Dime",
-    name: "Off-White & Blue Cotton Jacket",
-    price: 155,
-    tag:"clothing",
-  },
-  {
-    id: 21,
-    imgUrl:
-      "https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_320/f_auto,dpr_1.3/222841M202012_1/dime-blue-cotton-hoodie.jpg",
-    brand: "Dime",
-    name: "Blue Cotton Hoodie",
-    price: 140,
-    tag:"clothing",
-  },
-  {
-    id: 22,
-    imgUrl:
-      "https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_320/f_auto,dpr_1.3/222841M202013_1/dime-gray-cotton-hoodie.jpg",
-    brand: "Dime",
-    name: "Gray Cotton Hoodie",
-    price: 140,
-    tag:"clothing",
-  },
-  {
-    id: 23,
-    imgUrl:
-      "https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_320/f_auto,dpr_1.3/222841M202015_1/dime-gray-cotton-hoodie.jpg",
-    brand: "Dime",
-    name: "Gray Cotton Hoodie",
-    price: 140,
-    tag:"clothing",
-  },
-  {
-    id: 24,
-    imgUrl:
-      "https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_320/f_auto,dpr_1.3/222841M202017_1/dime-black-bmf-hoodie.jpg",
-    brand: "Dime",
-    name: "Black BMF Hoodie",
-    price: 140,
-    tag:"clothing",
-  },
-  {
-    id: 25,
-    imgUrl:
-      "https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_320/f_auto,dpr_1.3/222841M204012_1/dime-gray-cotton-sweatshirt.jpg",
-    brand: "Dime",
-    name: "Gray Cotton Sweatshirt",
-    price: 130,
-    tag:"clothing",
-  },
-  {
-    id: 26,
-    imgUrl:
-      "https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_320/f_auto,dpr_1.3/222841M213018_1/dime-green-cotton-long-sleeve-t-shirt.jpg",
-    brand: "Dime",
-    name: "Green Cotton Long Sleeve T-Shirt",
-    price: 100,
-    tag:"clothing",
-  },
-  {
-    id: 27,
-    imgUrl:
-      "https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_320/f_auto,dpr_1.3/222841M180005_1/dime-black-cotton-jacket.jpg",
-    brand: "Dime",
-    name: "Black Cotton Jacket",
-    price: 155,
-    tag:"clothing",
-  },
-  {
-    id: 28,
-    imgUrl:
-      "https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_320/f_auto,dpr_1.3/222841M192002_1/dime-off-white-cotton-shirt.jpg",
-    brand: "Dime",
-    name: "Off-White Cotton Shirt",
-    price: 140,
-    tag:"clothing",
-  },
-  {
-    id: 29,
-    imgUrl:
-      "https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_320/f_auto,dpr_1.3/222841M192003_1/dime-black-cotton-shirt.jpg",
-    brand: "Dime",
-    name: "Black Cotton Shirt",
-    price: 140,
-    tag:"clothing",
-  },
-  {
-    id: 30,
-    imgUrl:
-      "https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_320/f_auto,dpr_1.3/222841M213028_1/dime-orange-cotton-t-shirt.jpg",
-    brand: "Dime",
-    name: "Orange Cotton T-Shirt",
-    price: 50,
-    tag:"clothing",
-  },
-  {
-    id: 31,
-    imgUrl:
-      "https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.3/222841M188004_1/dime-green-cotton-cargo-pants.jpg",
-    brand: "Dime",
-    name: "Green Cotton Cargo Pants",
-    price: 165,
-    tag:"clothing",
-  },
-  {
-    id: 32,
-    imgUrl:
-      "https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.3/222841M193005_1/dime-black-and-gray-polyester-shorts.jpg",
-    brand: "Dime",
-    name: "Black & Gray Polyster Shorts",
-    price: 115,
-    tag:"clothing",
-  },
-  {
-    id: 33,
-    imgUrl:'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.3/221828M166003_1/stone-island-burgundy-roll-top-backpack.jpg',
-    brand: 'Stone Island',
-    name: 'Burgundy Roll Top Backpack',
-    price: 490,
-    tag: 'bag',
-  },
-  {
-    id: 34,
-    imgUrl:'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.3/221828M166005_1/stone-island-navy-roll-top-backpack.jpg',
-    brand: 'Stone Island',
-    name: 'Navy Roll Top Backpack',
-    price: 490,
-    tag: 'bag',
-  },
-  {
-    id: 35,
-    imgUrl:'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.3/221828M166005_1/stone-island-navy-roll-top-backpack.jpg',
-    brand: 'Stone Island',
-    name: 'Black Roll Top Backpack',
-    price: 490,
-    tag: 'bag',
-  },
-  {
-    id: 36,
-    imgUrl:'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.3/221828M166007_1/stone-island-green-roll-top-backpack.jpg',
-    brand: 'Stone Island',
-    name: 'Green Roll Top Backpack',
-    price: 490,
-    tag: 'bag',
-  },
-  {
-    id: 37,
-    imgUrl:'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.3/221001M166020_1/diesel-white-farb-backpack.jpg',
-    brand: 'Diesel',
-    name: 'White Farb Backpack',
-    price: 145,
-    tag: 'bag',
-  },
-  {
-    id: 38,
-    imgUrl:'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.3/222387M166010_1/kenzo-black-canvas-kampus-tiger-backpack.jpg',
-    brand: 'Kenzo',
-    name: 'Black Canvas Kampus Tiger Backpack',
-    price: 285,
-    tag: 'bag',
-  },
-  {
-    id: 39,
-    imgUrl:'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.3/222387M166012_1/kenzo-black-mini-kampus-tiger-backpack.jpg',
-    brand: 'Kenzo',
-    name: 'Black Mini Kampus Tiger Backpack',
-    price: 230,
-    tag: 'bag',
-  },
-  {
-    id: 40,
-    imgUrl:'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.3/222387M171010_1/kenzo-black-small-kampus-tiger-pouch.jpg',
-    brand: 'Kenzo',
-    name: 'Black Small Kampus Tiger Pouch',
-    price: 195,
-    tag: 'bag',
-  },
- 
-  {
-    id: 41,
-    imgUrl: 'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.3/222129M138026_1/acne-studios-black-wool-beanie.jpg',
-    brand: 'Acne Studios',
-    name: 'Black Wool Beanie',
-    price: 145,
-    tag: 'accessories',
-  },
-  {
-    id: 42,
-    imgUrl: 'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.3/222807M139001_1/valentino-garavani-black-baseball-cap.jpg',
-    brand: 'Valentino Garavani',
-    name: 'Black Baseball Cap',
-    price: 450,
-    tag: 'accessories',
-  },
-  {
-    id: 43,
-    imgUrl: 'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.3/222111M138002_1/moncler-black-wool-beanie.jpg',
-    brand: 'Moncler',
-    name: 'Black Wool Beanie',
-    price: 315,
-    tag: 'accessories',
-  },
-  {
-    id: 44,
-    imgUrl: 'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.3/221379M139001_1/marni-orange-denim-bucket-hat.jpg',
-    brand: 'Marni',
-    name: 'Orange Denim Bucket Hat',
-    price: 385,
-    tag: 'accessories',
-  },
-  {
-    id: 45,
-    imgUrl: 'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.3/222745M139000_1/online-ceramics-green-good-deed-cap.jpg',
-    brand: 'Online Ceramics',
-    name: 'Green \'Good Deed\' Cap',
-    price: 45,
-    tag: 'accessories',
-  },
-  {
-    id: 46,
-    imgUrl: 'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.3/222745M139001_1/online-ceramics-black-its-ok-cap.jpg',
-    brand: 'Online Ceramics',
-    name: 'Black \'It\'s Ok\' Cap',
-    price: 45,
-    tag: 'accessories',
-  },
-  {
-    id: 47,
-    imgUrl: 'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.3/221769M165002_1/frandeacutedandeacuterique-constant-silver-classics-index-automatic-watch.jpg',
-    brand: 'Frederique Constant',
-    name: 'Silver Classics Index Automatic Watch',
-    price: 1465,
-    tag: 'accessories',
-  },
-  {
-    id: 48,
-    imgUrl: 'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.3/222503M145004_1/dear-letterman-silver-damaati-necklace.jpg',
-    brand: 'Dear Letterman',
-    name: 'Silver Damaati Necklace',
-    price: 155,
-    tag: 'accessories',
-  },
-  {
-    id: 49,
-    imgUrl: 'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.3/221451M231009_1/gucci-black-wislet-loafers.jpg',
-    brand: 'Gucci',
-    name: 'Black Wislet Loafers',
-    price: 815,
-    tag: 'shoes',
-  },
-  {
-    id: 50,
-    imgUrl: 'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.3/221891M236000_1/a-cold-wall-gray-roa-edition-andreas-boots.jpg',
-    brand: 'A-COLD-WALL*',
-    name: 'Gray ROA Edition Andreas Boots',
-    price: 535,
-    tag: 'shoes',
-  },
-  {
-    id: 51,
-    imgUrl: 'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.3/221891M236002_1/a-cold-wall-black-roa-edition-andreas-lace-up-boots.jpg',
-    brand: 'A-COLD-WALL*',
-    name: 'Black ROA Edition Andreas Lace-Up Boots',
-    price: 535,
-    tag: 'shoes',
-  },
-  {
-    id: 52,
-    imgUrl: 'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.3/222807M237052_1/valentino-garavani-white-one-stud-sneakers.jpg',
-    brand: 'Valentino Garavani',
-    name: 'White One Stud Sneakers',
-    price: 775,
-    tag: 'shoes',
-  },
-  {
-    id: 53,
-    imgUrl: 'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.3/221249M234007_1/jil-sander-black-nabuk-sandals.jpg',
-    brand: 'Jil Sander',
-    name: 'Black Nabuk Sandals',
-    price: 680,
-    tag: 'shoes',
-  },
-  {
-    id: 54,
-    imgUrl: 'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.3/222387M237008_1/kenzo-black-tiger-k-skate-sneakers.jpg',
-    brand: 'Kenzo',
-    name: 'Black Tiger K-Skate Sneakers',
-    price: 245,
-    tag: 'shoes',
-  },
-  {
-    id: 55,
-    imgUrl: 'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.3/222387M237010_1/kenzo-white-tiger-k-skate-sneakers.jpg',
-    brand: 'Kenzo',
-    name: 'White Tiger K-Skate Sneakers',
-    price: 245,
-    tag: 'shoes',
-  },
-  {
-    id: 56,
-    imgUrl: 'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_706,w_470/c_scale,h_280/f_auto,dpr_1.3/222381M225000_1/thom-browne-black-longwing-brogue-oxfords.jpg',
-    brand: 'Thom Browne',
-    name: 'Black Longwing Brogue Oxfords',
-    price: 970,
-    tag: 'shoes',
-  },
-];
 
-// let mensArr=JSON.parse(localStorage.getItem("mensInfo")) || [];
 
-display(mensData);
+// let womensArr=JSON.parse(localStorage.getItem("womensInfo")) || [];
 
-function display(mensData) {
+display(womensData);
+
+function display(womensData) {
 
     document.querySelector("#box2").innerHTML="";
 
-  mensData.forEach(function (elem) {
+  womensData.forEach(function (elem) {
     let box = document.createElement("div");
     box.setAttribute("id","box");
     box.addEventListener("click",function(){
@@ -554,12 +506,14 @@ function display(mensData) {
 
   let s2 = document.createElement("span");
   s2.innerText = "BAGS";
-  s2.setAttribute("id","bags");
+
+  s2.setAttribute("id","bags")
 
   let s3 = document.createElement("span");
   s3.innerText = "CLOTHING";
-  s3.setAttribute("id","clothing");
+  s3.setAttribute("id","clothing")
 
+  
   let s4 = document.createElement("span");
   s4.innerText = "SHOES";
   s4.setAttribute("id","shoes");
@@ -2622,38 +2576,37 @@ document.querySelector("#low2high").addEventListener("click",sortPrice1);
 document.querySelector("#high2low").addEventListener("click",sortPrice2);
 
 function sortPrice1(){
-    mensData.sort(function(a,b){
+    womensData.sort(function(a,b){
         if(a.price>b.price) return 1;
         if(a.price<b.price) return -1;
         return 0;
     });
 
    
-    display(mensData);
+    display(womensData);
    
 }
 
 function sortPrice2(){
-    mensData.sort(function(a,b){
+    womensData.sort(function(a,b){
         if(a.price<b.price) return 1;
         if(a.price>b.price) return -1;
         return 0;
     });
    
-    display(mensData);
+    display(womensData);
     
 }
 
 
 function preview(elem){
-let mensArr=[];
-    mensArr.push(elem);
+let womensArr=[];
+    womensArr.push(elem);
     // let parr=[];
     // parr.push(elem);
-    localStorage.setItem("mensInfo",JSON.stringify(mensArr));
+    localStorage.setItem("womensInfo",JSON.stringify(womensArr));
     window.location.href="preview.html";
 }
-
 
 document.querySelector("#all").addEventListener("click",allfun);
 function allfun(){
@@ -2663,7 +2616,9 @@ function allfun(){
 document.querySelector("#bags").addEventListener("click",bagsfun);
 
 function bagsfun(){
-  let filteredbags=mensData.filter(function(elem){
+
+  let filteredbags=womensData.filter(function(elem){
+
     
     return elem.tag=="bag";
 })
@@ -2674,7 +2629,9 @@ display(filteredbags);
 document.querySelector("#clothing").addEventListener("click",clothingfun);
 
 function clothingfun(){
-  let filteredclothing=mensData.filter(function(elem){
+
+  let filteredclothing=womensData.filter(function(elem){
+
     
     return elem.tag=="clothing";
 })
@@ -2685,7 +2642,9 @@ display(filteredclothing);
 document.querySelector("#shoes").addEventListener("click",shoesfun);
 
 function shoesfun(){
-  let filteredshoes=mensData.filter(function(elem){
+
+  let filteredshoes=womensData.filter(function(elem){
+
     
     return elem.tag=="shoes";
 })
@@ -2696,7 +2655,9 @@ display(filteredshoes);
 document.querySelector("#accessories").addEventListener("click",accessoriesfun);
 
 function accessoriesfun(){
-  let filteredaccessories=mensData.filter(function(elem){
+
+  let filteredaccessories=womensData.filter(function(elem){
+
     
     return elem.tag=="accessories";
 })
@@ -2706,29 +2667,40 @@ display(filteredaccessories);
 
 
 
+
+
+
 document.querySelector("#low2high2").addEventListener("click",sortPrice12);
 document.querySelector("#high2low2").addEventListener("click",sortPrice22);
 
 function sortPrice12(){
-    mensData.sort(function(a,b){
+
+    womensData.sort(function(a,b){
+
         if(a.price>b.price) return 1;
         if(a.price<b.price) return -1;
         return 0;
     });
 
-   
-    display(mensData);
+
+    display(womensData);
+
    
 }
 
 function sortPrice22(){
-    mensData.sort(function(a,b){
+
+    womensData.sort(function(a,b){
+
         if(a.price<b.price) return 1;
         if(a.price>b.price) return -1;
         return 0;
     });
    
-    display(mensData);
+
+    display(womensData);
+
+
     
 }
 
@@ -2742,7 +2714,9 @@ function allfun2(){
 document.querySelector("#bags2").addEventListener("click",bagsfun2);
 
 function bagsfun2(){
-  let filteredbags=mensData.filter(function(elem){
+
+  let filteredbags=womensData.filter(function(elem){
+
     
     return elem.tag=="bag";
 })
@@ -2753,7 +2727,9 @@ display(filteredbags);
 document.querySelector("#clothing2").addEventListener("click",clothingfun2);
 
 function clothingfun2(){
-  let filteredclothing=mensData.filter(function(elem){
+
+  let filteredclothing=womensData.filter(function(elem){
+
     
     return elem.tag=="clothing";
 })
@@ -2764,7 +2740,9 @@ display(filteredclothing);
 document.querySelector("#shoes2").addEventListener("click",shoesfun2);
 
 function shoesfun2(){
-  let filteredshoes=mensData.filter(function(elem){
+
+  let filteredshoes=womensData.filter(function(elem){
+
     
     return elem.tag=="shoes";
 })
@@ -2775,7 +2753,9 @@ display(filteredshoes);
 document.querySelector("#accessories2").addEventListener("click",accessoriesfun2);
 
 function accessoriesfun2(){
-  let filteredaccessories=mensData.filter(function(elem){
+
+  let filteredaccessories=womensData.filter(function(elem){
+
     
     return elem.tag=="accessories";
 })

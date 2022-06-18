@@ -1,0 +1,529 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+#maincontainer{
+    width: 100%;
+    margin-top: 65px;
+}
+
+#container{
+    /* border: 1px solid red; */
+    display: flex;
+    /* width: 100%; */
+    padding: 0px 55px 0px 55px;
+}
+#container>div:nth-child(1){
+    /* border: 1px solid blue; */
+    width: 17%;
+    /* height: 500px; */
+}
+#container>div:nth-child(2){
+    /* border: 1px solid red; */
+    width: 66%;
+    /* height: 500px; */
+}
+#container>div:nth-child(3){
+    /* border: 1px solid blue; */
+    width: 17%;
+    /* height: 500px; */
+}
+#box2{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: auto;
+    gap:15px;
+    height: 100%;
+}
+#box2 div{
+    margin-bottom: -2px;
+}
+#box2>div>div:nth-child(2){
+    text-transform: uppercase;
+}
+#box3>div,#box3>span{
+    padding-left: 125px;
+}
+img{
+    width: 100%;
+}
+
+span{
+    display: block;
+    cursor: pointer;
+}
+span:hover{
+    text-decoration: underline;
+}
+h2{
+    font-weight: bold;
+    cursor: pointer;
+}
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    line-height: 1.36;
+    letter-spacing: 0.09px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    color: #000;
+}
+#productbar{
+    display: none;
+}
+
+
+@media all and (min-width:991px) and (max-width:1200px){
+
+    #box2{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: auto;
+       
+    }
+    #box3>div,#box3>span{
+        padding-left: 0px;
+    }
+}
+
+@media all and (min-width:575px) and (max-width:991px) {
+
+    #container{
+        /* border: 1px solid red; */
+        display: flex;
+        /* width: 100%; */
+        padding: 0px 31px 0px 31px;
+    }
+    #box2 {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto;
+        
+    }
+    #box3>div,#box3>span{
+        padding-left: 0px;
+    }
+
+    
+    #box1,#box3{
+        display: none;
+    }
+    #container>div:nth-child(2){
+        margin: auto;
+        width: 100%;
+    }
+
+
+    #productbar{
+        text-align: center;
+        display: flex;
+        justify-content: space-around;
+        padding: 0px 31px 0px 31px;
+        height: 45px;
+        /* border: 1px solid black; */
+        margin-bottom: 10px;
+    }
+    #productbar>div{
+        border: 1px solid;
+        width: 100%;
+    }
+
+    /* product bar */
+    .productbar {
+        overflow: hidden;
+        /* background-color: #333; */
+        /* font-family: Arial; */
+      }
+      .dropdown {
+        float: left;
+        overflow: hidden;
+      }
+      /* Dropdown button */
+    .dropdown .dropbtn {
+        /* font-size: 16px; */
+        border: none;
+        outline: none;
+        color: black;
+        padding: 14px 16px;
+        background-color: inherit;
+        font-family: inherit; /* Important for vertical align on mobile phones */
+        margin: 0; /* Important for vertical align on mobile phones */
+      }
+    .dropdown-content{
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        border: 1px solid black;
+      /* min-width: 160px; */
+      /* width: 125px; */
+      /* text-align: center; */
+      /* box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); */
+      z-index: 1;
+    }
+    /* Links inside the dropdown */
+    .dropdown-content span {
+        float: none;
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+      }
+      /* Show the dropdown menu on hover */
+    .dropdown:hover .dropdown-content {
+        display: block;
+      }
+
+
+}
+
+    @media all and (min-width: 0px) and (max-width:575px){
+
+        #container{
+            /* border: 1px solid red; */
+            display: flex;
+            /* width: 100%; */
+            padding: 0px 23px 0px 23px;
+        }
+
+        #box2 {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+        
+    }
+    #box1,#box3{
+        display: none;
+        width: 0%;
+    }
+    #container>div:nth-child(2){
+        margin: auto;
+        width: 100%;
+    }
+
+    #productbar{
+        text-align: center;
+        display: flex;
+        justify-content: space-around;
+        padding: 0px 23px 0px 23px;
+        height: 45px;
+        /* border: 1px solid black; */
+        margin-bottom: 10px;
+    }
+    #productbar>div{
+        border: 1px solid;
+        width: 100%;
+    }
+
+    /* product bar */
+    .productbar {
+        overflow: hidden;
+        /* background-color: #333; */
+        /* font-family: Arial; */
+      }
+      .dropdown {
+        float: left;
+        overflow: hidden;
+      }
+      /* Dropdown button */
+    .dropdown .dropbtn {
+        /* font-size: 16px; */
+        border: none;
+        outline: none;
+        color: black;
+        padding: 14px 16px;
+        background-color: inherit;
+        font-family: inherit; /* Important for vertical align on mobile phones */
+        margin: 0; /* Important for vertical align on mobile phones */
+      }
+    .dropdown-content{
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        border: 1px solid black;
+      /* min-width: 160px; */
+      /* width: 125px; */
+      /* text-align: center; */
+      /* box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); */
+      z-index: 1;
+    }
+    /* Links inside the dropdown */
+    .dropdown-content span {
+        float: none;
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+      }
+      /* Show the dropdown menu on hover */
+    .dropdown:hover .dropdown-content {
+        display: block;
+      }
+
+
+
+    }
+
+    /* Navbar CSS */
+#navbar{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    margin: auto;
+    position: fixed;
+    top: 0px;
+    /* background-color: white; */
+    background-color: transparent;
+    align-items: center;
+}
+#leftPage{
+    width: 33%;
+}
+#leftPage>div:first-child{
+    display: flex;
+    justify-content:space-evenly;
+    height: auto;
+}
+#leftPage>div:first-child>p{
+    text-transform: uppercase;
+    font-size: 11px;
+    font-family: 'Open Sans', sans-serif;
+    cursor: pointer;
+}
+#leftPage>div:first-child>p:hover{
+    text-decoration: underline;
+}
+#navbar>div:nth-child(2){
+    width: 6%;
+}
+#navbar>div:nth-child(4){
+    width: 11%;
+}
+#navbar>div:nth-child(3){
+    width: 20%;
+    height: auto;
+    text-align: center;
+    cursor: pointer;
+}
+#navbar>div:nth-child(3)>img{
+    width: 100px;
+    height: 21px;
+}
+#rightPage{
+    width: 30%;
+}
+#rightPage>div:first-child{
+    display: flex;
+    justify-content: space-evenly;
+    height: auto;
+}
+#rightPage>div:first-child>p{
+    text-transform: uppercase;
+    font-size: 11px;
+    font-family: 'Open Sans', sans-serif;
+    cursor: pointer;
+}
+#rightPage>div:first-child>p:hover{
+    text-decoration: underline;
+}
+#navbar>div>div>p>a{
+    text-decoration: none;
+    color: #000000;
+}
+#allProduct{
+    display: none;
+}
+#cartLogo{
+    display: none;
+}
+
+/* Media Query for medium screen */
+@media screen and (min-width: 800px) and (max-width: 1024px) {
+
+    #allProduct{
+         text-align: center;
+         display: flex;
+         justify-content: space-around;
+         padding: 0px 10px 0px 10px;
+         height: 45px;
+         margin-bottom: 10px;
+     }
+     #allProduct>div{
+         border: 1px solid grey;
+         width: 100%;
+         border-radius: 13px;
+         font-family: 'Open Sans', sans-serif;
+     }
+ 
+     /* product bar */
+     .productbar {
+         overflow: hidden;
+     }
+     .dropdown {
+         float: left;
+         overflow: hidden;
+     }
+       /* Dropdown button */
+     .dropdown .dropbtn {
+         border: none;
+         outline: none;
+         color: black;
+         padding: 14px 16px;
+         background-color: inherit;
+         font-family: inherit;
+         margin: 0; 
+     }
+     .dropdown-content{
+         width: 95%;
+         display: none;
+         position: absolute;
+         background-color: #f9f9f9;
+         z-index: 1;
+         font-size: 11px;
+         font-family: 'Open Sans', sans-serif;
+     }
+     .dropdown-content>span:hover{
+         cursor: pointer;
+         text-decoration: underline;
+     }
+     /* Links inside the dropdown */
+     .dropdown-content span {
+         float: none;
+         color: black;
+         padding: 12px 16px;
+         text-decoration: none;
+         display: block;
+         text-align: left;
+     }
+       /* Show the dropdown menu on hover */
+     .dropdown:hover .dropdown-content {
+         display: block;
+     }
+ 
+     #cartLogo{
+         text-align: center;
+         display: flex;
+         justify-content: space-evenly;
+         margin-bottom: 10px;
+     }
+     #cartLogo>img{
+         width: 20px;
+         height: 20px;
+         cursor: pointer;
+     }
+ 
+ 
+     #leftPage>div:first-child{
+         display: none;
+     }
+     #navbar>div:nth-child(3){
+         width: 100%;
+         margin: auto;
+     }
+     #rightPage>div:first-child{
+         display: none;
+     }
+}
+
+/* Media Query for small screen */
+@media screen and (min-width: 0px) and (max-width: 799px) {
+
+    #allProduct{
+         text-align: center;
+         display: flex;
+         justify-content: space-around;
+         padding: 0px 10px 0px 10px;
+         height: 45px;
+         margin-bottom: 10px;
+     }
+     #allProduct>div{
+         border: 1px solid grey;
+         width: 100%;
+         border-radius: 13px;
+         font-family: 'Open Sans', sans-serif;
+     }
+ 
+     /* product bar */
+     .productbar {
+         overflow: hidden;
+     }
+     .dropdown {
+         float: left;
+         overflow: hidden;
+     }
+       /* Dropdown button */
+     .dropdown .dropbtn {
+         border: none;
+         outline: none;
+         color: black;
+         padding: 14px 16px;
+         background-color: inherit;
+         font-family: inherit;
+         margin: 0; 
+     }
+     .dropdown-content{
+         width: 95%;
+         display: none;
+         position: absolute;
+         background-color: #f9f9f9;
+         z-index: 1;
+         font-size: 11px;
+         font-family: 'Open Sans', sans-serif;
+     }
+     .dropdown-content>span:hover{
+         cursor: pointer;
+         text-decoration: underline;
+     }
+     /* Links inside the dropdown */
+     .dropdown-content span {
+         float: none;
+         color: black;
+         padding: 12px 16px;
+         text-decoration: none;
+         display: block;
+         text-align: left;
+     }
+       /* Show the dropdown menu on hover */
+     .dropdown:hover .dropdown-content {
+         display: block;
+     }
+ 
+     #cartLogo{
+         text-align: center;
+         display: flex;
+         justify-content: space-evenly;
+         margin-bottom: 10px;
+     }
+     #cartLogo>img{
+         width: 20px;
+         height: 20px;
+         cursor: pointer;
+     }
+ 
+ 
+     #leftPage>div:first-child{
+         display: none;
+     }
+     #navbar>div:nth-child(3){
+         width: 100%;
+         margin: auto;
+     }
+     #rightPage>div:first-child{
+         display: none;
+     }
+
+     #storeProduct{
+        width: 100%;
+     }
+     #pricePart{
+        width: 100%;
+     }
+     #container{
+        width: 100%;
+        flex-direction: column-reverse;
+    }
+    #checkout{
+        width: 100%;
+    }
+}
