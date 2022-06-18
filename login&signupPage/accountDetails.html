@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>OTP | CONFIRMATION</title>
-    <link rel="stylesheet" href="otp.css">
+    <title>Account Details | SSENSE</title>
+    <link rel="stylesheet" href="accountDetails.css">
 </head>
 
 <body>
@@ -56,7 +56,7 @@
             <div>
                 <p>english</p>
                 <p>account</p>
-                <p><a href="../wishPage/wish.html">whishlist</a></p>
+                <p><a href="https://course.masaischool.com/">whishlist</a></p>
                 <p><a href="../cartPage/bag.html">shopping bag <span id="countShow">(0)</span></a></p>
             </div>
 
@@ -69,17 +69,51 @@
             </div>
         </div>
     </div>
-    <!-- Navbar End -->
-    <form>
-        <label for="otp">Enter your OTP here: </label>
-        <br>
-        <input type="number" id="otp" placeholder="Enter your OTP here" maxlength=4>
-        <br>
-        <input type="submit" value="Enter">
-        <br>
-    </form>
+    <div id="accDetails">
+        <div id="box1">
+            <h1 id="child">Account</h1>
+            <div id="child2">
+                <p>Account Details</p>
+                <p>Email Preferences</p>
+                <p>Order History</p>
+                <p>Appointments</p>
+                <p>Addresses</p>
+                <p>Logout</p>
+            </div>
+        </div>
+        <div id="box2">
+            <form>
+                <p id="edit">Edit your preferences below</p>
+                <p id="acc1">Account Information</p>
+                <br>
+                <label for="firstName">First Name</label>
+                <br>
+                <input id="firstName" type="text">
+                <br>
+                <label for="lastName">Last Name</label>
+                <br>
+                <input id="lastName" type="text">
+                <br>
+                <label> Email Address</label>
+                <br>
+                <input id="email" type="email">
+                <br>
+                <p>Account Password</p>
+                <br>
+                <label for="oldPassword">Old Password</label>
+                <br>
+                <input id="oldPassword" type="password" name="oldPassword">
+                <br>
+                <label for="newPassword">New Password</label>
+                <br>
+                <input id="newPassword" type="password" name="newPassword">
+                <br>
+                <input type="submit" value="SAVE CHANGES">
+            </form>
+        </div>
+    </div>
 </body>
 
 </html>
 
-<script src="otp.js"></script>
+<script src="account.js"></script>

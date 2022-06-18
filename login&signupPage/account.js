@@ -1,23 +1,3 @@
-let currentEmail = JSON.parse(localStorage.getItem("currentEmail"));
-document.querySelector("#email").value = currentEmail;
-document.querySelector("#email").readOnly = true;
-
-let mail = JSON.parse(localStorage.getItem("email"));
-document.querySelector("form").addEventListener("submit", uData);
-function uData() {
-    event.preventDefault();
-    let pass = document.querySelector("#password").value;
-    for (let i = 0; i < mail.length; i++) {
-        if (currentEmail === mail[i].email && mail[i].pass === undefined) {
-            mail[i].pass = pass;
-            break;
-        }
-    }
-    localStorage.setItem("email", JSON.stringify(mail));
-}
-
-// javascript functionalaty
-
 // EventListener for menswear
 document.querySelector("#mens").addEventListener("click", mensFunction);
 function mensFunction(){
@@ -51,13 +31,13 @@ function searchFunction(){
 // EventListener for accountLogo
 document.querySelector("#accountLogo").addEventListener("click", accountFunction);
 function accountFunction(){
-    window.location.href = "accountDetails.html"
+    window.location.href = ""
 }
 
 // EventListener for shopping bag
 document.querySelector("#shoppingLogo").addEventListener("click", shoppingFunction);
 function shoppingFunction(){
-    window.location.href = "../cartPage/bag.html"
+    window.location.href = "bag.html"
 }
 
 
@@ -67,5 +47,19 @@ function brandLogoFunction(){
     window.location.href = "../index.html"
 }
 
-let previewDataFromLs = JSON.parse(localStorage.getItem("bagdata"))
-document.querySelector("#countShow").innerText = "("+previewDataFromLs.length+")";
+
+document.querySelector("form").addEventListener("submit",accountDetails);
+let accDet = [];
+
+function accountDetails(){
+    event.preventDefault();
+    let acdetails = {
+        firstName: document.querySelector("#firstName").value,
+        lastName: document.querySelector("#lastName").value,
+        email: document.querySelector("#email").value,
+        oldPassword: document.querySelector("#oldPassword").value,
+        newPassword: document.querySelector("#newPassword").value
+    };
+    accDet.push(acdetails);
+    localStorage.setItem("accountUpdated", JSON.stringify(accDet));
+}
