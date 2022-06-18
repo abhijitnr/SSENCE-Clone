@@ -239,19 +239,30 @@ function display(previewarr){
 
 function addtobag(elem,fit){
     // console.log(elem,fit)
-    if(fit == undefined){
-        elem["size"]="-";
-    }else if(elem["size"]==undefined){
-        elem["size"]=fit;
+    if(fit=="SELECT SIZE"){
+        alert("Please Select Size");
+        window.location.reload();
     }else{
-        elem.size = fit;
+        if(fit == undefined){
+            elem["size"]="-";
+        }else if(elem["size"]==undefined){
+            elem["size"]=fit;
+        }else{
+            elem.size = fit;
+        }
+        previewdata.push(elem)
+        localStorage.setItem("bagdata",JSON.stringify(previewdata));
+        window.location.reload();
     }
-    previewdata.push(elem)
-    localStorage.setItem("bagdata",JSON.stringify(previewdata));
-    window.location.reload();
+  
 }
 
 function addtowish(elem,fit){
+    if(fit=="SELECT SIZE"){
+        alert("Please Select Size");
+        window.location.reload();
+    }
+    else{
     if(fit==undefined){
         elem["size"]="-";
     }else if(elem["size"]==undefined){
@@ -262,6 +273,7 @@ function addtowish(elem,fit){
     previewdata2.push(elem)
     localStorage.setItem("wishdata",JSON.stringify(previewdata2));
     window.location.reload();
+}
 }
 
 
