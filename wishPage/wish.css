@@ -187,7 +187,6 @@
      .dropdown:hover .dropdown-content {
          display: block;
      }
- 
      #cartLogo{
          text-align: center;
          display: flex;
@@ -199,8 +198,6 @@
          height: 20px;
          cursor: pointer;
      }
- 
- 
      #leftPage>div:first-child{
          display: none;
      }
@@ -299,4 +296,49 @@
      #rightPage>div:first-child{
          display: none;
      }
+}
+
+@media screen  and (min-width: 575px) and (max-width: 950px){
+    #container{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto;
+    }
+    #aboutWish{
+        width: 100%;
+    }
+    #aboutWish>p:last-child{
+        width: 100%;
+    }
+}
+
+@media screen  and (min-width: 370px) and (max-width: 574px){
+    #container{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+    }
+    #aboutWish{
+        width: 100%;
+    }
+    #aboutWish>p:last-child{
+        width: 100%;
+    }
+}
+
+@media screen  and (min-width: 50px) and (max-width: 369px){
+    #container{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: auto;
+    }
+    #aboutWish{
+        width: 100%;
+    }
+    #aboutWish>p:last-child{
+        width: 100%;
+    }
 }

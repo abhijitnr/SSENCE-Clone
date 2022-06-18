@@ -2799,7 +2799,7 @@ function searchFunction(){
 // EventListener for accountLogo
 document.querySelector("#accountLogo").addEventListener("click", accountFunction);
 function accountFunction(){
-    window.location.href = ""
+    window.location.href = "../login&signupPage/accountDetails.html"
 }
 
 // EventListener for shopping bag

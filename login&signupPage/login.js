@@ -58,7 +58,7 @@ function searchFunction(){
 // EventListener for accountLogo
 document.querySelector("#accountLogo").addEventListener("click", accountFunction);
 function accountFunction(){
-    window.location.href = ""
+    window.location.href = "accountDetails.html"
 }
 
 // EventListener for shopping bag
