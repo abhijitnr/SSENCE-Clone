@@ -65,6 +65,7 @@ promo.style.color = "gray";
 let promoValue = document.createElement("input");
 promoValue.type = "text";
 promoValue.style.boxShadow = "rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;"
+promoValue.placeholder = "ssense30";
 
 let prBtn1 = document.createElement("button");
 prBtn1.style.border = "none";
@@ -72,7 +73,6 @@ prBtn1.style.backgroundColor = "transparent";
 
 let prBtn = document.createElement("button");
 prBtn.innerText = "Apply";
-prBtn.placeholder = "ssense30";
 prBtn.style.marginTop = "2%"
 prBtn.style.backgroundColor = "black";
 prBtn.style.color = "white";
