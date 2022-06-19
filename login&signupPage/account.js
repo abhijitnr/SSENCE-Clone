@@ -37,7 +37,7 @@ function accountFunction(){
 // EventListener for shopping bag
 document.querySelector("#shoppingLogo").addEventListener("click", shoppingFunction);
 function shoppingFunction(){
-    window.location.href = "bag.html"
+    window.location.href = "../cartPage/bag.html"
 }
 
 
