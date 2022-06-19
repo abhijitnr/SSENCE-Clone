@@ -72,6 +72,7 @@ prBtn1.style.backgroundColor = "transparent";
 
 let prBtn = document.createElement("button");
 prBtn.innerText = "Apply";
+prBtn.placeholder = "ssense30";
 prBtn.style.marginTop = "2%"
 prBtn.style.backgroundColor = "black";
 prBtn.style.color = "white";
