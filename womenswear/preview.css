@@ -395,7 +395,7 @@ p{
          display: none;
      }
 
-     #storeProduct{
+     /* #storeProduct{
         width: 100%;
      }
      #pricePart{
@@ -407,5 +407,5 @@ p{
     }
     #checkout{
         width: 100%;
-    }
+    } */
 }
